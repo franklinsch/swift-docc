@@ -20,11 +20,19 @@ struct TechnologyRenderTranslator: SemanticTranslator {
         node.metadata.title = technology.intro.title
         node.metadata.category = technology.name
         node.metadata.categoryPathComponent = visitor.identifier.url.lastPathComponent
-        node.metadata.estimatedTime = visitor.totalEstimatedDuration(for: technology)
+        node.metadata.estimatedTime = totalEstimatedDuration(
+            for: technology,
+            context: visitor.context,
+            identifier: visitor.identifier,
+            contentRenderer: visitor.contentRenderer
+        )
         node.metadata.role = visitor.contentRenderer.role(for: .technology).rawValue
 
         var intro = IntroRenderTranslator().translate(technology.intro, visitor: &visitor)
-        if let firstTutorial = visitor.firstTutorial(ofTechnology: visitor.identifier) {
+        if let firstTutorial = firstTutorial(
+            ofTechnology: visitor.identifier,
+            context: visitor.context
+        ) {
             intro.action = visitor.visitLink(firstTutorial.reference.url, defaultTitle: "Get started")
         }
         node.sections.append(intro)
@@ -46,11 +54,51 @@ struct TechnologyRenderTranslator: SemanticTranslator {
         
         node.references = visitor.createTopicRenderReferences()
         
-        visitor.addReferences(visitor.fileReferences, to: &node)
-        visitor.addReferences(visitor.imageReferences, to: &node)
-        visitor.addReferences(visitor.videoReferences, to: &node)
-        visitor.addReferences(visitor.linkReferences, to: &node)
+        addReferences(visitor.fileReferences, to: &node)
+        addReferences(visitor.imageReferences, to: &node)
+        addReferences(visitor.videoReferences, to: &node)
+        addReferences(visitor.linkReferences, to: &node)
         
         return node
+    }
+    
+    /// Returns a description of the total estimated duration to complete the tutorials of the given technology.
+    /// - Returns: The estimated duration, or `nil` if there are no tutorials with time estimates.
+    private func totalEstimatedDuration(
+        for technology: Technology,
+        context: DocumentationContext,
+        identifier: ResolvedTopicReference,
+        contentRenderer: DocumentationContentRenderer
+    ) -> String? {
+        var totalDurationMinutes: Int? = nil
+
+        context.traverseBreadthFirst(from: identifier) { node in
+            if let entity = try? context.entity(with: node.reference),
+                let durationMinutes = (entity.semantic as? Timed)?.durationMinutes
+            {
+                if totalDurationMinutes == nil {
+                    totalDurationMinutes = 0
+                }
+                totalDurationMinutes! += durationMinutes
+            }
+
+            return .continue
+        }
+
+
+        return totalDurationMinutes.flatMap(contentRenderer.formatEstimatedDuration(minutes:))
+    }
+    
+    private func firstTutorial(
+        ofTechnology technology: ResolvedTopicReference,
+        context: DocumentationContext
+    ) -> (reference: ResolvedTopicReference, kind: DocumentationNode.Kind)? {
+        guard let volume = (context.children(of: technology, kind: .volume)).first,
+              let firstChapter = (context.children(of: volume.reference)).first,
+              let firstTutorial = (context.children(of: firstChapter.reference)).first else
+        {
+            return nil
+        }
+        return firstTutorial
     }
 }

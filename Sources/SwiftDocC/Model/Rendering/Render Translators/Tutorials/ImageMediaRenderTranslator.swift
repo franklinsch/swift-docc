@@ -17,6 +17,10 @@ struct ImageMediaRenderTranslator: SemanticTranslator {
     ///
     /// This function registers a render reference for the associated media in the given render node translator.
     func translate(_ imageMedia: ImageMedia, visitor: inout RenderNodeTranslator) -> RenderReferenceIdentifier {
-        visitor.createAndRegisterRenderReference(forMedia: imageMedia.source, altText: imageMedia.altText)
+        RenderReferenceGenerator().createAndRegisterRenderReference(
+            forMedia: imageMedia.source,
+            altText: imageMedia.altText,
+            visitor: &visitor
+        )
     }
 }

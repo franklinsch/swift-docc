@@ -18,7 +18,7 @@ struct TutorialSectionRenderTranslator: SemanticTranslator {
         _ tutorialSection: TutorialSection,
         visitor: inout RenderNodeTranslator
     ) -> TutorialSectionsRenderSection.Section {
-        let introduction = visitor.contentLayouts(tutorialSection.introduction)
+        let introduction = MarkupLayoutsRenderTranslator().translate(tutorialSection.introduction, visitor: &visitor)
         let stepsContent: [RenderBlockContent]
         if let steps = tutorialSection.stepsContent {
             stepsContent = StepsRenderTranslator().translate(steps, visitor: &visitor)

@@ -65,10 +65,11 @@ struct SymbolRenderTranslator: SemanticTranslator {
                           }
                     
                     return AvailabilityRenderItem(availability, current: currentPlatform)
-                } ?? visitor.defaultAvailability(
+                } ?? DefaultAvailabilityGenerator().createDefaultAvailability(
                     for: bundle,
                     moduleName: moduleName,
-                    currentPlatforms: context.externalMetadata.currentPlatforms
+                    currentPlatforms: context.externalMetadata.currentPlatforms,
+                    visitor: &visitor
                 )
             )?.filter({ !($0.unconditionallyUnavailable == true) })
                 .sorted(by: AvailabilityRenderOrder.compare)
@@ -253,10 +254,11 @@ struct SymbolRenderTranslator: SemanticTranslator {
             
             if let topics = topics, !topics.taskGroups.isEmpty {
                 sections.append(
-                    contentsOf: visitor.renderGroups(
+                    contentsOf: GroupedSectionRenderTranslator().translate(
                         topics,
                         allowExternalLinks: false,
-                        contentCompiler: &contentCompiler
+                        contentCompiler: &contentCompiler,
+                        visitor: &visitor
                     )
                 )
             }
@@ -265,7 +267,7 @@ struct SymbolRenderTranslator: SemanticTranslator {
             // after any user-defined task groups but before automatic curation.
             if !automaticTaskGroups.isEmpty {
                 sections.append(
-                    contentsOf: visitor.renderAutomaticTaskGroupsSection(
+                    contentsOf: AutomaticTaskGroupSectionRenderTranslator().translate(
                         automaticTaskGroups.filter({ $0.renderPositionPreference == .top }),
                         contentCompiler: &contentCompiler
                     )
@@ -294,7 +296,7 @@ struct SymbolRenderTranslator: SemanticTranslator {
             // after any user-defined task groups but before automatic curation.
             if !automaticTaskGroups.isEmpty {
                 sections.append(
-                    contentsOf: visitor.renderAutomaticTaskGroupsSection(
+                    contentsOf: AutomaticTaskGroupSectionRenderTranslator().translate(
                         automaticTaskGroups.filter({ $0.renderPositionPreference == .bottom }),
                         contentCompiler: &contentCompiler
                     )
@@ -357,10 +359,11 @@ struct SymbolRenderTranslator: SemanticTranslator {
             
             if let seeAlso = variant.map(\.1) {
                 seeAlsoSections.append(
-                    contentsOf: visitor.renderGroups(
+                    contentsOf: GroupedSectionRenderTranslator().translate(
                         seeAlso,
                         allowExternalLinks: true,
-                        contentCompiler: &contentCompiler
+                        contentCompiler: &contentCompiler,
+                        visitor: &visitor
                     )
                 )
             }
@@ -396,13 +399,40 @@ struct SymbolRenderTranslator: SemanticTranslator {
         visitor.collectedTopicReferences.append(contentsOf: contentCompiler.collectedTopicReferences)
         node.references = visitor.createTopicRenderReferences()
         
-        visitor.addReferences(visitor.imageReferences, to: &node)
+        addReferences(visitor.imageReferences, to: &node)
         // See Also can contain external links, we need to separately transfer
         // link references from the content compiler
-        visitor.addReferences(contentCompiler.linkReferences, to: &node)
-        visitor.addReferences(visitor.linkReferences, to: &node)
+        addReferences(contentCompiler.linkReferences, to: &node)
+        addReferences(visitor.linkReferences, to: &node)
         
         visitor.currentSymbol = nil
         return node
+    }
+}
+
+fileprivate extension RenderNodeTranslator {
+    @discardableResult
+    mutating func collectUnresolvableSymbolReference(
+        destination: UnresolvedTopicReference,
+        title: String
+    ) -> UnresolvedTopicReference? {
+        guard let url = ValidatedURL(destination.topicURL.url) else {
+            return nil
+        }
+        
+        let reference = UnresolvedTopicReference(topicURL: url, title: title)
+        collectedUnresolvedTopicReferences.append(reference)
+        
+        return reference
+    }
+    
+    mutating func createRenderSections(
+        for symbol: Symbol,
+        renderNode: inout RenderNode,
+        translators: [RenderSectionTranslator]
+    ) -> [VariantCollection<CodableContentSection?>] {
+        translators.compactMap { translator in
+            translator.translateSection(for: symbol, renderNode: &renderNode, renderNodeTranslator: &self)
+        }
     }
 }

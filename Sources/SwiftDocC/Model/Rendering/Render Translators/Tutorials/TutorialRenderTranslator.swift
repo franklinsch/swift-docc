@@ -57,9 +57,10 @@ struct TutorialRenderTranslator: SemanticTranslator {
         }
         
         if let projectFiles = tutorial.projectFiles {
-            intro.projectFiles = visitor.createAndRegisterRenderReference(
+            intro.projectFiles = RenderReferenceGenerator().createAndRegisterRenderReference(
                 forMedia: projectFiles,
-                assetContext: .download
+                assetContext: .download,
+                visitor: &visitor
             )
         }
         
@@ -95,20 +96,24 @@ struct TutorialRenderTranslator: SemanticTranslator {
         if technologyPath.count >= 2 {
             let volume = technologyPath[technologyPath.count - 2]
             
-            if let cta = visitor.callToAction(with: tutorial.callToActionImage, volume: volume) {
+            if let cta = CallToActionGenerator().createCallToAction(
+                with: tutorial.callToActionImage,
+                volume: volume,
+                visitor: &visitor
+            ) {
                 node.sections.append(cta)
             }
         }
         
         node.references = visitor.createTopicRenderReferences()
 
-        visitor.addReferences(visitor.fileReferences, to: &node)
-        visitor.addReferences(visitor.imageReferences, to: &node)
-        visitor.addReferences(visitor.videoReferences, to: &node)
-        visitor.addReferences(visitor.requirementReferences, to: &node)
-        visitor.addReferences(visitor.downloadReferences, to: &node)
-        visitor.addReferences(visitor.linkReferences, to: &node)
-        visitor.addReferences(hierarchyTranslator.linkReferences, to: &node)
+        addReferences(visitor.fileReferences, to: &node)
+        addReferences(visitor.imageReferences, to: &node)
+        addReferences(visitor.videoReferences, to: &node)
+        addReferences(visitor.requirementReferences, to: &node)
+        addReferences(visitor.downloadReferences, to: &node)
+        addReferences(visitor.linkReferences, to: &node)
+        addReferences(hierarchyTranslator.linkReferences, to: &node)
         return node
     }
 }

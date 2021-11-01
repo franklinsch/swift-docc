@@ -22,8 +22,11 @@ struct IntroRenderTranslator: SemanticTranslator {
         section.video = intro.video.map { VideoMediaRenderTranslator().translate($0, visitor: &visitor) }
         
         // Set the Intro's background image to the video's poster image.
-        section.backgroundImage = intro.video?.poster.map { visitor.createAndRegisterRenderReference(forMedia: $0) }
-            ?? intro.image.map { visitor.createAndRegisterRenderReference(forMedia: $0.source) }
+        section.backgroundImage = intro.video?.poster.map {
+            RenderReferenceGenerator().createAndRegisterRenderReference(forMedia: $0, visitor: &visitor)
+        } ?? intro.image.map {
+            RenderReferenceGenerator().createAndRegisterRenderReference(forMedia: $0.source, visitor: &visitor)
+        }
         
         return section
     }

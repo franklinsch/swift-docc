@@ -81,7 +81,12 @@ struct ArticleRenderTranslator: SemanticTranslator {
         if let topics = article.topics, !topics.taskGroups.isEmpty {
             // Don't set an eyebrow as collections and groups don't have one; append the authored Topics section
             node.topicSections.append(
-                contentsOf: visitor.renderGroups(topics, allowExternalLinks: false, contentCompiler: &contentCompiler)
+                contentsOf: GroupedSectionRenderTranslator().translate(
+                    topics,
+                    allowExternalLinks: false,
+                    contentCompiler: &contentCompiler,
+                    visitor: &visitor
+                )
             )
         }
         
@@ -89,7 +94,7 @@ struct ArticleRenderTranslator: SemanticTranslator {
         // after any user-defined task groups but before automatic curation.
         if !article.automaticTaskGroups.isEmpty {
             node.topicSections.append(
-                contentsOf: visitor.renderAutomaticTaskGroupsSection(
+                contentsOf: AutomaticTaskGroupSectionRenderTranslator().translate(
                     article.automaticTaskGroups.filter { $0.renderPositionPreference == .top },
                     contentCompiler: &contentCompiler
                 )
@@ -126,7 +131,7 @@ struct ArticleRenderTranslator: SemanticTranslator {
         // after any user-defined task groups but before automatic curation.
         if !article.automaticTaskGroups.isEmpty {
             node.topicSections.append(
-                contentsOf: visitor.renderAutomaticTaskGroupsSection(
+                contentsOf: AutomaticTaskGroupSectionRenderTranslator().translate(
                     article.automaticTaskGroups.filter({ $0.renderPositionPreference == .bottom }),
                     contentCompiler: &contentCompiler
                 )
@@ -145,7 +150,12 @@ struct ArticleRenderTranslator: SemanticTranslator {
         // Authored See Also section
         if let seeAlso = article.seeAlso, !seeAlso.taskGroups.isEmpty {
             node.seeAlsoSections.append(
-                contentsOf: visitor.renderGroups(seeAlso, allowExternalLinks: true, contentCompiler: &contentCompiler)
+                contentsOf: GroupedSectionRenderTranslator().translate(
+                    seeAlso,
+                    allowExternalLinks: true,
+                    contentCompiler: &contentCompiler,
+                    visitor: &visitor
+                )
             )
         }
         
@@ -170,12 +180,12 @@ struct ArticleRenderTranslator: SemanticTranslator {
         visitor.collectedTopicReferences.append(contentsOf: contentCompiler.collectedTopicReferences)
         node.references = visitor.createTopicRenderReferences()
 
-        visitor.addReferences(visitor.imageReferences, to: &node)
-        visitor.addReferences(visitor.videoReferences, to: &node)
-        visitor.addReferences(visitor.linkReferences, to: &node)
+        addReferences(visitor.imageReferences, to: &node)
+        addReferences(visitor.videoReferences, to: &node)
+        addReferences(visitor.linkReferences, to: &node)
         // See Also can contain external links, we need to separately transfer
         // link references from the content compiler
-        visitor.addReferences(contentCompiler.linkReferences, to: &node)
+        addReferences(contentCompiler.linkReferences, to: &node)
 
         return node
     }

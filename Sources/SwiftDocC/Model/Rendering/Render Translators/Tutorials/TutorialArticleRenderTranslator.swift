@@ -61,7 +61,7 @@ struct TutorialArticleRenderTranslator: SemanticTranslator {
                 
         node.sections.append(intro)
         
-        let layouts = visitor.contentLayouts(article.content)
+        let layouts = MarkupLayoutsRenderTranslator().translate(article.content, visitor: &visitor)
         
         let articleSection = TutorialArticleSection(content: layouts)
         
@@ -74,19 +74,23 @@ struct TutorialArticleRenderTranslator: SemanticTranslator {
         if technologyPath.count >= 2 {
             let volume = technologyPath[technologyPath.count - 2]
             
-            if let cta = visitor.callToAction(with: article.callToActionImage, volume: volume) {
+            if let cta = CallToActionGenerator().createCallToAction(
+                with: article.callToActionImage,
+                volume: volume,
+                visitor: &visitor
+            ) {
                 node.sections.append(cta)
             }
         }
         
         node.references = visitor.createTopicRenderReferences()
 
-        visitor.addReferences(visitor.fileReferences, to: &node)
-        visitor.addReferences(visitor.imageReferences, to: &node)
-        visitor.addReferences(visitor.videoReferences, to: &node)
-        visitor.addReferences(visitor.requirementReferences, to: &node)
-        visitor.addReferences(visitor.downloadReferences, to: &node)
-        visitor.addReferences(visitor.linkReferences, to: &node)
+        addReferences(visitor.fileReferences, to: &node)
+        addReferences(visitor.imageReferences, to: &node)
+        addReferences(visitor.videoReferences, to: &node)
+        addReferences(visitor.requirementReferences, to: &node)
+        addReferences(visitor.downloadReferences, to: &node)
+        addReferences(visitor.linkReferences, to: &node)
         
         return node
     }

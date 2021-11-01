@@ -15,6 +15,7 @@ struct VideoMediaRenderTranslator: SemanticTranslator {
     
     /// Translates a video media into a render reference identifier.
     func translate(_ videoMedia: VideoMedia, visitor: inout RenderNodeTranslator) -> RenderReferenceIdentifier {
-        visitor.createAndRegisterRenderReference(forMedia: videoMedia.source, poster: videoMedia.poster)
+        RenderReferenceGenerator()
+            .createAndRegisterRenderReference(forMedia: videoMedia.source, poster: videoMedia.poster, visitor: &visitor)
     }
 }

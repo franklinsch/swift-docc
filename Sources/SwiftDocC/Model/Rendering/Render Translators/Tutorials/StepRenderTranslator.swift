@@ -22,7 +22,11 @@ struct StepRenderTranslator: SemanticTranslator {
         let codeReference = step.code.map { CodeRenderTranslator().translate($0, visitor: &visitor) }
         
         let previewReference = step.code?.preview.map {
-            visitor.createAndRegisterRenderReference(forMedia: $0.source, altText: ($0 as? ImageMedia)?.altText)
+            RenderReferenceGenerator().createAndRegisterRenderReference(
+                forMedia: $0.source,
+                altText: ($0 as? ImageMedia)?.altText,
+                visitor: &visitor
+            )
         }
         
         return [
