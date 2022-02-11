@@ -29,16 +29,25 @@ public final class Metadata: Semantic, DirectiveConvertible {
     let documentationOptions: DocumentationExtension?
     /// Configuration to make this page root-level documentation.
     let technologyRoot: TechnologyRoot?
+    /// The languages that this pages supports.
+    let supportedLanguages: SupportedLanguages?
     
     /// Creates a metadata object with a given markup, documentation extension, and technology root.
     /// - Parameters:
     ///   - originalMarkup: The original markup for this metadata directive.
     ///   - documentationExtension: Optional configuration that describes how this documentation extension file merges or overrides the in-source documentation.
     ///   - technologyRoot: Optional configuration to make this page root-level documentation.
-    init(originalMarkup: BlockDirective, documentationExtension: DocumentationExtension?, technologyRoot: TechnologyRoot?) {
+    ///   - supportedLanguages: Optional configuration to specify what languages this technology is available in.
+    init(
+        originalMarkup: BlockDirective,
+        documentationExtension: DocumentationExtension?,
+        technologyRoot: TechnologyRoot?,
+        supportedLanguages: SupportedLanguages?
+    ) {
         self.originalMarkup = originalMarkup
         self.documentationOptions = documentationExtension
         self.technologyRoot = technologyRoot
+        self.supportedLanguages = supportedLanguages
     }
     
     public convenience init?(from directive: BlockDirective, source: URL?, for bundle: DocumentationBundle, in context: DocumentationContext, problems: inout [Problem]) {
@@ -55,13 +64,16 @@ public final class Metadata: Semantic, DirectiveConvertible {
         let technologyRoot: TechnologyRoot?
         (technologyRoot, remainder) = Semantic.Analyses.HasAtMostOne<Metadata, TechnologyRoot>().analyze(directive, children: remainder, source: source, for: bundle, in: context, problems: &problems)
         
+        let supportedLanguages: SupportedLanguages?
+        (supportedLanguages, remainder) = Semantic.Analyses.HasAtMostOne<Metadata, SupportedLanguages>().analyze(directive, children: remainder, source: source, for: bundle, in: context, problems: &problems)
+        
         if !remainder.isEmpty {
             let diagnostic = Diagnostic(source: source, severity: .warning, range: directive.range, identifier: "org.swift.docc.\(Metadata.directiveName).UnexpectedContent", summary: "\(Metadata.directiveName.singleQuoted) directive has content but none is expected")
             problems.append(Problem(diagnostic: diagnostic, possibleSolutions: []))
         }
         
         // Check that something is configured in the metadata block
-        if documentationExtension == nil && technologyRoot == nil {
+        if documentationExtension == nil && technologyRoot == nil && supportedLanguages == nil {
             let diagnostic = Diagnostic(source: source, severity: .information, range: directive.range, identifier: "org.swift.docc.\(Metadata.directiveName).NoConfiguration", summary: "\(Metadata.directiveName.singleQuoted) doesn't configure anything and has no effect")
             
             let solutions = directive.range.map {
@@ -70,7 +82,12 @@ public final class Metadata: Semantic, DirectiveConvertible {
             problems.append(Problem(diagnostic: diagnostic, possibleSolutions: solutions))
         }
         
-        self.init(originalMarkup: directive, documentationExtension: documentationExtension, technologyRoot: technologyRoot)
+        self.init(
+            originalMarkup: directive,
+            documentationExtension: documentationExtension,
+            technologyRoot: technologyRoot,
+            supportedLanguages: supportedLanguages
+        )
     }
 }
 

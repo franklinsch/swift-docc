@@ -798,9 +798,19 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                     
                     // Warn for an incorrect root page metadata directive.
                     if result.value.metadata?.technologyRoot != nil {
-                        let diagnostic = Diagnostic(source: url.url, severity: .warning, range: article.metadata?.technologyRoot?.originalMarkup.range, identifier: "org.swift.docc.UnexpectedTechnologyRoot", summary: "Don't use TechnologyRoot in documentation extension files because it's only valid as a directive in articles")
-                        let problem = Problem(diagnostic: diagnostic, possibleSolutions: [])
-                        diagnosticEngine.emit(problem)
+                        warnForInvalidDirectiveInDocumentationExtension(
+                            directiveName: TechnologyRoot.directiveName,
+                            url: url.url,
+                            range: article.metadata?.technologyRoot?.originalMarkup.range
+                        )
+                    }
+                    
+                    if result.value.metadata?.supportedLanguages != nil {
+                        warnForInvalidDirectiveInDocumentationExtension(
+                            directiveName: SupportedLanguages.directiveName,
+                            url: url.url,
+                            range: article.metadata?.technologyRoot?.originalMarkup.range
+                        )
                     }
                 } else {
                     precondition(uncuratedArticles[result.topicGraphNode.reference] == nil, "Article references are unique.")
@@ -1582,7 +1592,12 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         // Create a root leaf node for all root page articles
         for article in articles {
             // Create the documentation data
-            guard let (documentation, title) = DocumentationContext.documentationNodeAndTitle(for: article, kind: .collection, in: bundle) else { continue }
+            guard let (documentation, title) = DocumentationContext.documentationNodeAndTitle(
+                for: article,
+                availableSourceLanguages: article.value.metadata?.supportedLanguages.map { Set($0.languages) },
+                kind: .collection,
+                in: bundle
+            ) else { continue }
             let reference = documentation.reference
             
             // Create the documentation node
@@ -2633,6 +2648,25 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 self.topicGraph.dump(startingAt: node, keyPath: \.reference.absoluteString)
             }
             .joined()
+    }
+    
+    func warnForInvalidDirectiveInDocumentationExtension(
+        directiveName: String,
+        url: URL,
+        range: SourceRange?
+    ) {
+        let diagnostic = Diagnostic(
+            source: url,
+            severity: .warning,
+            range: range,
+            identifier: "org.swift.docc.Unexpected\(directiveName)",
+            summary: """
+            \(directiveName.singleQuoted) cannot be used in documentation extension files because it's only valid as \
+            a directive in articles.
+            """
+        )
+        let problem = Problem(diagnostic: diagnostic, possibleSolutions: [])
+        diagnosticEngine.emit(problem)
     }
 }
 
