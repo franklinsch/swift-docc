@@ -2117,15 +2117,22 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         return topicGraph.reverseEdges[reference] ?? []
     }
     
-    /// Attempt to locate the file for a given `reference`.
+    /// Returns the file URL for the given article reference.
     ///
     /// - Parameter reference: The identifier for the topic whose file URL to locate.
-    /// - Returns: The absolute file URL of the topic if it could be found in a matching registered documentation bundle, otherwise `nil`.
+    /// - Returns: If the reference is a reference to a known article, this function returns the article's URL, otherwise `nil`.
     public func fileURL(for reference: ResolvedTopicReference) -> URL? {
         if let node = topicGraph.nodes[reference], case .file(let url) = node.source {
             return url
         }
         return nil
+    }
+    
+    /// Returns the URL of the documentation extension of the given reference.
+    ///
+    /// - Parameter reference: The reference to the symbol this function should return the documentation extension URL for.
+    public func documentationExtensionURL(for reference: ResolvedTopicReference) -> URL? {
+        documentLocationMap[reference]
     }
     
     /// Attempt to locate the reference for a given file.
