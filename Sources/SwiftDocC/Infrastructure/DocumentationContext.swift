@@ -115,6 +115,8 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
     
     /// The graph of all the documentation content and their relationships to each other.
     var topicGraph = TopicGraph()
+    
+    var multiLanguageTopicGraph = MultiLanguageTopicGraph()
 
     /// A value to control whether the set of manually curated references found during bundle registration should be stored. Defaults to `false`. Setting this property to `false` clears any stored references from `manuallyCuratedReferences`.
     public var shouldStoreManuallyCuratedReferences: Bool = false {
@@ -1198,8 +1200,33 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         default: return nil
         }
     }
+    
+    private func parentChildRelationship(
+        from edge: UnifiedSymbolGraph.Relationship
+    ) -> (ResolvedTopicReference, ResolvedTopicReference, [UnifiedSymbolGraph.Selector])? {
+        // Filter only parent <-> child edges
+        switch edge.kind {
+        case .memberOf, .requirementOf:
+            guard let parentRef = symbolIndex[edge.target]?.reference, let childRef = symbolIndex[edge.source]?.reference else {
+            return nil
+            }
+            return (parentRef, childRef, edge.selectors)
+        default: return nil
+        }
+    }
 
     static private func sortRelationshipsPreOrder(lhs: (ResolvedTopicReference, ResolvedTopicReference), rhs: (ResolvedTopicReference, ResolvedTopicReference)) -> Bool {
+        // To walk the relationships deterministically for nodes at the same level in the hierarchy sort alphabetically.
+        if lhs.0.pathComponents.count == rhs.0.pathComponents.count {
+            return lhs.0.path < rhs.0.path
+        }
+        return lhs.0.pathComponents.count < rhs.0.pathComponents.count
+    }
+    
+    static private func sortRelationshipsPreOrder(
+        lhs: (ResolvedTopicReference, ResolvedTopicReference, [UnifiedSymbolGraph.Selector]),
+        rhs: (ResolvedTopicReference, ResolvedTopicReference, [UnifiedSymbolGraph.Selector])
+    ) -> Bool {
         // To walk the relationships deterministically for nodes at the same level in the hierarchy sort alphabetically.
         if lhs.0.pathComponents.count == rhs.0.pathComponents.count {
             return lhs.0.path < rhs.0.path
@@ -1258,6 +1285,9 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
     private func addPreparedSymbolToContext(_ result: AddSymbolResultWithProblems) {
         let symbolData = result.0
         topicGraph.addNode(symbolData.topicGraphNode)
+        for sourceLanguage in symbolData.node.availableSourceLanguages {
+            multiLanguageTopicGraph.addNode(symbolData.topicGraphNode, sourceLanguage: sourceLanguage)
+        }
         documentationCache[symbolData.reference] = symbolData.node
         symbolIndex[symbolData.preciseIdentifier] = symbolData.node
 
@@ -1279,13 +1309,29 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
     ///
     /// - Parameter bundle: The bundle to load symbol graph files from.
     /// - Returns: A pair of the references to all loaded modules and the hierarchy of all the loaded symbol's references.
-    private func registerSymbols(from bundle: DocumentationBundle, symbolGraphLoader: SymbolGraphLoader) throws -> (moduleReferences: Set<ResolvedTopicReference>, urlHierarchy: BidirectionalTree<ResolvedTopicReference>) {
+    private func registerSymbols(
+        from bundle: DocumentationBundle,
+        symbolGraphLoader: SymbolGraphLoader
+    ) throws -> (
+        moduleReferences: Set<ResolvedTopicReference>,
+        urlHierarchy: BidirectionalTree<ResolvedTopicReference>,
+        multiLanguageURLHierarchy: [SourceLanguage: BidirectionalTree<ResolvedTopicReference>]
+    ) {
         // Making sure that we correctly let decoding memory get released, do not remove the autorelease pool.
-        return try autoreleasepool { () -> (Set<ResolvedTopicReference>, BidirectionalTree<ResolvedTopicReference>) in
+        return try autoreleasepool { () -> (Set<ResolvedTopicReference>, BidirectionalTree<ResolvedTopicReference>, [SourceLanguage: BidirectionalTree<ResolvedTopicReference>]) in
             /// A tree of the symbol hierarchy as defined by the combined symbol graph.
             var symbolsURLHierarchy = BidirectionalTree<ResolvedTopicReference>(root: bundle.documentationRootReference)
+            
+            var multiLanguageSymbolsURLHierarchy: [SourceLanguage: _] = [
+                .swift: BidirectionalTree<ResolvedTopicReference>(root: bundle.documentationRootReference),
+                .objectiveC: BidirectionalTree<ResolvedTopicReference>(root: bundle.documentationRootReference)
+            ]
+            
             /// We need only unique relationships so we'll collect them in a set.
             var combinedRelationships = Set<SymbolGraph.Relationship>()
+            
+            var combinedUnifiedRelationships = Set<UnifiedSymbolGraph.Relationship>()
+            
             /// Collect symbols from all symbol graphs.
             var combinedSymbols = [String: UnifiedSymbolGraph.Symbol]()
             
@@ -1383,6 +1429,9 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                     
                     // Add modules as root nodes in the URL tree
                     try symbolsURLHierarchy.add(moduleReference, parent: symbolsURLHierarchy.root)
+                    
+                    try multiLanguageSymbolsURLHierarchy[.swift]?.add(moduleReference, parent: symbolsURLHierarchy.root)
+                    try multiLanguageSymbolsURLHierarchy[.objectiveC]?.add(moduleReference, parent: symbolsURLHierarchy.root)
                 }
                 
                 // Map the symbol graph hierarchy into a URL tree to use as default curation
@@ -1390,16 +1439,23 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 
                 // Curate all root framework symbols under the module in the URL tree
                 for symbol in unifiedSymbolGraph.symbols.values where symbol.defaultSymbol!.pathComponents.count == 1 {
-                    try symbolIndex[symbol.uniqueIdentifier].map({
+                    try symbolIndex[symbol.uniqueIdentifier].map({ node in
                         // If merging symbol graph extension there can be repeat symbols, don't add them again.
-                        guard (try? symbolsURLHierarchy.parent(of: $0.reference)) == nil else { return }
-                        try symbolsURLHierarchy.add($0.reference, parent: moduleReference)
+                        guard (try? symbolsURLHierarchy.parent(of: node.reference)) == nil else { return }
+                        try symbolsURLHierarchy.add(node.reference, parent: moduleReference)
+                        
+                        let languages = symbol.mainGraphSelectors.map(\.interfaceLanguage).map(SourceLanguage.init(id:))
+                        
+                        for language in languages {
+                            try multiLanguageSymbolsURLHierarchy[language]?.add(node.reference, parent: moduleReference)
+                        }
                     })
                 }
                 
                 // Collect symbols and relationships
                 combinedSymbols.merge(unifiedSymbolGraph.symbols, uniquingKeysWith: { $1 })
                 combinedRelationships.formUnion(unifiedSymbolGraph.relationships)
+                combinedUnifiedRelationships.formUnion(unifiedSymbolGraph.unifiedRelationships.values)
             }
             
             try shouldContinueRegistration()
@@ -1422,6 +1478,37 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                             // those are not pulled into and available in the current symbol graph.
                             case .nodeNotFound: break
                             default: throw error
+                            }
+                        }
+                    }
+                })
+            
+            // Add parent <-> child edges to the URL tree
+            try combinedUnifiedRelationships
+                .compactMap(parentChildRelationship(from:))
+                .sorted(by: Self.sortRelationshipsPreOrder)
+                .forEach({ pair in
+                    // Add the relationship to the URL hierarchy
+                    let (parentRef, childRef, selectors) = pair
+                    // If the unique reference already exists, it's been added by another symbol graph
+                    // likely built for a different target platform, ignore it as it's the exact same symbol.
+                    
+                    for selector in selectors {
+                        let sourceLanguage = SourceLanguage(id: selector.interfaceLanguage)
+                        guard let symbolsURLHierarchy = multiLanguageSymbolsURLHierarchy[sourceLanguage] else {
+                            fatalError()
+                        }
+
+                        if (try? symbolsURLHierarchy.parent(of: childRef)) == nil {
+                            do {
+                                try multiLanguageSymbolsURLHierarchy[sourceLanguage]!.add(childRef, parent: parentRef)
+                            } catch let error as BidirectionalTree<ResolvedTopicReference>.Error {
+                                switch error {
+                                // Some parents might not exist if they are types from other frameworks and
+                                // those are not pulled into and available in the current symbol graph.
+                                case .nodeNotFound: break
+                                default: throw error
+                                }
                             }
                         }
                     }
@@ -1479,6 +1566,7 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
             
             // Build relationships in the completed graph
             buildRelationships(combinedRelationships, bundle: bundle, engine: diagnosticEngine)
+            buildRelationships(combinedUnifiedRelationships, bundle: bundle, engine: diagnosticEngine)
             
             // Index references
             referencesIndex.removeAll()
@@ -1487,7 +1575,11 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 registerReference(reference)
             }
 
-            return (moduleReferences: Set(moduleReferences.values), urlHierarchy: symbolsURLHierarchy)
+            return (
+                moduleReferences: Set(moduleReferences.values),
+                urlHierarchy: symbolsURLHierarchy,
+                multiLanguageSymbolsURLHierarchy: multiLanguageSymbolsURLHierarchy
+            )
         }
     }
     
@@ -1584,6 +1676,34 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 SymbolGraphRelationshipsBuilder.addRequirementRelationship(edge: edge, in: bundle, symbolIndex: &symbolIndex, engine: diagnosticEngine)
                 continue
             }
+        }
+    }
+    
+    func buildRelationships(_ relationships: Set<UnifiedSymbolGraph.Relationship>, bundle: DocumentationBundle, engine: DiagnosticEngine) {
+        for edge in relationships {
+            // Build conformant type <-> protocol relationships
+            if case .conformsTo = edge.kind {
+                SymbolGraphRelationshipsBuilder.addConformanceRelationship(edge: edge, in: bundle, symbolIndex: &symbolIndex, engine: diagnosticEngine)
+                continue
+            }
+            
+//            // Build implementation <-> protocol requirement relationships.
+//            if case .defaultImplementationOf = edge.kind {
+//                SymbolGraphRelationshipsBuilder.addImplementationRelationship(edge: edge, in: bundle, context: self, symbolIndex: &symbolIndex, engine: diagnosticEngine)
+//                continue
+//            }
+//
+            // Build ancestor <-> offspring relationships.
+            if case .inheritsFrom = edge.kind {
+                SymbolGraphRelationshipsBuilder.addInheritanceRelationship(edge: edge, in: bundle, symbolIndex: &symbolIndex, engine: diagnosticEngine)
+                continue
+            }
+//
+//            // Build required member -> protocol relationships.
+//            if case .requirementOf = edge.kind {
+//                SymbolGraphRelationshipsBuilder.addRequirementRelationship(edge: edge, in: bundle, symbolIndex: &symbolIndex, engine: diagnosticEngine)
+//                continue
+//            }
         }
     }
     
@@ -2037,7 +2157,7 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         var (otherArticles, rootPageArticles) = splitArticles(allArticles)
 
         let rootPages = registerRootPages(from: rootPageArticles, in: bundle)
-        let (moduleReferences, symbolsURLHierarchy) = try registerSymbols(from: bundle, symbolGraphLoader: symbolGraphLoader)
+        let (moduleReferences, symbolsURLHierarchy, multiLanguageSymbolsURLHierarchy) = try registerSymbols(from: bundle, symbolGraphLoader: symbolGraphLoader)
         // We don't need to keep the loader in memory after we've registered all symbols.
         symbolGraphLoader = nil
         
@@ -2075,6 +2195,7 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         
         try shouldContinueRegistration()
         var allCuratedReferences = try crawlSymbolCuration(rootModules: moduleReferences, rootPages: rootPages, symbolsURLHierarchy: symbolsURLHierarchy, bundle: bundle)
+        _ = try crawlSymbolCuration(rootModules: moduleReferences, rootPages: rootPages, multiLanguageSymbolsURLHierarchy: multiLanguageSymbolsURLHierarchy, bundle: bundle)
         
         // Store the list of manually curated references if doc coverage is on.
         if shouldStoreManuallyCuratedReferences {
@@ -2085,6 +2206,7 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
 
         // Fourth, automatically curate all symbols that haven't been curated manually
         let automaticallyCurated = autoCurateSymbolsInTopicGraph(symbolsURLHierarchy: symbolsURLHierarchy, engine: diagnosticEngine)
+        _ = autoCurateSymbolsInTopicGraph(multiLanguageSymbolsURLHierarchy: multiLanguageSymbolsURLHierarchy, engine: diagnosticEngine)
         
         // Crawl the rest of the symbols that haven't been crawled so far in hierarchy pre-order.
         allCuratedReferences = try crawlSymbolCuration(in: automaticallyCurated.map(\.child), bundle: bundle, initial: allCuratedReferences)
@@ -2211,6 +2333,46 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         return automaticallyCuratedSymbols
     }
     
+    private func autoCurateSymbolsInTopicGraph(
+        multiLanguageSymbolsURLHierarchy: [SourceLanguage: BidirectionalTree<ResolvedTopicReference>],
+        engine: DiagnosticEngine
+    ) -> [(child: ResolvedTopicReference, parent: ResolvedTopicReference)] {
+        
+        // We'll collect references in an array to keep them pre-order in respect to their position in the symbol hierarchy
+        var automaticallyCuratedSymbols = [(ResolvedTopicReference, ResolvedTopicReference)]()
+        
+        for (sourceLanguage, symbolsURLHierarchy) in multiLanguageSymbolsURLHierarchy {
+            do {
+                // Walk all symbols and find their nodes in the topic graph
+                try symbolsURLHierarchy.traversePreOrder { reference in
+                    
+                    // Skip over root node while traversing
+                    guard symbolsURLHierarchy.root != reference,
+                          // Fetch the matching topic graph node
+                          let topicGraphNode = multiLanguageTopicGraph.nodeWithReference(reference, sourceLanguage: sourceLanguage),
+                          
+                            // Check that the node hasn't got any parents
+                          !multiLanguageTopicGraph.hasParent(reference, sourceLanguage: sourceLanguage),
+                          // Check that the symbol does have a parent in the symbol graph
+                          let symbolGraphParentReference = try symbolsURLHierarchy.parent(of: reference),
+                          // Fetch the topic graph node matching the symbol graph parent reference
+                          let topicGraphParentNode = multiLanguageTopicGraph.nodeWithReference(symbolGraphParentReference, sourceLanguage: sourceLanguage)
+                            
+                    else { return }
+                    
+                    // Curate the symbol under its parent
+                    multiLanguageTopicGraph.addEdge(from: topicGraphParentNode, to: topicGraphNode, sourceLanguage: sourceLanguage)
+                    automaticallyCuratedSymbols.append((child: reference, parent: symbolGraphParentReference))
+                }
+            } catch {
+                // This will only ever happen if the symbol graph contains invalid relationships (cyclic links, a symbol with multiple parents, etc.)
+                engine.emit(.init(diagnostic: Diagnostic(source: nil, severity: .error, range: nil, identifier: "org.swift.docc.InvalidSymbolGraphHierarchy", summary: error.localizedDescription), possibleSolutions: []))
+            }
+        }
+        
+        return automaticallyCuratedSymbols
+    }
+    
     /// A closure type getting the information about a reference in a context and returns any possible problems with it.
     public typealias ReferenceCheck = (DocumentationContext, ResolvedTopicReference) -> [Problem]
 
@@ -2245,6 +2407,31 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         return try crawlSymbolCuration(in: topLevelModuleReferences + rootPageReferences, bundle: bundle)
     }
     
+    func crawlSymbolCuration<Modules: Sequence>(
+        rootModules: Modules,
+        rootPages: Articles,
+        multiLanguageSymbolsURLHierarchy: [SourceLanguage: BidirectionalTree<ResolvedTopicReference>],
+        bundle: DocumentationBundle
+    ) throws -> Set<ResolvedTopicReference> where Modules.Element == ResolvedTopicReference {
+        
+        var curatedSymbols = Set<ResolvedTopicReference>()
+        
+        for (sourceLanguage, symbolsURLHierarchy) in multiLanguageSymbolsURLHierarchy {
+            
+            // Start crawling at top-level symbols and decent the hierarchy following custom curations,
+            // finally curate the top-level symbols under the module. We do this to account for the fact
+            // top-level types aren't initially children of the module.
+            let topLevelModuleReferences = try rootModules.flatMap(symbolsURLHierarchy.children(of:)) + rootModules
+            
+            // Crawl hierarchy under a root page for custom curations
+            let rootPageReferences = rootPages.map(\.topicGraphNode.reference)
+            
+            curatedSymbols.formUnion(try crawlSymbolCuration(in: topLevelModuleReferences + rootPageReferences, bundle: bundle, sourceLanguage: sourceLanguage))
+        }
+        
+        return curatedSymbols
+    }
+    
     /// Crawls the hierarchy of the given list of nodes, adding relationships in the topic graph for all resolvable task group references.
     /// - Parameters:
     ///   - references: A list of references to crawl.
@@ -2260,6 +2447,29 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 of: reference,
                 relateNodes: {
                     self.topicGraph.unsafelyAddEdge(source: $0, target: $1)
+                }
+            )
+        }
+        
+        diagnosticEngine.emit(crawler.problems)
+        
+        return crawler.curatedNodes
+    }
+    
+    @discardableResult
+    func crawlSymbolCuration(
+        in references: [ResolvedTopicReference],
+        bundle: DocumentationBundle,
+        initial: Set<ResolvedTopicReference> = [],
+        sourceLanguage: SourceLanguage
+    ) throws -> Set<ResolvedTopicReference> {
+        var crawler = DocumentationCurator(in: self, bundle: bundle, initial: initial)
+
+        for reference in references {
+            try crawler.crawlChildren(
+                of: reference,
+                relateNodes: {
+                    self.multiLanguageTopicGraph.unsafelyAddEdge(source: $0, target: $1, sourceLanguage: sourceLanguage)
                 }
             )
         }

@@ -475,7 +475,12 @@ public struct UnresolvedTopicReference: Hashable, CustomStringConvertible {
     }
     
     /// An optional title.
-    public var title: String? = nil
+    public var title: String? {
+        get { titleVariants.firstValue }
+        set { titleVariants.firstValue = newValue }
+    }
+    
+    public var titleVariants: DocumentationDataVariants<String> = .empty
     
     /// Creates a new unresolved reference from another unresolved reference with a resolved parent reference.
     /// - Parameters:
@@ -499,11 +504,20 @@ public struct UnresolvedTopicReference: Hashable, CustomStringConvertible {
     ///   - title: The title of this unresolved reference.
     public init(topicURL: ValidatedURL, title: String) {
         self.topicURL = topicURL
-        self.title = title
+        self.titleVariants = DocumentationDataVariants(swiftVariant: title)
+    }
+    
+    public init(topicURL: ValidatedURL, titleVariants: DocumentationDataVariants<String>) {
+        self.topicURL = topicURL
+        self.titleVariants = titleVariants
     }
     
     public var description: String {
         return topicURL.components.string!
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(topicURL)
     }
 }
 

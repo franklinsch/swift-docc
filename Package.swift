@@ -38,7 +38,7 @@ let package = Package(
             name: "SwiftDocC",
             dependencies: [
                 .product(name: "Markdown", package: "swift-markdown"),
-                "SymbolKit",
+                .product(name: "SymbolKit", package: "swift-docc-symbolkit-victoria"),
                 "CLMDB",
                 .product(name: "Crypto", package: "swift-crypto"),
             ]),
@@ -62,7 +62,8 @@ let package = Package(
                 "SwiftDocC",
                 .product(name: "NIOSSL", package: "swift-nio-ssl"),
                 .product(name: "NIOHTTP1", package: "swift-nio"),
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "SymbolKit", package: "swift-docc-symbolkit-victoria"),
             ]),
         .testTarget(
             name: "SwiftDocCUtilitiesTests",
@@ -86,6 +87,7 @@ let package = Package(
             name: "docc",
             dependencies: [
                 "SwiftDocCUtilities",
+                .product(name: "SymbolKit", package: "swift-docc-symbolkit-victoria"),
             ]),
 
         // Empty target that builds the documentation catalog at /DocCDocumentation/DocCDocumentation.docc.
@@ -106,7 +108,8 @@ let package = Package(
         .executableTarget(
             name: "generate-symbol-graph",
             dependencies: [
-                "SymbolKit",
+                .product(name: "SymbolKit", package: "swift-docc-symbolkit-victoria"),
+
             ]
         ),
         
@@ -124,7 +127,8 @@ if ProcessInfo.processInfo.environment["SWIFTCI_USE_LOCAL_DEPS"] == nil {
         .package(name: "swift-markdown", url: "https://github.com/apple/swift-markdown.git", .branch("main")),
         .package(name: "CLMDB", url: "https://github.com/apple/swift-lmdb.git", .branch("main")),
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.0.1")),
-        .package(name: "SymbolKit", url: "https://github.com/apple/swift-docc-symbolkit", .branch("main")),
+        .package(path: "/Users/fschrans/git/swift-docc-symbolkit-victoria"),
+//        .package(name: "SymbolKit", url: "https://github.com/apple/swift-docc-symbolkit", .branch("main")),
         .package(url: "https://github.com/apple/swift-crypto.git", .upToNextMinor(from: "1.1.2")),
     ]
     

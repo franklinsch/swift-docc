@@ -23,7 +23,7 @@ public struct RenderNodeTranslator: SemanticVisitor {
     var collectedTopicReferences: [ResolvedTopicReference] = []
     
     /// Unresolvable topic references outside the current bundle.
-    var collectedUnresolvedTopicReferences: [UnresolvedTopicReference] = []
+    var collectedUnresolvedTopicReferences: [ValidatedURL: UnresolvedTopicReference] = [:]
     
     /// Any collected constraints to symbol relationships.
     var collectedConstraints: [TopicReference: [SymbolGraph.Symbol.Swift.GenericConstraint]] = [:]
@@ -434,7 +434,7 @@ public struct RenderNodeTranslator: SemanticVisitor {
             renderReferences[reference.absoluteString] = renderReference
         }
 
-        for unresolved in collectedUnresolvedTopicReferences {
+        for unresolved in collectedUnresolvedTopicReferences.values {
             let renderReference = UnresolvedRenderReference(
                 identifier: RenderReferenceIdentifier(unresolved.topicURL.absoluteString),
                 title: unresolved.title ?? unresolved.topicURL.absoluteString
@@ -973,15 +973,23 @@ public struct RenderNodeTranslator: SemanticVisitor {
     }
     
     @discardableResult
-    private mutating func collectUnresolvableSymbolReference(destination: UnresolvedTopicReference, title: String) -> UnresolvedTopicReference? {
+    private mutating func collectUnresolvableSymbolReference(
+        destination: UnresolvedTopicReference,
+        title: String,
+        trait: DocumentationDataVariantsTrait
+    ) -> UnresolvedTopicReference? {
         guard let url = ValidatedURL(destination.topicURL.url) else {
             return nil
         }
         
-        let reference = UnresolvedTopicReference(topicURL: url, title: title)
-        collectedUnresolvedTopicReferences.append(reference)
+        collectedUnresolvedTopicReferences[
+            url, default: UnresolvedTopicReference(topicURL: url)
+        ].titleVariants[.init(interfaceLanguage: trait.interfaceLanguage)] = title
         
-        return reference
+//        let reference = UnresolvedTopicReference(topicURL: url, title: title)
+//        collectedUnresolvedTopicReferences.append(reference)
+        
+        return collectedUnresolvedTopicReferences[url]
     }
     
     public mutating func visitSymbol(_ symbol: Symbol) -> RenderTree? {
@@ -1143,7 +1151,7 @@ public struct RenderNodeTranslator: SemanticVisitor {
                     case .unresolved(let unresolved), .resolved(.failure(let unresolved, _)):
                         // Try creating a render reference anyway
                         if let title = relationships.targetFallbacks[destination],
-                           let reference = collectUnresolvableSymbolReference(destination: unresolved, title: title) {
+                           let reference = collectUnresolvableSymbolReference(destination: unresolved, title: title, trait: trait) {
                             destinationsMap[destination] = reference.title
                         }
                     }
@@ -1236,7 +1244,7 @@ public struct RenderNodeTranslator: SemanticVisitor {
         node.defaultImplementationsSectionsVariants = VariantCollection<[TaskGroupRenderSection]>(
             from: symbol.defaultImplementationsVariants,
             symbol.relationshipsVariants
-        ) { _, defaultImplementations, relationships in
+        ) { trait, defaultImplementations, relationships in
             guard !symbol.defaultImplementations.groups.isEmpty else {
                 return []
             }
@@ -1249,7 +1257,7 @@ public struct RenderNodeTranslator: SemanticVisitor {
                 case .unresolved(let unresolved), .resolved(.failure(let unresolved, _)):
                     // Try creating a render reference anyway
                     if let title = defaultImplementations.targetFallbacks[imp.reference],
-                       let reference = collectUnresolvableSymbolReference(destination: unresolved, title: title),
+                       let reference = collectUnresolvableSymbolReference(destination: unresolved, title: title, trait: trait),
                        let constraints = relationships.constraints[imp.reference] {
                         collectedConstraints[.unresolved(reference)] = constraints
                     }

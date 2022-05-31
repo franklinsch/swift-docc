@@ -172,6 +172,76 @@ struct SymbolGraphRelationshipsBuilder {
         }
     }
     
+    static func addConformanceRelationship(edge: UnifiedSymbolGraph.Relationship, in bundle: DocumentationBundle, symbolIndex: inout [String: DocumentationNode], engine: DiagnosticEngine) {
+        for selector in edge.selectors {
+            // Resolve source symbol
+            guard let conformingNode = symbolIndex[edge.source],
+                  let conformingSymbol = conformingNode.semantic as? Symbol else {
+                // The source node for coformance relationship not found.
+                engine.emit(NodeProblem.notFound(edge.source))
+                return
+            }
+            
+            // Resolve target symbol if possible
+            let optionalConformanceNode = symbolIndex[edge.target]
+            let conformanceNodeReference: TopicReference
+            
+            if let conformanceNode = optionalConformanceNode {
+                conformanceNodeReference = .successfullyResolved(conformanceNode.reference)
+            } else {
+                // Take the interface language of the target symbol
+                // or if external - default to the language of the current symbol.
+                let language = symbolIndex[edge.target]?.reference.sourceLanguage
+                ?? conformingNode.reference.sourceLanguage
+                
+                let symbolReference = SymbolReference(edge.target, interfaceLanguage: language, symbol: symbolIndex[edge.target]?.symbol)
+                guard let unresolved = UnresolvedTopicReference(symbolReference: symbolReference, bundle: bundle) else {
+                    // The symbol reference format is invalid.
+                    engine.emit(NodeProblem.invalidReference(symbolReference.path))
+                    return
+                }
+                conformanceNodeReference = .unresolved(unresolved)
+                
+                if let targetFallback = edge.targetFallback[selector] {
+                    conformingSymbol.relationshipsVariants[
+                        DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                        default: RelationshipsSection()
+                    ].targetFallbacks[.unresolved(unresolved)] = targetFallback
+                }
+            }
+            
+            // Conditional conformance constraints, if any
+            let relationshipConstraints = edge.mixins[selector]?[SymbolGraph.Relationship.Swift.GenericConstraints.mixinKey] as? SymbolGraph.Relationship.Swift.GenericConstraints
+            
+            // Add relationships depending whether it's class inheritance or protocol conformance
+            if conformingSymbol.kind.identifier == .protocol {
+                conformingSymbol.relationshipsVariants[
+                    DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                    default: RelationshipsSection()
+                ].addRelationship(.inheritsFrom(conformanceNodeReference))
+            } else {
+                conformingSymbol.relationshipsVariants[
+                    DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                    default: RelationshipsSection()
+                ].addRelationship(.conformsTo(conformanceNodeReference, relationshipConstraints?.constraints))
+            }
+            
+            if let conformanceNode = optionalConformanceNode, let conformanceSymbol = conformanceNode.semantic as? Symbol {
+                if let rawSymbol = conformingNode.symbol, rawSymbol.kind.identifier == .protocol {
+                    conformanceSymbol.relationshipsVariants[
+                        DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                        default: RelationshipsSection()
+                    ].addRelationship(.inheritedBy(.successfullyResolved(conformingNode.reference)))
+                } else {
+                    conformanceSymbol.relationshipsVariants[
+                        DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                        default: RelationshipsSection()
+                    ].addRelationship(.conformingType(.successfullyResolved(conformingNode.reference), relationshipConstraints?.constraints))
+                }
+            }
+        }
+    }
+    
     /// Adds a two-way relationship from a child class to a parent class *or*
     /// a conforming protocol to a parent protocol.
     ///
@@ -229,6 +299,59 @@ struct SymbolGraphRelationshipsBuilder {
                 DocumentationDataVariantsTrait(interfaceLanguage: parentNode.sourceLanguage.id),
                 default: RelationshipsSection()
             ].addRelationship(.inheritedBy(.successfullyResolved(childNode.reference)))
+        }
+    }
+    
+    static func addInheritanceRelationship(edge: UnifiedSymbolGraph.Relationship, in bundle: DocumentationBundle, symbolIndex: inout [String: DocumentationNode], engine: DiagnosticEngine) {
+        for selector in edge.selectors {
+            // Resolve source symbol
+            guard let childNode = symbolIndex[edge.source],
+                  let childSymbol = childNode.semantic as? Symbol else {
+                // The source node for inheritance relationship not found.
+                engine.emit(NodeProblem.notFound(edge.source))
+                return
+            }
+            
+            // Resolve target symbol if possible
+            let optionalParentNode = symbolIndex[edge.target]
+            let parentNodeReference: TopicReference
+            
+            if let parentNode = optionalParentNode {
+                parentNodeReference = .successfullyResolved(parentNode.reference)
+            } else {
+                // Use the target symbol language, if external - fallback on child symbol's langauge
+                let language = symbolIndex[edge.target]?.symbol.map({ SourceLanguage(id: $0.identifier.interfaceLanguage) })
+                ?? childNode.reference.sourceLanguage
+                
+                let symbolReference = SymbolReference(edge.target, interfaceLanguage: language, symbol: symbolIndex[edge.target]?.symbol)
+                guard let unresolved = UnresolvedTopicReference(symbolReference: symbolReference, bundle: bundle) else {
+                    // The symbol reference format is invalid.
+                    engine.emit(NodeProblem.invalidReference(symbolReference.path))
+                    return
+                }
+                parentNodeReference = .unresolved(unresolved)
+                
+                // At this point the parent node we are inheriting from is unresolved, so let's add a fallback in case we can not resolve it later.
+                if let targetFallback = edge.targetFallback[selector] {
+                    childSymbol.relationshipsVariants[
+                        DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                        default: RelationshipsSection()
+                    ].targetFallbacks[.unresolved(unresolved)] = targetFallback
+                }
+            }
+            
+            // Add relationships
+            childSymbol.relationshipsVariants[
+                DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                default: RelationshipsSection()
+            ].addRelationship(.inheritsFrom(parentNodeReference))
+            
+            if let parentNode = optionalParentNode, let parentSymbol = parentNode.semantic as? Symbol {
+                parentSymbol.relationshipsVariants[
+                    DocumentationDataVariantsTrait(interfaceLanguage: selector.interfaceLanguage),
+                    default: RelationshipsSection()
+                ].addRelationship(.inheritedBy(.successfullyResolved(childNode.reference)))
+            }
         }
     }
     
