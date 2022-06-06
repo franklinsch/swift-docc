@@ -437,7 +437,8 @@ public struct RenderNodeTranslator: SemanticVisitor {
         for unresolved in collectedUnresolvedTopicReferences.values {
             let renderReference = UnresolvedRenderReference(
                 identifier: RenderReferenceIdentifier(unresolved.topicURL.absoluteString),
-                title: unresolved.title ?? unresolved.topicURL.absoluteString
+                titleVariants: VariantCollection<String>(from: unresolved.titleVariants)
+                    ?? .init(defaultValue: unresolved.topicURL.absoluteString)
             )
             renderReferences[renderReference.identifier.identifier] = renderReference
         }

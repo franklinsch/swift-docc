@@ -64,7 +64,9 @@ public struct AutomaticCuration {
                 } ?? []
         )
         
-        return try context.children(of: node.reference)
+        let sourceLanguage = variantsTrait.map { SourceLanguage(id: $0.interfaceLanguage!) } ?? .swift
+        
+        return try context.children(of: node.reference, sourceLanguage: sourceLanguage)
             // Remove any default implementations
             .filter({ (reference, kind) -> Bool in
                 return !defaultImplementationReferences.contains(reference.absoluteString)
@@ -72,7 +74,7 @@ public struct AutomaticCuration {
             // Force unwrapping as all nodes need to be valid in the rendering phase of the pipeline.
             .reduce(into: AutomaticCuration.groups) { groupsIndex, child in
                 
-                guard context.parents(of: child.reference).count == 1 else {
+                guard context.parents(of: child.reference, sourceLanguage: sourceLanguage).count == 1 else {
                     // There are other parents than `node` - the child is curated via markdown.
                     return
                 }

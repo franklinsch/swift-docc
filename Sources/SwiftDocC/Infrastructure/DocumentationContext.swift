@@ -1438,18 +1438,23 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
                 // for symbols that aren't manually curated via documentation extension.
                 
                 // Curate all root framework symbols under the module in the URL tree
-                for symbol in unifiedSymbolGraph.symbols.values where symbol.defaultSymbol!.pathComponents.count == 1 {
-                    try symbolIndex[symbol.uniqueIdentifier].map({ node in
-                        // If merging symbol graph extension there can be repeat symbols, don't add them again.
-                        guard (try? symbolsURLHierarchy.parent(of: node.reference)) == nil else { return }
-                        try symbolsURLHierarchy.add(node.reference, parent: moduleReference)
+                for unifiedSymbol in unifiedSymbolGraph.symbols.values {
+                    for selector in unifiedSymbol.mainGraphSelectors {
+                        let symbol = unifiedSymbol.symbol(forSelector: selector)
                         
-                        let languages = symbol.mainGraphSelectors.map(\.interfaceLanguage).map(SourceLanguage.init(id:))
-                        
-                        for language in languages {
-                            try multiLanguageSymbolsURLHierarchy[language]?.add(node.reference, parent: moduleReference)
+                        guard let symbol = symbol, symbol.pathComponents.count == 1 else {
+                            continue
                         }
-                    })
+                        
+                        try symbolIndex[unifiedSymbol.uniqueIdentifier].map({ node in
+                            // If merging symbol graph extension there can be repeat symbols, don't add them again.
+                            guard (try? symbolsURLHierarchy.parent(of: node.reference)) == nil else { return }
+                            try symbolsURLHierarchy.add(node.reference, parent: moduleReference)
+                            
+                            let language = SourceLanguage(id: symbol.identifier.interfaceLanguage)
+                            try multiLanguageSymbolsURLHierarchy[language]?.add(node.reference, parent: moduleReference)
+                        })
+                    }
                 }
                 
                 // Collect symbols and relationships
@@ -1516,9 +1521,19 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
 
             // Update the children of collision URLs. Walk the tree and update any dependents of updated URLs
             for moduleReference in moduleReferences.values {
-                try symbolsURLHierarchy.traversePreOrder(from: moduleReference) { reference in
-                    try self.updateNodeWithReferenceIfCollisionChild(reference, symbolsURLHierarchy: &symbolsURLHierarchy)
-                }
+//                try symbolsURLHierarchy.traversePreOrder(from: moduleReference) { reference in
+//                    try self.updateNodeWithReferenceIfCollisionChild(reference, symbolsURLHierarchy: &symbolsURLHierarchy)
+//                }
+                
+//                for (sourceLanguage, symbolsURLHierarchy) in multiLanguageSymbolsURLHierarchy {
+//                    try symbolsURLHierarchy.traversePreOrder(from: moduleReference) { reference in
+//                        try self.updateNodeWithReferenceIfCollisionChild(
+//                            reference,
+//                            multiLanguageSymbolsURLHierarchy: &multiLanguageSymbolsURLHierarchy,
+//                            sourceLanguage: sourceLanguage
+//                        )
+//                    }
+//                }
             }
             
             // Create inherited API collections
@@ -1608,6 +1623,26 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         // Build an up to date reference path for the current node based on the parent path
         return parentReference.appendingPath(reference.lastPathComponent)
     }
+    
+    private func currentReferenceFor(
+        reference: ResolvedTopicReference,
+        multiLanguageSymbolsURLHierarchy: inout [SourceLanguage: BidirectionalTree<ResolvedTopicReference>],
+        sourceLanguage: SourceLanguage
+    ) throws -> ResolvedTopicReference {
+        // Check if a possible child of a re-written symbol path; we don't account for module name collisions.
+        // `pathComponents` starts with a "/", then we have "documentation", and then a name of a root symbol
+        // therefore for the currently processed symbol to be a child of a re-written symbol it needs to have
+        // at least 3 components. It's a fair optimization to make since graphs will include a lot of root level symbols.
+        guard reference.pathComponents.count > 3,
+            // Fetch the symbol's parent
+            let parentReference = try multiLanguageSymbolsURLHierarchy[sourceLanguage]?.parent(of: reference),
+            // If the parent path matches the current reference path, bail out
+            parentReference.pathComponents != reference.pathComponents.dropLast()
+        else { return reference }
+        
+        // Build an up to date reference path for the current node based on the parent path
+        return parentReference.appendingPath(reference.lastPathComponent)
+    }
 
     /// Method called when walking the symbol url tree that checks if a parent of a symbol has had its
     /// path modified during loading the symbol graph. If that's the case the method replaces
@@ -1639,6 +1674,44 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         if newRefParent != refParent {
             // Replace the url hierarchy node
             try symbolsURLHierarchy.replace(reference, with: newReference)
+        }
+    }
+    
+    private func updateNodeWithReferenceIfCollisionChild(
+        _ reference: ResolvedTopicReference,
+        multiLanguageSymbolsURLHierarchy: inout [SourceLanguage: BidirectionalTree<ResolvedTopicReference>],
+        sourceLanguage: SourceLanguage
+    ) throws {
+        let newReference = try currentReferenceFor(
+            reference: reference,
+            multiLanguageSymbolsURLHierarchy: &multiLanguageSymbolsURLHierarchy,
+            sourceLanguage: sourceLanguage
+        )
+        guard newReference != reference else { return }
+        
+        // Update the reference of the node in the documentation cache
+        var documentationNode = documentationCache.removeValue(forKey: reference)
+        documentationNode?.reference = newReference
+        documentationCache[newReference] = documentationNode
+
+        // Rewrite the symbol index
+        if let symbolIdentifier = documentationNode?.symbol?.identifier {
+            symbolIndex.removeValue(forKey: symbolIdentifier.precise)
+            symbolIndex[symbolIdentifier.precise] = documentationNode
+        }
+        
+        // Replace the topic graph node
+        if let node = topicGraph.nodeWithReference(reference) {
+            let newNode = TopicGraph.Node(reference: newReference, kind: node.kind, source: node.source, title: node.title)
+            topicGraph.replaceNode(node, with: newNode)
+        }
+
+        // Check if this relationship hasn't been created by another symbol graph (e.g. same module / different platform)
+        let newRefParent = try? multiLanguageSymbolsURLHierarchy[sourceLanguage]?.parent(of: newReference) // might not exist, just checking
+        let refParent = try multiLanguageSymbolsURLHierarchy[sourceLanguage]?.parent(of: reference)
+        if newRefParent != refParent {
+            // Replace the url hierarchy node
+            try multiLanguageSymbolsURLHierarchy[sourceLanguage]?.replace(reference, with: newReference)
         }
     }
     
@@ -2646,12 +2719,41 @@ public class DocumentationContext: DocumentationContextDataProviderDelegate {
         }
     }
     
+    public func children(
+        of reference: ResolvedTopicReference,
+        kind: DocumentationNode.Kind? = nil,
+        sourceLanguage: SourceLanguage
+    ) -> [(reference: ResolvedTopicReference, kind: DocumentationNode.Kind)] {
+        guard let node = multiLanguageTopicGraph.nodeWithReference(reference, sourceLanguage: sourceLanguage) else {
+            return []
+        }
+        return multiLanguageTopicGraph.children(of: node, sourceLanguage: sourceLanguage).compactMap { childReference in
+            guard let node = multiLanguageTopicGraph.nodeWithReference(
+                childReference, sourceLanguage: sourceLanguage
+            ) else {
+                return nil
+            }
+            
+            if kind == nil || node.kind == kind {
+                return (childReference, node.kind)
+            }
+            return nil
+        }
+    }
+    
     /// Fetches the parents of the documentation node with the given `reference`.
     ///
     /// - Parameter reference: The reference of the node to fetch parents for.
     /// - Returns: A list of the reference for the given node's parent nodes.
     public func parents(of reference: ResolvedTopicReference) -> [ResolvedTopicReference] {
         return topicGraph.reverseEdges[reference] ?? []
+    }
+    
+    public func parents(
+        of reference: ResolvedTopicReference,
+        sourceLanguage: SourceLanguage
+    ) -> [ResolvedTopicReference] {
+        multiLanguageTopicGraph.parents(of: reference, sourceLanguage: sourceLanguage)
     }
     
     /// Returns the document URL for the given article or tutorial reference.

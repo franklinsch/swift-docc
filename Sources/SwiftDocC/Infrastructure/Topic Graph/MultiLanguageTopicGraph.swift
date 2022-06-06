@@ -74,6 +74,14 @@ struct MultiLanguageTopicGraph {
         topicGraphs[sourceLanguage]?.reverseEdges[reference] != nil
     }
     
+    func children(of node: Node, sourceLanguage: SourceLanguage) -> [ResolvedTopicReference] {
+        topicGraphs[sourceLanguage]?.edges[node.reference] ?? []
+    }
+    
+    func parents(of reference: ResolvedTopicReference, sourceLanguage: SourceLanguage) -> [ResolvedTopicReference] {
+        topicGraphs[sourceLanguage]?.reverseEdges[reference] ?? []
+    }
+    
     func dump(
         startingAt node: Node,
         keyPath: KeyPath<TopicGraph.Node, String> = \.title,
