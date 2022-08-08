@@ -151,7 +151,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -160,7 +160,6 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Redirect\/init()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Redirect\/init(from:source:for:in:problems:)"
       ],
       "title" : "Initializers"
@@ -339,27 +338,6 @@
   "title" : "directiveName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/redirect\/directivename"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Redirect/init()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Redirect\/init()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init()",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/redirect\/init()"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Redirect/init(from:source:for:in:problems:)": {
   "abstract" : [

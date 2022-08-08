@@ -162,7 +162,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -237,7 +237,9 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/resolve(_:in:fromSymbolLink:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/resolveAsset(named:in:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/resolveCodeListing(_:in:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/resourceExists(with:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/setRegistrationEnabled(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/sourceLanguages(for:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/title(for:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/updateAsset(named:asset:in:)"
       ],
@@ -2604,6 +2606,60 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/resource(with:trait:)"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/resourceExists(with:)": {
+  "abstract" : [
+    {
+      "text" : "Returns true if a resource with the given identifier exists in the registered bundle.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "resourceExists"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17ResourceReferenceV",
+      "text" : "ResourceReference"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/resourceExists(with:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "resourceExists(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/resourceexists(with:)"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/rootModules": {
   "abstract" : [
     {
@@ -2787,6 +2843,73 @@
   "title" : "shouldStoreManuallyCuratedReferences",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/shouldstoremanuallycuratedreferences"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/sourceLanguages(for:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the set of languages the entity corresponding to the given reference is available in.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sourceLanguages"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC22ResolvedTopicReferenceV",
+      "text" : "ResolvedTopicReference"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sh",
+      "text" : "Set"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC14SourceLanguageV",
+      "text" : "SourceLanguage"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/sourceLanguages(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sourceLanguages(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/sourcelanguages(for:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/title(for:)": {
   "abstract" : [

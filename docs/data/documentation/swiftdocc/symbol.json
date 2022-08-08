@@ -169,7 +169,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -258,9 +258,9 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/init()"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/crossImportOverlayModule"
       ],
-      "title" : "Initializers"
+      "title" : "Instance Properties"
     },
     {
       "identifiers" : [
@@ -936,10 +936,11 @@
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/bystanderModuleNames": {
   "abstract" : [
     {
-      "text" : "Optional cross-import module names of the symbol.",
+      "text" : "The names of any “bystander” modules required for this symbol, if it came from a cross-import overlay.",
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1118,6 +1119,64 @@
   "title" : "constraintsVariants",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/constraintsvariants"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/crossImportOverlayModule": {
+  "abstract" : [
+    {
+      "text" : "Optional cross-import module names of the symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "crossImportOverlayModule"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (declaringModule"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", bystanderModules"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "])?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/crossImportOverlayModule",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "crossImportOverlayModule",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/symbol\/crossimportoverlaymodule"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/declaration": {
   "abstract" : [
@@ -1664,27 +1723,6 @@
   "title" : "externalIDVariants",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/externalidvariants"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/init()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/init()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init()",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/init()"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/isDeprecated": {
   "abstract" : [

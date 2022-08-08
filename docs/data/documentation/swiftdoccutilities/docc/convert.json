@@ -94,7 +94,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -1347,7 +1347,15 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/transformForStaticHosting": {
   "abstract" : [
     {
-      "text" : "Defaults to false",
+      "text" : "A Boolean value that is true if the DocC archive produced by this conversion",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "will support static hosting environments.",
       "type" : "text"
     }
   ],

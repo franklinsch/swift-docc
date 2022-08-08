@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -30,7 +24,7 @@
   },
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -202,18 +196,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/helpMessage(for:columns:)": {
   "abstract" : [
-    {
-      "text" : "Returns the text of the help screen for the given subcommand of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "command.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -289,34 +272,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/main()": {
   "abstract" : [
-    {
-      "text" : "Parses an instance of this type, or one of its subcommands, from",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "command-line arguments and calls its ",
-      "type" : "text"
-    },
-    {
-      "code" : "run()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " method, exiting with a",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "relevant error message if necessary.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -353,34 +309,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/main(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses an instance of this type, or one of its subcommands, from",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "the given arguments and calls its ",
-      "type" : "text"
-    },
-    {
-      "code" : "run()",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " method, exiting with a",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "relevant error message if necessary.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -426,18 +355,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/parseAsRoot(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses an instance of this type, or one of its subcommands, from",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "command-line arguments.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

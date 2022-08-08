@@ -107,19 +107,13 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
 
   ],
   "topicSections" : [
-    {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Media\/init()"
-      ],
-      "title" : "Initializers"
-    },
     {
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Media\/source"
@@ -227,27 +221,6 @@
   "title" : "Media",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/media"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Media/init()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Media\/init()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init()",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/media\/init()"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Media/source": {
   "abstract" : [

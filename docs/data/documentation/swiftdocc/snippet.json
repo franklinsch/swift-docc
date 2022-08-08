@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -107,7 +101,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -116,7 +110,6 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/init()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/init(from:source:for:in:problems:)"
       ],
       "title" : "Initializers"
@@ -124,7 +117,8 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/originalMarkup",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/path"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/path",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/slice"
       ],
       "title" : "Instance Properties"
     },
@@ -327,27 +321,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/snippet\/directivename"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Snippet/init()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/init()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init()",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/snippet\/init()"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Snippet/init(from:source:for:in:problems:)": {
   "abstract" : [
 
@@ -498,7 +471,18 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Snippet/path": {
   "abstract" : [
-
+    {
+      "text" : "The path components of a symbol link that would be used to resolve a reference to a snippet,",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "only occurring as a block directive argument.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -529,6 +513,47 @@
   "title" : "path",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/snippet\/path"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Snippet/slice": {
+  "abstract" : [
+    {
+      "text" : "An optional named range to limit the lines shown.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "slice"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Snippet\/slice",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "slice",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/snippet\/slice"
 }
 }
 }

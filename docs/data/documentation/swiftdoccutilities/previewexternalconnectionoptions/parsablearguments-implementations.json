@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -30,7 +24,7 @@
   },
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -197,10 +191,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/completionScript(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a shell completion script for the specified shell.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -259,18 +250,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/exit(withError:)": {
   "abstract" : [
-    {
-      "text" : "Terminates execution with a message and exit code that is appropriate",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -329,10 +309,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/exitCode(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns the exit code for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -391,18 +368,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/fullMessage(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a full message for the given error, including usage information,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "if appropriate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -461,10 +427,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/helpMessage(columns:)": {
   "abstract" : [
-    {
-      "text" : "Returns the text of the help screen for this type.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -523,10 +486,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/message(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a brief message for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -585,10 +545,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/parse(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses a new instance of this type from command-line arguments.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -646,18 +603,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewExternalConnectionOptions/parseOrExit(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses a new instance of this type from command-line arguments or exits",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "with a relevant message.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

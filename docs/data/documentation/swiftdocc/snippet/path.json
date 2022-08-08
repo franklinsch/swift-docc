@@ -1,7 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "No overview available.",
+      "text" : "The path components of a symbol link that would be used to resolve a reference to a snippet,",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "only occurring as a block directive argument.",
       "type" : "text"
     }
   ],
@@ -93,7 +101,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -160,7 +168,18 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Snippet/path": {
   "abstract" : [
-
+    {
+      "text" : "The path components of a symbol link that would be used to resolve a reference to a snippet,",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "only occurring as a block directive argument.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

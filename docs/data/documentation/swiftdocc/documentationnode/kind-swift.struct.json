@@ -96,7 +96,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -154,7 +154,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/root",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/sampleCode",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/snippet",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/snippetGroup",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/structure",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/tag",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/technology",
@@ -2376,60 +2375,6 @@
   "title" : "snippet",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationnode\/kind-swift.struct\/snippet"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationNode/Kind-swift.struct/snippetGroup": {
-  "abstract" : [
-    {
-      "text" : "A group of snippets.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "let"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "snippetGroup"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17DocumentationNodeV",
-      "text" : "DocumentationNode"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17DocumentationNodeV4KindV",
-      "text" : "Kind"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Kind-swift.struct\/snippetGroup",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "snippetGroup",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationnode\/kind-swift.struct\/snippetgroup"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationNode/Kind-swift.struct/structure": {
   "abstract" : [

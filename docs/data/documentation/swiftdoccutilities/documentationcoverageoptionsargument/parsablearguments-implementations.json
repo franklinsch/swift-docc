@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "No overview available.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -29,7 +23,7 @@
   },
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -122,10 +116,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/completionScript(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a shell completion script for the specified shell.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -184,18 +175,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/exit(withError:)": {
   "abstract" : [
-    {
-      "text" : "Terminates execution with a message and exit code that is appropriate",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -254,10 +234,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/exitCode(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns the exit code for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -316,18 +293,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/fullMessage(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a full message for the given error, including usage information,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "if appropriate.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -386,10 +352,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/helpMessage(columns:)": {
   "abstract" : [
-    {
-      "text" : "Returns the text of the help screen for this type.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -448,10 +411,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/message(for:)": {
   "abstract" : [
-    {
-      "text" : "Returns a brief message for the given error.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -510,10 +470,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/parse(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses a new instance of this type from command-line arguments.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -571,18 +528,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/parseOrExit(_:)": {
   "abstract" : [
-    {
-      "text" : "Parses a new instance of this type from command-line arguments or exits",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "with a relevant message.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

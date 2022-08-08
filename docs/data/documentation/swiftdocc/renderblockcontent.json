@@ -235,7 +235,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -254,6 +254,7 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/AsideStyle",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/ListItem",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/TableRow",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/TermListItem"
@@ -278,7 +279,6 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/AsideStyle",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/HeaderType"
       ],
       "title" : "Enumerations"
@@ -374,14 +374,14 @@
 "doc://SwiftDocC/documentation/SwiftDocC/RenderBlockContent/AsideStyle": {
   "abstract" : [
     {
-      "text" : "An aside style.",
+      "text" : "A type the describes an aside style.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "enum"
+      "text" : "struct"
     },
     {
       "kind" : "text",
@@ -628,7 +628,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleO",
+      "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleV",
       "text" : "AsideStyle"
     },
     {

@@ -116,7 +116,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -125,7 +125,6 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Justification\/init()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Justification\/init(from:source:for:in:problems:)"
       ],
       "title" : "Initializers"
@@ -465,27 +464,6 @@
   "title" : "directiveName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/justification\/directivename"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Justification/init()": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "identifier",
-      "text" : "init"
-    },
-    {
-      "kind" : "text",
-      "text" : "()"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Justification\/init()",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init()",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/justification\/init()"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Justification/init(from:source:for:in:problems:)": {
   "abstract" : [

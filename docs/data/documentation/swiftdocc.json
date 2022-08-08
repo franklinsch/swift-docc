@@ -148,7 +148,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -167,6 +167,12 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup"
       ],
       "title" : "Content Discovery"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LinkResolution"
+      ],
+      "title" : "Resolving documentation links"
     },
     {
       "abstract" : [
@@ -284,6 +290,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnchorSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AssetReference",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BenchmarkResult",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BenchmarkResults",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BuildMetadata",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BundleDiscoveryOptions",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodableContentSection",
@@ -320,6 +327,7 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BasicDiagnostic",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MetricValue",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeTransformation"
       ],
       "title" : "Type Aliases"
@@ -331,7 +339,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Layout",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LogHandle",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupLayout",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MetricValue",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderJSONDecoder",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderJSONEncoder"
       ],
@@ -621,15 +628,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/BenchmarkBlockMetric": {
   "abstract" : [
     {
-      "text" : "A metric that runs over a period of time and needs",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "to be started and stopped to produce its result.",
+      "text" : "A metric that runs over a period of time and needs to be started and stopped to produce its result.",
       "type" : "text"
     }
   ],
@@ -727,6 +726,40 @@
   "title" : "BenchmarkResult",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/benchmarkresult"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/BenchmarkResults": {
+  "abstract" : [
+    {
+      "text" : "The results of a single benchmark run.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkResults"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BenchmarkResults",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "BenchmarkResults"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "BenchmarkResults",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/benchmarkresults"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Benchmarking": {
   "abstract" : [
@@ -2466,6 +2499,20 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/layout"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/LinkResolution": {
+  "abstract" : [
+    {
+      "text" : "Connect documentation pages with documentation links.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LinkResolution",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Linking between documentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/linkresolution"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/LogHandle": {
   "abstract" : [
     {
@@ -2681,14 +2728,14 @@
 "doc://SwiftDocC/documentation/SwiftDocC/MetricValue": {
   "abstract" : [
     {
-      "text" : "An encodable value which is either a number or a string.",
+      "text" : "A metric value which is either a duration, a number of bytes, or a checksum.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "enum"
+      "text" : "typealias"
     },
     {
       "kind" : "text",

@@ -1,8 +1,19 @@
 {
   "abstract" : [
     {
-      "text" : "Optional cross-import module names of the symbol.",
+      "text" : "The names of any “bystander” modules required for this symbol, if it came from a cross-import overlay.",
       "type" : "text"
+    }
+  ],
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "Use crossImportOverlayModule instead",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
     }
   ],
   "hierarchy" : {
@@ -52,6 +63,9 @@
         "name" : "SwiftDocC"
       }
     ],
+    "platforms" : [
+
+    ],
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -91,7 +105,15 @@
             },
             {
               "kind" : "text",
-              "text" : "]? { get }"
+              "text" : "]? { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
             }
           ]
         }
@@ -101,7 +123,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -427,10 +449,11 @@
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/bystanderModuleNames": {
   "abstract" : [
     {
-      "text" : "Optional cross-import module names of the symbol.",
+      "text" : "The names of any “bystander” modules required for this symbol, if it came from a cross-import overlay.",
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

@@ -261,20 +261,11 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:Sq",
-              "text" : "Optional"
-            },
-            {
-              "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
               "text" : "Wrapped"
             },
             {
               "kind" : "text",
-              "text" : ">, "
+              "text" : "?, "
             },
             {
               "kind" : "typeIdentifier",
@@ -409,7 +400,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [

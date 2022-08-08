@@ -20,7 +20,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC18RenderBlockContentO5asideyA2C10AsideStyleO_SayACGtcACmF",
+    "externalID" : "s:9SwiftDocC18RenderBlockContentO5asideyA2C10AsideStyleV_SayACGtcACmF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -57,7 +57,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleO",
+        "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleV",
         "text" : "AsideStyle"
       },
       {
@@ -140,7 +140,7 @@
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderBlockContent\/AsideStyle",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleO",
+              "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleV",
               "text" : "AsideStyle"
             },
             {
@@ -173,7 +173,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -244,14 +244,14 @@
 "doc://SwiftDocC/documentation/SwiftDocC/RenderBlockContent/AsideStyle": {
   "abstract" : [
     {
-      "text" : "An aside style.",
+      "text" : "A type the describes an aside style.",
       "type" : "text"
     }
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "enum"
+      "text" : "struct"
     },
     {
       "kind" : "text",
@@ -318,7 +318,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleO",
+      "preciseIdentifier" : "s:9SwiftDocC18RenderBlockContentO10AsideStyleV",
       "text" : "AsideStyle"
     },
     {
