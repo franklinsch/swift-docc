@@ -524,6 +524,53 @@ class ConvertServiceTests: XCTestCase {
         }
     }
     
+    func testConvertSingleArticlePage() throws {
+          let articleFile = Bundle.module.url(
+              forResource: "StandaloneArticle",
+              withExtension: "md",
+              subdirectory: "Test Resources"
+          )!
+
+          let article = try Data(contentsOf: articleFile)
+
+          let request = ConvertRequest(
+              bundleInfo: testBundleInfo,
+              externalIDsToConvert: nil,
+              documentPathsToConvert: nil,
+              symbolGraphs: [],
+              knownDisambiguatedSymbolPathComponents: nil,
+              markupFiles: [article],
+              miscResourceURLs: []
+          )
+
+          try processAndAssert(request: request) { message in
+              XCTAssertEqual(message.type, "convert-response")
+              XCTAssertEqual(message.identifier, "test-identifier-response")
+
+              let response = try JSONDecoder().decode(
+                  ConvertResponse.self, from: XCTUnwrap(message.payload)
+              )
+
+              XCTAssertEqual(response.renderNodes.count, 1)
+              let data = try XCTUnwrap(response.renderNodes.first)
+              let renderNode = try JSONDecoder().decode(RenderNode.self, from: data)
+
+              XCTAssertEqual(
+                  renderNode.metadata.externalID,
+                  nil
+              )
+
+              XCTAssertEqual(renderNode.kind, .article)
+
+              XCTAssertEqual(renderNode.abstract?.count, 1)
+
+              XCTAssertEqual(
+                  renderNode.abstract?.first,
+                  .text("An article abstract.")
+              )
+          }
+      }
+    
     func processAndAssertResponseContents(
         expectedRenderNodePaths: [String],
         includesRenderReferenceStore: Bool,

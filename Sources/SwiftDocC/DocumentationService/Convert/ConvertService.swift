@@ -145,6 +145,9 @@ public struct ConvertService: DocumentationService {
             let context = try DocumentationContext(dataProvider: workspace)
             context.knownDisambiguatedSymbolPathComponents = request.knownDisambiguatedSymbolPathComponents
             
+            // Enable support for generating documentation for standalone articles.
+            context.allowsRegisteringArticlesWithoutTechnologyRoot = true
+            
             if let linkResolvingServer = linkResolvingServer {
                 let resolver = try OutOfProcessReferenceResolver(
                     bundleIdentifier: request.bundleInfo.identifier,
