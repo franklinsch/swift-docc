@@ -40,6 +40,10 @@
         "text" : "Error"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "NavigatorTree.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Indexing\/Navigator\/NavigatorTree.swift#L38"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -97,6 +101,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/cannotCreateFile(path:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/cannotOpenFile(path:)",
@@ -105,15 +111,17 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/errorDescription-8zwtr"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/errorDescription"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/LocalizedError-Implementations"
       ],
@@ -274,17 +282,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/navigatortree\/error"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree/Error/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/navigatortree\/error\/describederror-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree/Error/Error-Implementations": {
   "abstract" : [
 
@@ -405,7 +402,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/navigatortree\/error\/cannotopenfile(path:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree/Error/errorDescription-8zwtr": {
+"doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree/Error/errorDescription": {
   "abstract" : [
 
   ],
@@ -432,12 +429,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/errorDescription-8zwtr",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/Error\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/navigatortree\/error\/errordescription-8zwtr"
+  "url" : "\/documentation\/swiftdocc\/navigatortree\/error\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree/Error/invalidData": {
   "abstract" : [

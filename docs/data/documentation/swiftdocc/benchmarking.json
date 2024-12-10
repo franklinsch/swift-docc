@@ -24,6 +24,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Benchmarking"
   },
   "primaryContentSections" : [
@@ -78,7 +79,7 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " command with a given documentation bundle ",
+              "text" : " command with a given documentation catalog ",
               "type" : "text"
             },
             {
@@ -302,6 +303,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Diagnostics-and-Analysis",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
@@ -312,6 +314,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Benchmark-Log",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/main"
@@ -319,6 +322,7 @@
       "title" : "Benchmark Log"
     },
     {
+      "anchor" : "Default-Metrics",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/Duration",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/DataDirectoryOutputSize",
@@ -330,6 +334,7 @@
       "title" : "Default Metrics"
     },
     {
+      "anchor" : "Logging-Metrics",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/benchmark(add:benchmarkLog:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/benchmark(begin:benchmarkLog:)",
@@ -472,7 +477,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/Benchmark/ExternalTopicsHash": {
   "abstract" : [
     {
-      "text" : "A hash metric produced off the externally resolved links and symbols.",
+      "text" : "A hash metric produced off the externally resolved links.",
       "type" : "text"
     }
   ],
@@ -750,7 +755,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -788,7 +801,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/benchmark(begin:benchmarkLog:)": {
   "abstract" : [
     {
-      "text" : "Starts the given metric.",
+      "text" : "Begins the given metric.",
       "type" : "text"
     }
   ],
@@ -823,7 +836,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -904,7 +925,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",
@@ -941,10 +970,7 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/benchmark(wrap:benchmarkLog:body:)": {
   "abstract" : [
-    {
-      "text" : "Ends the given metric and adds it to the log.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -985,7 +1011,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": () -> "
+      "text" : ": "
+    },
+    {
+      "kind" : "attribute",
+      "text" : "@autoclosure "
+    },
+    {
+      "kind" : "text",
+      "text" : "() -> "
     },
     {
       "kind" : "typeIdentifier",

@@ -44,6 +44,10 @@
         "text" : "ErrorsEncountered"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ErrorWithProblems.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Utility\/Errors\/ErrorWithProblems.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -101,21 +105,25 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/init()"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/errorDescription-8d1id"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/errorDescription"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/LocalizedError-Implementations"
       ],
@@ -223,17 +231,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/errorsencountered"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/ErrorsEncountered/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/errorsencountered\/describederror-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/ErrorsEncountered/Error-Implementations": {
   "abstract" : [
 
@@ -256,7 +253,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/errorsencountered\/localizederror-implementations"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/ErrorsEncountered/errorDescription-8d1id": {
+"doc://SwiftDocC/documentation/SwiftDocC/ErrorsEncountered/errorDescription": {
   "abstract" : [
 
   ],
@@ -283,12 +280,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/errorDescription-8d1id",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorsEncountered\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/errorsencountered\/errordescription-8d1id"
+  "url" : "\/documentation\/swiftdocc\/errorsencountered\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ErrorsEncountered/init()": {
   "abstract" : [

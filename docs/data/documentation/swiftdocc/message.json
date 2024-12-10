@@ -45,6 +45,10 @@
         "text" : "Message"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Message.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Communication\/Message.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -82,6 +86,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/s8CopyableP",
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE"
       ],
@@ -100,13 +105,13 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Communication-Bridge",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CommunicationBridge",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CommunicationBridgeError",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationSchemeHandler",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceSchemeHandler",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MessageType",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColors",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColorsPreferenceKey"
@@ -116,12 +121,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/init(type:data:identifier:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/data",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/identifier",
@@ -130,6 +139,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/codeColors(_:identifier:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/generateUUID()",
@@ -139,6 +150,7 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message\/Decodable-Implementations",
@@ -890,38 +902,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/messagetype"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/TopicReferenceSchemeHandler": {
-  "abstract" : [
-
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "typealias"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "TopicReferenceSchemeHandler"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceSchemeHandler",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "TopicReferenceSchemeHandler"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "TopicReferenceSchemeHandler",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/topicreferenceschemehandler"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/WebKitCommunicationBridge": {
   "abstract" : [
     {
@@ -955,6 +935,11 @@
   "title" : "WebKitCommunicationBridge",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/webkitcommunicationbridge"
+},
+"doc://SwiftDocC/s8CopyableP": {
+  "identifier" : "doc:\/\/SwiftDocC\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

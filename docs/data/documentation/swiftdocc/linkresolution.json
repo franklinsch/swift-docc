@@ -25,7 +25,7 @@
     ],
     "role" : "article",
     "roleHeading" : "Article",
-    "title" : "Linking between documentation"
+    "title" : "Linking Between Documentation"
   },
   "primaryContentSections" : [
     {
@@ -158,9 +158,9 @@
           "type" : "codeListing"
         },
         {
-          "anchor" : "Resolving-a-documentation-link",
+          "anchor" : "Resolving-a-Documentation-Link",
           "level" : 2,
-          "text" : "Resolving a documentation link",
+          "text" : "Resolving a Documentation Link",
           "type" : "heading"
         },
         {
@@ -182,9 +182,9 @@
           "type" : "paragraph"
         },
         {
-          "anchor" : "Handling-ambiguous-links",
+          "anchor" : "Handling-Ambiguous-Links",
           "level" : 3,
-          "text" : "Handling ambiguous links",
+          "text" : "Handling Ambiguous Links",
           "type" : "heading"
         },
         {
@@ -243,16 +243,62 @@
         {
           "inlineContent" : [
             {
-              "text" : "Links with added disambiguation information is both harder read and harder write so DocC aims to require as little disambiguation as possible.",
+              "text" : "Links with added disambiguation information is both harder to read and harder to write so DocC aims to require as little disambiguation as possible.",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
         },
         {
-          "anchor" : "Resolving-links-outside-the-documentation-catalog",
+          "anchor" : "Handling-Type-Aliases",
+          "level" : 3,
+          "text" : "Handling Type Aliases",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Members defined on a ",
+              "type" : "text"
+            },
+            {
+              "code" : "typealias",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " cannot be linked to using the type alias’ name, but must use the original name instead. Only the declaration of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "typealias",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " itself uses the alias’ name.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "struct A {}",
+            "",
+            "\/\/\/ This is referred to as ``B``",
+            "typealias B = A",
+            "",
+            "extension B {",
+            "    \/\/\/ This can only be referred to as ``A\/foo()``, not `B\/foo()`",
+            "    func foo() { }",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Resolving-Links-to-Other-Documentation-Sources",
           "level" : 2,
-          "text" : "Resolving links outside the documentation catalog",
+          "text" : "Resolving Links to Other Documentation Sources",
           "type" : "heading"
         },
         {
@@ -271,7 +317,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalReferenceResolvers",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
               "isActive" : true,
               "type" : "reference"
             },
@@ -280,12 +326,29 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalReferenceResolver",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalDocumentationSource",
               "isActive" : true,
               "type" : "reference"
             },
             {
-              "text" : ". External documentation links need to be written with a bundle ID in the URI to identify which external resolver should handle the request.",
+              "text" : ". Links to external documentation sources need to be written with a bundle ID in the URI to identify which external resolver should handle the request.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "If the other documentation source represents DocC content for another module or project, it is preferred to use ",
+              "type" : "text"
+            },
+            {
+              "code" : "LinkResolver\/dependencyArchives",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " instead. This provides richer diagnostics with solutions and supports symbol links to external symbols.",
               "type" : "text"
             }
           ],
@@ -365,13 +428,11 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/externalReferenceResolvers": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/externalDocumentationSources": {
   "abstract" : [
-    {
-      "text" : "The dictionary mapping external documentation bundle identifiers to external reference resolvers.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -383,7 +444,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "externalReferenceResolvers"
+      "text" : "externalDocumentationSources"
     },
     {
       "kind" : "text",
@@ -396,29 +457,29 @@
     },
     {
       "kind" : "text",
-      "text" : " : "
+      "text" : " : any "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25ExternalReferenceResolverP",
-      "text" : "ExternalReferenceResolver"
+      "preciseIdentifier" : "s:9SwiftDocC27ExternalDocumentationSourceP",
+      "text" : "ExternalDocumentationSource"
     },
     {
       "kind" : "text",
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalReferenceResolvers",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "externalReferenceResolvers",
+  "title" : "externalDocumentationSources",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontext\/externalreferenceresolvers"
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/externaldocumentationsources"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/ExternalReferenceResolver": {
+"doc://SwiftDocC/documentation/SwiftDocC/ExternalDocumentationSource": {
   "abstract" : [
     {
-      "text" : "A type that resolves references to documentation outside of the documentation bundle, and creates documentation nodes with basic information about the resolved references.",
+      "text" : "A type that resolves references to documentation from other sources.",
       "type" : "text"
     }
   ],
@@ -433,21 +494,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "ExternalReferenceResolver"
+      "text" : "ExternalDocumentationSource"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalReferenceResolver",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalDocumentationSource",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "ExternalReferenceResolver"
+      "text" : "ExternalDocumentationSource"
     }
   ],
   "role" : "symbol",
-  "title" : "ExternalReferenceResolver",
+  "title" : "ExternalDocumentationSource",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/externalreferenceresolver"
+  "url" : "\/documentation\/swiftdocc\/externaldocumentationsource"
 }
 }
 }

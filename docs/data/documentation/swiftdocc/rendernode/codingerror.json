@@ -47,6 +47,10 @@
         "text" : "CodingError"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "RenderNode+Coding.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/RenderNode+Coding.swift#L148"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -104,6 +108,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/decoding(description:context:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/encoding(description:context:)"
@@ -111,15 +117,17 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/errorDescription-3xayl"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/errorDescription"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/LocalizedError-Implementations"
       ],
@@ -260,17 +268,6 @@
   "title" : "RenderNode.CodingError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendernode\/codingerror"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderNode/CodingError/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/rendernode\/codingerror\/describederror-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RenderNode/CodingError/Error-Implementations": {
   "abstract" : [
@@ -444,7 +441,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendernode\/codingerror\/encoding(description:context:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderNode/CodingError/errorDescription-3xayl": {
+"doc://SwiftDocC/documentation/SwiftDocC/RenderNode/CodingError/errorDescription": {
   "abstract" : [
     {
       "text" : "A user-facing description of the coding error.",
@@ -474,12 +471,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/errorDescription-3xayl",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode\/CodingError\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/rendernode\/codingerror\/errordescription-3xayl"
+  "url" : "\/documentation\/swiftdocc\/rendernode\/codingerror\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
   "abstract" : [

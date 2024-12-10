@@ -9,7 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery"
       ]
     ]
   },
@@ -45,6 +45,10 @@
         "text" : "DataAsset"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DataAssetManager.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Bundle%20Assets\/DataAssetManager.swift#L151"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -154,7 +158,8 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDocC\/Se",
-        "doc:\/\/SwiftDocC\/SE"
+        "doc:\/\/SwiftDocC\/SE",
+        "doc:\/\/SwiftDocC\/SQ"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -171,6 +176,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Bundle-Assets",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataTraitCollection",
@@ -181,6 +187,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Asset-Traits",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayScale",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UserInterfaceStyle"
@@ -188,6 +195,16 @@
       "title" : "Asset Traits"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/Metadata-swift.struct"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/init()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/init(from:)"
@@ -195,25 +212,39 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/context-swift.property",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/metadata-swift.property",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/variants"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/data(bestMatching:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/data(with:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/register(_:with:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/register(_:with:metadata:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/Context-swift.enum"
       ],
       "title" : "Enumerations"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -233,6 +264,11 @@
 "doc://SwiftDocC/SE": {
   "identifier" : "doc:\/\/SwiftDocC\/SE",
   "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDocC/SQ": {
+  "identifier" : "doc:\/\/SwiftDocC\/SQ",
+  "title" : "Swift.Equatable",
   "type" : "unresolvable"
 },
 "doc://SwiftDocC/Se": {
@@ -356,6 +392,51 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/dataasset\/context-swift.enum"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/dataasset\/equatable-implementations"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/Metadata-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "Metadata specific to this data asset.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Metadata"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/Metadata-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Metadata"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DataAsset.Metadata",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/dataasset\/metadata-swift.struct"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/DataAsset/context-swift.property": {
   "abstract" : [
     {
@@ -456,61 +537,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/dataasset\/data(bestmatching:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/data(with:)": {
-  "abstract" : [
-    {
-      "text" : "Returns the data that is registered to the data asset that best matches the given trait collection.",
-      "type" : "text"
-    }
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "data"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "with"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DataTraitCollectionV",
-      "text" : "DataTraitCollection"
-    },
-    {
-      "kind" : "text",
-      "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC10BundleDataV",
-      "text" : "BundleData"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/data(with:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "data(with:)",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/dataasset\/data(with:)"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/DataAsset/init()": {
   "abstract" : [
     {
@@ -554,7 +580,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -577,7 +603,66 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/dataasset\/init(from:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/register(_:with:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/metadata-swift.property": {
+  "abstract" : [
+    {
+      "text" : "The metadata associated with each variant.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "metadata"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9DataAssetV",
+      "text" : "DataAsset"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9DataAssetV8MetadataV",
+      "text" : "Metadata"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/metadata-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "metadata",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/dataasset\/metadata-swift.property"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DataAsset/register(_:with:metadata:)": {
   "abstract" : [
     {
       "text" : "Registers a variant of the asset.",
@@ -625,15 +710,41 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "metadata"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9DataAssetV",
+      "text" : "DataAsset"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9DataAssetV8MetadataV",
+      "text" : "Metadata"
+    },
+    {
+      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/register(_:with:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset\/register(_:with:metadata:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "register(_:with:)",
+  "title" : "register(_:with:metadata:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/dataasset\/register(_:with:)"
+  "url" : "\/documentation\/swiftdocc\/dataasset\/register(_:with:metadata:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DataAsset/variants": {
   "abstract" : [
@@ -753,19 +864,19 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/displayscale"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationWorkspaceGroup": {
+"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
   "abstract" : [
     {
-      "text" : "Learn how to explore a documentation workspace and discover bundles.",
+      "text" : "Learn how to discover documentation inputs on the file system.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Bundle Discovery",
+  "title" : "Input Discovery",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationworkspacegroup"
+  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/UserInterfaceStyle": {
   "abstract" : [

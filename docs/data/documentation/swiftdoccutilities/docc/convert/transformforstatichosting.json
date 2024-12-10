@@ -1,15 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "A Boolean value that is true if the DocC archive produced by this conversion",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "will support static hosting environments.",
+      "text" : "A Boolean value that is true if the DocC archive produced by this conversion will support static hosting environments.",
       "type" : "text"
     }
   ],
@@ -57,6 +49,10 @@
         "name" : "SwiftDocCUtilities"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Convert.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Subcommands\/Convert.swift#L192"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -130,11 +126,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "This value defaults to true but can be explicitly disabled with the",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
+              "text" : "This value defaults to true but can be explicitly disabled with the ",
               "type" : "text"
             },
             {
@@ -225,7 +217,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],
@@ -259,15 +251,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/transformForStaticHosting": {
   "abstract" : [
     {
-      "text" : "A Boolean value that is true if the DocC archive produced by this conversion",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "will support static hosting environments.",
+      "text" : "A Boolean value that is true if the DocC archive produced by this conversion will support static hosting environments.",
       "type" : "text"
     }
   ],

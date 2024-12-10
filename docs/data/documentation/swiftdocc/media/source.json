@@ -19,11 +19,11 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC5MediaC6sourceAA17ResourceReferenceVvp",
+    "externalID" : "s:9SwiftDocC5MediaP6sourceAA17ResourceReferenceVvp",
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "let"
+        "text" : "var"
       },
       {
         "kind" : "text",
@@ -48,6 +48,11 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Media.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Media\/Media.swift#L14"
+    },
+    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -66,7 +71,7 @@
           "tokens" : [
             {
               "kind" : "keyword",
-              "text" : "let"
+              "text" : "var"
             },
             {
               "kind" : "text",
@@ -85,6 +90,18 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:9SwiftDocC17ResourceReferenceV",
               "text" : "ResourceReference"
+            },
+            {
+              "kind" : "text",
+              "text" : " { "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "get"
+            },
+            {
+              "kind" : "text",
+              "text" : " }"
             }
           ]
         }
@@ -138,7 +155,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "protocol"
     },
     {
       "kind" : "text",
@@ -172,7 +189,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "let"
+      "text" : "var"
     },
     {
       "kind" : "text",
@@ -194,6 +211,7 @@
   ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Media\/source",
   "kind" : "symbol",
+  "required" : true,
   "role" : "symbol",
   "title" : "source",
   "type" : "topic",

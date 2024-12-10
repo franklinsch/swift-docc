@@ -45,6 +45,10 @@
         "text" : "RenderReferenceCache"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "TopicRenderReferenceEncoder.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/TopicRenderReferenceEncoder.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",
@@ -139,6 +143,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "References",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReference",

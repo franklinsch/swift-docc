@@ -38,6 +38,10 @@
         "text" : "RenderReferenceDependencies"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DocumentationContentRenderer.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/DocumentationContentRenderer.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -75,6 +79,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/s8CopyableP",
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE"
       ],
@@ -93,12 +98,15 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceDependencies\/init(topicReferences:linkReferences:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceDependencies\/init(topicReferences:linkReferences:imageReferences:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceDependencies\/Decodable-Implementations",
@@ -198,7 +206,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderreferencedependencies\/encodable-implementations"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderReferenceDependencies/init(topicReferences:linkReferences:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/RenderReferenceDependencies/init(topicReferences:linkReferences:imageReferences:)": {
   "abstract" : [
 
   ],
@@ -243,15 +251,37 @@
     },
     {
       "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "imageReferences"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC14ImageReferenceV",
+      "text" : "ImageReference"
+    },
+    {
+      "kind" : "text",
       "text" : "])"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceDependencies\/init(topicReferences:linkReferences:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceDependencies\/init(topicReferences:linkReferences:imageReferences:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(topicReferences:linkReferences:)",
+  "title" : "init(topicReferences:linkReferences:imageReferences:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderreferencedependencies\/init(topicreferences:linkreferences:)"
+  "url" : "\/documentation\/swiftdocc\/renderreferencedependencies\/init(topicreferences:linkreferences:imagereferences:)"
+},
+"doc://SwiftDocC/s8CopyableP": {
+  "identifier" : "doc:\/\/SwiftDocC\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 }
 }
 }

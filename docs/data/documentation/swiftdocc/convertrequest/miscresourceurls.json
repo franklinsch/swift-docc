@@ -52,6 +52,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ConvertRequest.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/Services\/Convert\/ConvertRequest.swift#L89"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -109,6 +113,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Related-Documentation",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationBundle\/miscResourceURLs"
       ],
@@ -221,7 +226,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationBundle/miscResourceURLs": {
   "abstract" : [
     {
-      "text" : "Miscellaneous resources of the bundle.",
+      "text" : "Miscellaneous resources (for example images, videos, or downloadable assets) for this unit of documentation.",
       "type" : "text"
     }
   ],

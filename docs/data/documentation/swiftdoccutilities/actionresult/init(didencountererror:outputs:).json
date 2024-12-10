@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Creates a new action results with a flag indicating if an error occured during the action and any URLs",
+      "text" : "Creates a new action results with a flag indicating if an error occurred during the action and any URLs",
       "type" : "text"
     },
     {
@@ -77,6 +77,10 @@
         "name" : "SwiftDocCUtilities"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ActionResult.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/Action\/ActionResult.swift#L31"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -247,7 +251,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/ActionResult/init(didEncounterError:outputs:)": {
   "abstract" : [
     {
-      "text" : "Creates a new action results with a flag indicating if an error occured during the action and any URLs",
+      "text" : "Creates a new action results with a flag indicating if an error occurred during the action and any URLs",
       "type" : "text"
     },
     {

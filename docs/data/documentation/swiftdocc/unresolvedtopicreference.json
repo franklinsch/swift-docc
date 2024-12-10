@@ -46,6 +46,10 @@
         "text" : "UnresolvedTopicReference"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Identifier.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Identifier.swift#L527"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -174,6 +178,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Topic-References",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ResolvedTopicReference",
@@ -185,6 +190,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/init(parent:unresolvedChild:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/init(topicURL:)",
@@ -193,7 +200,10 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/bundleID",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/bundleIdentifier",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/description",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/fragment",
@@ -204,6 +214,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/Equatable-Implementations"
@@ -444,13 +455,61 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/unresolvedtopicreference\/equatable-implementations"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/UnresolvedTopicReference/bundleIdentifier": {
+"doc://SwiftDocC/documentation/SwiftDocC/UnresolvedTopicReference/bundleID": {
   "abstract" : [
     {
       "text" : "The bundle identifier, if one was provided in the host name component of the original URL.",
       "type" : "text"
     }
   ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "bundleID"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
+      "text" : "DocumentationBundle"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV10IdentifierV",
+      "text" : "Identifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference\/bundleID",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "bundleID",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/unresolvedtopicreference\/bundleid"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/UnresolvedTopicReference/bundleIdentifier": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

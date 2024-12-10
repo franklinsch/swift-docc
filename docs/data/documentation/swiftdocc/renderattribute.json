@@ -46,6 +46,10 @@
         "text" : "RenderAttribute"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AttributesRenderSection.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Symbol\/AttributesRenderSection.swift#L51"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -102,6 +106,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Object-Description-Sections",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AttributesRenderSection",
@@ -118,30 +123,40 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/allowedTypes(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/allowedValues(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/default(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/maximum(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/maximumExclusive(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/maximumLength(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/minimum(_:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/minimumExclusive(_:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/minimumExclusive(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/minimumLength(_:)"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/headings"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/encode(to:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/rawIndexableTextContent(references:)"
@@ -149,6 +164,8 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/CodingKeys",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind"
@@ -156,6 +173,7 @@
       "title" : "Enumerations"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Equatable-Implementations"
@@ -712,7 +730,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -792,7 +810,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -913,6 +931,47 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderattribute\/maximumexclusive(_:)"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/maximumLength(_:)": {
+  "abstract" : [
+    {
+      "text" : "A maximum allowed length of a string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "maximumLength"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/maximumLength(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderAttribute.maximumLength(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/renderattribute\/maximumlength(_:)"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/minimum(_:)": {
   "abstract" : [
     {
@@ -1011,6 +1070,47 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderattribute\/minimumexclusive(_:)"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/minimumLength(_:)": {
+  "abstract" : [
+    {
+      "text" : "A minimum allowed length of a string.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "minimumLength"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/minimumLength(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderAttribute.minimumLength(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/renderattribute\/minimumlength(_:)"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/rawIndexableTextContent(references:)": {
   "abstract" : [
 
@@ -1047,7 +1147,7 @@
     },
     {
       "kind" : "text",
-      "text" : " : "
+      "text" : " : any "
     },
     {
       "kind" : "typeIdentifier",
@@ -1143,11 +1243,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/TitleStyle": {
   "abstract" : [
-    {
-      "text" : "A title style for a property list key or an entitlement key.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

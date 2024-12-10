@@ -45,6 +45,10 @@
         "text" : "PresentationURLGenerator"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "PresentationURLGenerator.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/PresentationURLGenerator.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -118,13 +122,18 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PresentationURLGenerator\/init(context:baseURL:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PresentationURLGenerator\/presentationURLForReference(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PresentationURLGenerator\/presentationURLForReference(_:requireRelativeURL:)"
       ],
       "title" : "Instance Methods"
@@ -281,13 +290,57 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/presentationurlgenerator\/init(context:baseurl:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/PresentationURLGenerator/presentationURLForReference(_:requireRelativeURL:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/PresentationURLGenerator/presentationURLForReference(_:)": {
   "abstract" : [
     {
       "text" : "Returns the URL for linking to the rendered page of a given reference.",
       "type" : "text"
     }
   ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "presentationURLForReference"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC22ResolvedTopicReferenceV",
+      "text" : "ResolvedTopicReference"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PresentationURLGenerator\/presentationURLForReference(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "presentationURLForReference(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/presentationurlgenerator\/presentationurlforreference(_:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/PresentationURLGenerator/presentationURLForReference(_:requireRelativeURL:)": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

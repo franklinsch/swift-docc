@@ -20,6 +20,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "MarkupVisitor Implementations"
   },
   "schemaVersion" : {
@@ -32,6 +33,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/defaultVisit(_:)",
@@ -42,10 +44,15 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitCustomBlock(_:)-7ykm6",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitCustomInline(_:)-ll68",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDocument(_:)-6hjbc",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenDiscussion(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenNote(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenParameter(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenReturns(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitEmphasis(_:)-74pp",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitHTMLBlock(_:)-7ulku",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitHeading(_:)-32s8o",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitImage(_:)-4hltp",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitInlineAttributes(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitInlineCode(_:)-1znb9",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitInlineHTML(_:)-7t7ts",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitLineBreak(_:)-23ilp",
@@ -158,7 +165,7 @@
     },
     {
       "kind" : "text",
-      "text" : "("
+      "text" : "(any "
     },
     {
       "kind" : "typeIdentifier",
@@ -196,7 +203,7 @@
     },
     {
       "kind" : "text",
-      "text" : "("
+      "text" : "(any "
     },
     {
       "kind" : "typeIdentifier",
@@ -217,6 +224,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -267,6 +275,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -317,6 +326,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -367,6 +377,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -417,6 +428,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -467,6 +479,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -517,6 +530,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -526,6 +540,210 @@
   "title" : "visitDocument(_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/anychecker\/visitdocument(_:)-6hjbc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitDoxygenDiscussion(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visitDoxygenDiscussion"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown17DoxygenDiscussionV",
+      "text" : "DoxygenDiscussion"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenDiscussion(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "visitDoxygenDiscussion(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/anychecker\/visitdoxygendiscussion(_:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitDoxygenNote(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visitDoxygenNote"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown11DoxygenNoteV",
+      "text" : "DoxygenNote"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenNote(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "visitDoxygenNote(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/anychecker\/visitdoxygennote(_:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitDoxygenParameter(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visitDoxygenParameter"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown16DoxygenParameterV",
+      "text" : "DoxygenParameter"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenParameter(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "visitDoxygenParameter(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/anychecker\/visitdoxygenparameter(_:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitDoxygenReturns(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visitDoxygenReturns"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14DoxygenReturnsV",
+      "text" : "DoxygenReturns"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitDoxygenReturns(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "visitDoxygenReturns(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/anychecker\/visitdoxygenreturns(_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitEmphasis(_:)-74pp": {
   "abstract" : [
@@ -567,6 +785,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -617,6 +836,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -667,6 +887,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -717,6 +938,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -726,6 +948,57 @@
   "title" : "visitImage(_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/anychecker\/visitimage(_:)-4hltp"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitInlineAttributes(_:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "visitInlineAttributes"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown16InlineAttributesV",
+      "text" : "InlineAttributes"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyChecker\/visitInlineAttributes(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "visitInlineAttributes(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/anychecker\/visitinlineattributes(_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AnyChecker/visitInlineCode(_:)-1znb9": {
   "abstract" : [
@@ -767,6 +1040,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -817,6 +1091,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -867,6 +1142,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -917,6 +1193,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -967,6 +1244,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1017,6 +1295,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1067,6 +1346,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1117,6 +1397,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1167,6 +1448,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1217,6 +1499,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1267,6 +1550,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1317,6 +1601,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1376,6 +1661,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1435,6 +1721,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1494,6 +1781,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1553,6 +1841,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1603,6 +1892,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1653,6 +1943,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -1703,6 +1994,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown13MarkupVisitorP6ResultQa",
       "text" : "Result"
     }
   ],

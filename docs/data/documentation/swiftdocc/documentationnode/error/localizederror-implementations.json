@@ -21,6 +21,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "LocalizedError Implementations"
   },
   "schemaVersion" : {
@@ -33,9 +34,9 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Error\/errorDescription-993ka",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Error\/failureReason",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Error\/helpAnchor",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Error\/recoverySuggestion"
@@ -149,44 +150,6 @@
   "title" : "DocumentationNode.Error",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationnode\/error"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationNode/Error/errorDescription-993ka": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "errorDescription"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode\/Error\/errorDescription-993ka",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "errorDescription",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationnode\/error\/errordescription-993ka"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationNode/Error/failureReason": {
   "abstract" : [

@@ -44,6 +44,10 @@
         "text" : "DocumentationCoverageOptionsArgument"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DocumentationCoverageOptionsArgument.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Options\/DocumentationCoverageOptionsArgument.swift#L18"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -128,6 +132,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/init()",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/init(from:)"
@@ -135,13 +141,23 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/kinds",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/level"
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/symbolKindFilter"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/validate()-3ui"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/ParsableArguments-Implementations"
@@ -190,7 +206,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],
@@ -306,7 +322,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -329,7 +345,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/documentationcoverageoptionsargument\/init(from:)"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/kinds": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/symbolKindFilter": {
   "abstract" : [
 
   ],
@@ -344,7 +360,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "kinds"
+      "text" : "symbolKindFilter"
     },
     {
       "kind" : "text",
@@ -378,52 +394,21 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/kinds",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/symbolKindFilter",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "kinds",
+  "title" : "symbolKindFilter",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/documentationcoverageoptionsargument\/kinds"
+  "url" : "\/documentation\/swiftdoccutilities\/documentationcoverageoptionsargument\/symbolkindfilter"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/level": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCoverageOptionsArgument/validate()-3ui": {
   "abstract" : [
-    {
-      "text" : "The desired level of documentation coverage. Options are ",
-      "type" : "text"
-    },
-    {
-      "code" : "none",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", ",
-      "type" : "text"
-    },
-    {
-      "code" : "brief",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", and ",
-      "type" : "text"
-    },
-    {
-      "code" : "detailed",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ". The default is ",
-      "type" : "text"
-    },
-    {
-      "code" : "none",
-      "type" : "codeVoice"
-    }
+
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "var"
+      "text" : "func"
     },
     {
       "kind" : "text",
@@ -431,24 +416,23 @@
     },
     {
       "kind" : "identifier",
-      "text" : "level"
+      "text" : "validate"
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : "() "
     },
     {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC26DocumentationCoverageLevelO",
-      "text" : "DocumentationCoverageLevel"
+      "kind" : "keyword",
+      "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/level",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCoverageOptionsArgument\/validate()-3ui",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "level",
+  "title" : "validate()",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/documentationcoverageoptionsargument\/level"
+  "url" : "\/documentation\/swiftdoccutilities\/documentationcoverageoptionsargument\/validate()-3ui"
 }
 }
 }

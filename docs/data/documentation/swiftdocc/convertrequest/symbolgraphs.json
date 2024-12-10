@@ -52,6 +52,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ConvertRequest.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/Services\/Convert\/ConvertRequest.swift#L64"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -109,6 +113,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Related-Documentation",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationBundle\/symbolGraphURLs"
       ],
@@ -221,7 +226,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationBundle/symbolGraphURLs": {
   "abstract" : [
     {
-      "text" : "Symbol Graph JSON files for the modules documented by this bundle.",
+      "text" : "Symbol graph JSON input files for the module that’s represented by this unit of documentation.",
       "type" : "text"
     }
   ],

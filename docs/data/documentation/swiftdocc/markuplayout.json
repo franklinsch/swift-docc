@@ -44,6 +44,10 @@
         "text" : "MarkupLayout"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "TutorialArticle.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/TutorialArticle\/TutorialArticle.swift#L143"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -88,6 +92,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupLayout\/contentAndMedia(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupLayout\/markup(_:)",

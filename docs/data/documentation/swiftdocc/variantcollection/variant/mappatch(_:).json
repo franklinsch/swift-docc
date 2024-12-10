@@ -21,7 +21,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC17VariantCollectionV0C0V8mapPatchyAEyqd0___qd0__Gqd0__qd__XESeRd0__SERd0__lF",
+    "externalID" : "s:9SwiftDocC17VariantCollectionV0C0V8mapPatchyAEyqd___Gqd__xXESeRd__SERd__lF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -84,18 +84,6 @@
         "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV0C0V",
         "text" : "Variant"
-      },
-      {
-        "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "TransformedValue"
-      },
-      {
-        "kind" : "text",
-        "text" : ">"
       }
     ],
     "modules" : [
@@ -103,6 +91,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "VariantCollection+Variant.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection+Variant.swift#L33"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -201,15 +193,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "TransformedValue"
-            },
-            {
-              "kind" : "text",
-              "text" : "> "
+              "text" : " "
             },
             {
               "kind" : "keyword",
@@ -482,18 +466,6 @@
       "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV0C0V",
       "text" : "Variant"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "TransformedValue"
-    },
-    {
-      "kind" : "text",
-      "text" : ">"
     }
   ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/VariantCollection\/Variant\/mapPatch(_:)",

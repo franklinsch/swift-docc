@@ -46,6 +46,10 @@
         "text" : "RenderHierarchyTutorial"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "RenderHierarchyTutorial.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Navigation%20Tree\/RenderHierarchyTutorial.swift#L12"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -84,7 +88,8 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDocC\/Se",
-        "doc:\/\/SwiftDocC\/SE"
+        "doc:\/\/SwiftDocC\/SE",
+        "doc:\/\/SwiftDocC\/SQ"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -101,6 +106,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Tutorials-Hierarchy",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyChapter",
@@ -112,6 +118,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/init(from:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/init(identifier:)"
@@ -119,11 +127,21 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/landmarks",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/reference"
       ],
       "title" : "Instance Properties"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -143,6 +161,11 @@
 "doc://SwiftDocC/SE": {
   "identifier" : "doc:\/\/SwiftDocC\/SE",
   "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDocC/SQ": {
+  "identifier" : "doc:\/\/SwiftDocC\/SQ",
+  "title" : "Swift.Equatable",
   "type" : "unresolvable"
 },
 "doc://SwiftDocC/Se": {
@@ -266,6 +289,17 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderhierarchytutorial"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/RenderHierarchyTutorial/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderHierarchyTutorial\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/renderhierarchytutorial\/equatable-implementations"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderHierarchyTutorial/init(from:)": {
   "abstract" : [
 
@@ -285,7 +319,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

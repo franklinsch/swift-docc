@@ -20,7 +20,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC17VariantCollectionV12defaultValue8variantsACyxGx_SayAC0C0Vyx_xGGtcfc",
+    "externalID" : "s:9SwiftDocC17VariantCollectionV12defaultValue8variantsACyxGx_SayAC0C0Vyx_GGtcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -78,15 +78,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "typeIdentifier",
-        "text" : "Value"
-      },
-      {
-        "kind" : "text",
-        "text" : ">])"
+        "text" : "])"
       }
     ],
     "modules" : [
@@ -94,6 +86,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "VariantCollection.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection.swift#L37"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -168,15 +164,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Value"
-            },
-            {
-              "kind" : "text",
-              "text" : ">] = [])"
+              "text" : "] = [])"
             }
           ]
         }
@@ -212,7 +200,7 @@
               "type" : "paragraph"
             }
           ],
-          "name" : "variantOverrides"
+          "name" : "variants"
         }
       ]
     }
@@ -439,15 +427,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">])"
+      "text" : "])"
     }
   ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/VariantCollection\/init(defaultValue:variants:)",

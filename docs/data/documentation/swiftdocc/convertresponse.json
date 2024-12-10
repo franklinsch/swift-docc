@@ -44,6 +44,10 @@
         "text" : "ConvertResponse"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ConvertResponse.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/Services\/Convert\/ConvertResponse.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -141,6 +145,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertResponse\/init(from:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertResponse\/init(renderNodes:renderReferenceStore:)"
@@ -148,6 +154,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertResponse\/renderNodes",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertResponse\/renderReferenceStore"
@@ -246,7 +254,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

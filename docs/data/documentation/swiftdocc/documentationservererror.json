@@ -44,6 +44,10 @@
         "text" : "DocumentationServerError"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DocumentationServerError.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/DocumentationServerError.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -103,20 +107,26 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/description",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/errorDescription-8ovmd",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/errorDescription",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/identifier"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/invalidMessage(underlyingError:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/invalidResponseMessage(underlyingError:)",
@@ -125,9 +135,9 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/LocalizedError-Implementations"
       ],
@@ -245,17 +255,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationservererror"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationServerError/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationservererror\/describederror-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationServerError/Error-Implementations": {
   "abstract" : [
 
@@ -315,7 +314,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationservererror\/description"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationServerError/errorDescription-8ovmd": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationServerError/errorDescription": {
   "abstract" : [
 
   ],
@@ -342,12 +341,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/errorDescription-8ovmd",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationServerError\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationservererror\/errordescription-8ovmd"
+  "url" : "\/documentation\/swiftdocc\/documentationservererror\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationServerError/identifier": {
   "abstract" : [
@@ -405,7 +404,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

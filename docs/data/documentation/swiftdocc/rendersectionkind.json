@@ -39,6 +39,10 @@
         "text" : "RenderSectionKind"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "RenderSection.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/RenderSection.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -97,6 +101,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Render-Nodes",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeTranslator",
@@ -111,6 +116,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/articleBody",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/assessments",
@@ -123,6 +130,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/discussion",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/hero",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/intro",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/mentions",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/parameters",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/plistDetails",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/possibleValues",
@@ -133,6 +141,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/restEndpoint",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/restParameters",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/restResponses",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/row",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/sampleDownload",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/taskGroup",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/tasks",
@@ -142,12 +151,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/Equatable-Implementations",
@@ -742,6 +754,31 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendersectionkind\/intro"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/RenderSectionKind/mentions": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "mentions"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/mentions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderSectionKind.mentions",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/rendersectionkind\/mentions"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderSectionKind/parameters": {
   "abstract" : [
 
@@ -991,6 +1028,31 @@
   "title" : "RenderSectionKind.restResponses",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendersectionkind\/restresponses"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/RenderSectionKind/row": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "row"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSectionKind\/row",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderSectionKind.row",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/rendersectionkind\/row"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RenderSectionKind/sampleDownload": {
   "abstract" : [

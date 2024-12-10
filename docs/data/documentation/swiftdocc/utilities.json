@@ -18,6 +18,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Utility APIs"
   },
   "schemaVersion" : {
@@ -30,6 +31,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Utilities-and-Communication",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Concurrency",
@@ -40,13 +42,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Errors",
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DescribedError",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorWithProblems"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DescribedError"
       ],
       "title" : "Errors"
     },
     {
+      "anchor" : "Language",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EnglishLanguage",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NativeLanguage"
@@ -54,12 +57,14 @@
       "title" : "Language"
     },
     {
+      "anchor" : "URLs",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ValidatedURL"
       ],
       "title" : "URLs"
     },
     {
+      "anchor" : "Auxiliary",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checksum",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags"
@@ -224,41 +229,6 @@
   "title" : "EnglishLanguage",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/englishlanguage"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/ErrorWithProblems": {
-  "abstract" : [
-    {
-      "text" : "An error that contains a list of problems.",
-      "type" : "text"
-    }
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "ErrorWithProblems"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ErrorWithProblems",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "ErrorWithProblems"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "ErrorWithProblems",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/errorwithproblems"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags": {
   "abstract" : [

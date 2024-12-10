@@ -5,6 +5,17 @@
       "type" : "text"
     }
   ],
+  "deprecationSummary" : [
+    {
+      "inlineContent" : [
+        {
+          "text" : "This deprecated API will be removed after 6.2 is released",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -44,6 +55,13 @@
         "text" : "DocumentationConverter"
       }
     ],
+    "platforms" : [
+
+    ],
+    "remoteSource" : {
+      "fileName" : "DocumentationConverter.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/DocumentationConverter.swift#L42"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -160,18 +178,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:isCancelled:diagnosticEngine:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:isCancelled:diagnosticEngine:symbolIdentifiersWithExpandedDocumentation:experimentalModifyCatalogWithGeneratedCuration:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/setupContext"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/convert(outputConsumer:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/firstAvailableBundle()"
@@ -248,6 +272,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -279,6 +304,7 @@
   "abstract" : [
 
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -294,15 +320,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "OutputConsumer"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
+      "text" : "("
     },
     {
       "kind" : "externalParam",
@@ -310,11 +328,12 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": some "
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "OutputConsumer"
+      "preciseIdentifier" : "s:9SwiftDocC21ConvertOutputConsumerP",
+      "text" : "ConvertOutputConsumer"
     },
     {
       "kind" : "text",
@@ -369,6 +388,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -403,13 +423,14 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationconverter\/firstavailablebundle()"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationConverter/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:isCancelled:diagnosticEngine:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationConverter/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:isCancelled:diagnosticEngine:symbolIdentifiersWithExpandedDocumentation:experimentalModifyCatalogWithGeneratedCuration:)": {
   "abstract" : [
     {
       "text" : "Creates a documentation converter given a documentation bundle’s URL.",
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "identifier",
@@ -536,7 +557,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -634,6 +655,23 @@
     },
     {
       "kind" : "externalParam",
+      "text" : "sourceRepository"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16SourceRepositoryV",
+      "text" : "SourceRepository"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
       "text" : "isCancelled"
     },
     {
@@ -673,15 +711,67 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "symbolIdentifiersWithExpandedDocumentation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC14ConvertRequestV",
+      "text" : "ConvertRequest"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC14ConvertRequestV33ExpandedDocumentationRequirementsV",
+      "text" : "ExpandedDocumentationRequirements"
+    },
+    {
+      "kind" : "text",
+      "text" : "]?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "experimentalModifyCatalogWithGeneratedCuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:isCancelled:diagnosticEngine:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationConverter\/init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:isCancelled:diagnosticEngine:symbolIdentifiersWithExpandedDocumentation:experimentalModifyCatalogWithGeneratedCuration:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:isCancelled:diagnosticEngine:)",
+  "title" : "init(documentationBundleURL:emitDigest:documentationCoverageOptions:currentPlatforms:workspace:context:dataProvider:externalIDsToConvert:documentPathsToConvert:bundleDiscoveryOptions:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:isCancelled:diagnosticEngine:symbolIdentifiersWithExpandedDocumentation:experimentalModifyCatalogWithGeneratedCuration:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationconverter\/init(documentationbundleurl:emitdigest:documentationcoverageoptions:currentplatforms:workspace:context:dataprovider:externalidstoconvert:documentpathstoconvert:bundlediscoveryoptions:emitsymbolsourcefileuris:emitsymbolaccesslevels:iscancell-7wu55"
+  "url" : "\/documentation\/swiftdocc\/documentationconverter\/init(documentationbundleurl:emitdigest:documentationcoverageoptions:currentplatforms:workspace:context:dataprovider:externalidstoconvert:documentpathstoconvert:bundlediscoveryoptions:emitsymbolsourcefileuris:emitsymbolaccesslevels:sourcerep-3k40r"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationConverter/setupContext": {
   "abstract" : [
@@ -690,6 +780,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -748,6 +839,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

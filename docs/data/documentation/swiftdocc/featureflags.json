@@ -45,6 +45,10 @@
         "text" : "FeatureFlags"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "FeatureFlags.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Utility\/FeatureFlags.swift#L12"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -100,6 +104,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Auxiliary",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checksum"
@@ -109,6 +114,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/init(additionalFlags:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/init(from:)"
@@ -116,13 +123,21 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalJSONIndexEnabled",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalObjectiveCSupportEnabled"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalDeviceFrameSupportEnabled",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalLinkHierarchySerializationEnabled",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalMentionedInEnabled",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalOverloadedSymbolPresentationEnabled",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalParametersAndReturnsValidationEnabled",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isParametersAndReturnsValidationEnabled"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/current"
       ],
@@ -357,7 +372,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -380,10 +395,84 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/featureflags\/init(from:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalJSONIndexEnabled": {
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalDeviceFrameSupportEnabled": {
   "abstract" : [
     {
-      "text" : "Whether or not experimental support for emitting a JSON representation of the converted",
+      "text" : "Whether or not experimental support for device frames on images and video is enabled.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isExperimentalDeviceFrameSupportEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalDeviceFrameSupportEnabled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isExperimentalDeviceFrameSupportEnabled",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentaldeviceframesupportenabled"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalLinkHierarchySerializationEnabled": {
+  "abstract" : [
+    {
+      "text" : "Whether or not experimental support for emitting a serialized version of the local link resolution information is enabled.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isExperimentalLinkHierarchySerializationEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalLinkHierarchySerializationEnabled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isExperimentalLinkHierarchySerializationEnabled",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentallinkhierarchyserializationenabled"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalMentionedInEnabled": {
+  "abstract" : [
+    {
+      "text" : "Whether experimental support for automatically rendering links on symbol documentation to articles",
       "type" : "text"
     },
     {
@@ -391,11 +480,10 @@
       "type" : "text"
     },
     {
-      "text" : "documentation’s navigator index is enabled.",
+      "text" : "that mention that symbol.",
       "type" : "text"
     }
   ],
-  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -407,7 +495,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "isExperimentalJSONIndexEnabled"
+      "text" : "isExperimentalMentionedInEnabled"
     },
     {
       "kind" : "text",
@@ -419,19 +507,53 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalJSONIndexEnabled",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalMentionedInEnabled",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "isExperimentalJSONIndexEnabled",
+  "title" : "isExperimentalMentionedInEnabled",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentaljsonindexenabled"
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentalmentionedinenabled"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalObjectiveCSupportEnabled": {
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalOverloadedSymbolPresentationEnabled": {
   "abstract" : [
     {
-      "text" : "Whether or not experimental language support for Objective-C is enabled.",
+      "text" : "Whether or not experimental support for combining overloaded symbol pages is enabled.",
       "type" : "text"
     }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isExperimentalOverloadedSymbolPresentationEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalOverloadedSymbolPresentationEnabled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isExperimentalOverloadedSymbolPresentationEnabled",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentaloverloadedsymbolpresentationenabled"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isExperimentalParametersAndReturnsValidationEnabled": {
+  "abstract" : [
+
   ],
   "deprecated" : true,
   "fragments" : [
@@ -445,7 +567,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "isExperimentalObjectiveCSupportEnabled"
+      "text" : "isExperimentalParametersAndReturnsValidationEnabled"
     },
     {
       "kind" : "text",
@@ -457,12 +579,49 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalObjectiveCSupportEnabled",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isExperimentalParametersAndReturnsValidationEnabled",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "isExperimentalObjectiveCSupportEnabled",
+  "title" : "isExperimentalParametersAndReturnsValidationEnabled",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentalobjectivecsupportenabled"
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isexperimentalparametersandreturnsvalidationenabled"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/FeatureFlags/isParametersAndReturnsValidationEnabled": {
+  "abstract" : [
+    {
+      "text" : "Whether or not support for validating parameters and return value documentation is enabled.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isParametersAndReturnsValidationEnabled"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags\/isParametersAndReturnsValidationEnabled",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isParametersAndReturnsValidationEnabled",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/featureflags\/isparametersandreturnsvalidationenabled"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Utilities": {
   "abstract" : [

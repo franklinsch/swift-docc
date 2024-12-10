@@ -46,6 +46,10 @@
         "text" : "TopicReferenceResolutionResult"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Identifier.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Identifier.swift#L54"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -102,6 +106,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Topic-References",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedTopicReference",
@@ -113,19 +118,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/failure(_:errorMessage:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/failure(_:_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/success(_:)"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/description"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/Equatable-Implementations"
@@ -366,7 +376,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/topicreferenceresolutionresult\/description"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/TopicReferenceResolutionResult/failure(_:errorMessage:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/TopicReferenceResolutionResult/failure(_:_:)": {
   "abstract" : [
     {
       "text" : "A topic reference that has failed to resolve to known documentation and an error message with information about why the reference failed to resolve.",
@@ -400,29 +410,21 @@
       "text" : ", "
     },
     {
-      "kind" : "externalParam",
-      "text" : "errorMessage"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
+      "preciseIdentifier" : "s:9SwiftDocC33TopicReferenceResolutionErrorInfoV",
+      "text" : "TopicReferenceResolutionErrorInfo"
     },
     {
       "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/failure(_:errorMessage:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult\/failure(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "TopicReferenceResolutionResult.failure(_:errorMessage:)",
+  "title" : "TopicReferenceResolutionResult.failure(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/topicreferenceresolutionresult\/failure(_:errormessage:)"
+  "url" : "\/documentation\/swiftdocc\/topicreferenceresolutionresult\/failure(_:_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/TopicReferenceResolutionResult/success(_:)": {
   "abstract" : [

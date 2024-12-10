@@ -1,31 +1,15 @@
 {
   "abstract" : [
     {
-      "text" : "The original ",
+      "text" : "Inherited from ",
       "type" : "text"
     },
     {
-      "code" : "Markup",
+      "code" : "DirectiveConvertible.originalMarkup",
       "type" : "codeVoice"
     },
     {
-      "text" : " node that was parsed into this semantic step,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "or ",
-      "type" : "text"
-    },
-    {
-      "code" : "nil",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " if it was created elsewhere.",
+      "text" : ".",
       "type" : "text"
     }
   ],
@@ -72,6 +56,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Step.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Tutorial\/Tasks\/Steps\/Step.swift#L20"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -235,34 +223,7 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Step/originalMarkup": {
   "abstract" : [
-    {
-      "text" : "The original ",
-      "type" : "text"
-    },
-    {
-      "code" : "Markup",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " node that was parsed into this semantic step,",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "or ",
-      "type" : "text"
-    },
-    {
-      "code" : "nil",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " if it was created elsewhere.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

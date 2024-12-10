@@ -44,6 +44,10 @@
         "text" : "Volume"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Volume.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Technology\/Volume\/Volume.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -115,6 +119,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/init(from:source:for:in:problems:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/init(originalMarkup:name:image:content:chapters:redirects:)"
@@ -122,6 +128,8 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/chapters",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/content",
@@ -133,18 +141,24 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/accept(_:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/directiveName"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/directiveName",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/introducedVersion"
       ],
       "title" : "Type Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/DirectiveConvertible-Implementations"
@@ -353,6 +367,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC15SemanticVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -775,6 +790,48 @@
   "title" : "init(originalMarkup:name:image:content:chapters:redirects:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/volume\/init(originalmarkup:name:image:content:chapters:redirects:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Volume/introducedVersion": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "introducedVersion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Volume\/introducedVersion",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "introducedVersion",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/volume\/introducedversion"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Volume/name": {
   "abstract" : [

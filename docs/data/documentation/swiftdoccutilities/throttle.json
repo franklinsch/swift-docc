@@ -44,6 +44,10 @@
         "text" : "Throttle"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Throttle.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/Utility\/Throttle.swift#L18"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -150,6 +154,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Execution-Workflow",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Signal"
@@ -159,12 +164,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Throttle\/init(interval:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Throttle\/schedule(block:)"
       ],
@@ -201,10 +210,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Signal": {
   "abstract" : [
-    {
-      "text" : "A handler that intercepts system signal-events.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

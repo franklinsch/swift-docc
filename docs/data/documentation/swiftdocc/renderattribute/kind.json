@@ -47,6 +47,10 @@
         "text" : "Kind"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "AttributesRenderSection.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Symbol\/AttributesRenderSection.swift#L58"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -105,24 +109,31 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/allowedTypes",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/allowedValues",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/default",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/maximum",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/maximumExclusive",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/maximumLength",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/minimum",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/minimumExclusive"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/minimumExclusive",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/minimumLength"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/Equatable-Implementations",
@@ -437,6 +448,31 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderattribute\/kind\/maximumexclusive"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/Kind/maximumLength": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "maximumLength"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/maximumLength",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderAttribute.Kind.maximumLength",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/renderattribute\/kind\/maximumlength"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/Kind/minimum": {
   "abstract" : [
 
@@ -486,6 +522,31 @@
   "title" : "RenderAttribute.Kind.minimumExclusive",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderattribute\/kind\/minimumexclusive"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/RenderAttribute/Kind/minimumLength": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "minimumLength"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute\/Kind\/minimumLength",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "RenderAttribute.Kind.minimumLength",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/renderattribute\/kind\/minimumlength"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
   "abstract" : [

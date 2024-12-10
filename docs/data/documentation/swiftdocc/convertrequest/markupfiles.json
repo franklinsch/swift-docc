@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "The markup file data included in the documentation bundle to convert.",
+      "text" : "The article and documentation extension file data included in the documentation bundle to convert.",
       "type" : "text"
     }
   ],
@@ -52,6 +52,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ConvertRequest.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/Services\/Convert\/ConvertRequest.swift#L79"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -109,6 +113,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Related-Documentation",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationBundle\/markupURLs"
       ],
@@ -180,7 +185,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/ConvertRequest/markupFiles": {
   "abstract" : [
     {
-      "text" : "The markup file data included in the documentation bundle to convert.",
+      "text" : "The article and documentation extension file data included in the documentation bundle to convert.",
       "type" : "text"
     }
   ],
@@ -221,7 +226,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationBundle/markupURLs": {
   "abstract" : [
     {
-      "text" : "DocC Markup files of the bundle.",
+      "text" : "Documentation markup input files for this unit of documentation.",
       "type" : "text"
     }
   ],

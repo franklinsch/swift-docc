@@ -25,6 +25,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Symbol Reference Rendering"
   },
   "primaryContentSections" : [
@@ -95,6 +96,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Semantic-Structures",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TutorialsRendering"
@@ -104,12 +106,14 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Metadata",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReferenceHierarchy"
       ],
       "title" : "Metadata"
     },
     {
+      "anchor" : "Main-Sections",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AbstractSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecatedSection",
@@ -125,6 +129,7 @@
       "title" : "Main Sections"
     },
     {
+      "anchor" : "Relationship-Sections",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RelationshipsRenderSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Relationship",
@@ -137,6 +142,7 @@
       "title" : "Relationship Sections"
     },
     {
+      "anchor" : "Object-Description-Sections",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AttributesRenderSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderAttribute",
@@ -151,6 +157,7 @@
       "title" : "Object Description Sections"
     },
     {
+      "anchor" : "Other-Sections",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTEndpointRenderSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeExample"
@@ -158,6 +165,7 @@
       "title" : "Other Sections"
     },
     {
+      "anchor" : "Callouts",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SimpleTag",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Parameter",
@@ -167,6 +175,7 @@
       "title" : "Callouts"
     },
     {
+      "anchor" : "Generic-Sections",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GroupedSection",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection",
@@ -175,6 +184,7 @@
       "title" : "Generic Sections"
     },
     {
+      "anchor" : "Availability",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiffAvailability"
@@ -1421,11 +1431,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/TitleStyle": {
   "abstract" : [
-    {
-      "text" : "A title style for a property list key or an entitlement key.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

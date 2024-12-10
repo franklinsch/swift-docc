@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],
@@ -46,6 +46,10 @@
         "text" : "Convert"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Convert.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Subcommands\/Convert.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -83,6 +87,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocCUtilities\/14ArgumentParser20AsyncParsableCommandP",
         "doc:\/\/SwiftDocCUtilities\/14ArgumentParser17ParsableArgumentsP",
         "doc:\/\/SwiftDocCUtilities\/14ArgumentParser15ParsableCommandP",
         "doc:\/\/SwiftDocCUtilities\/Se"
@@ -102,6 +107,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/init()",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/init(from:)"
@@ -109,50 +116,65 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/additionalSymbolGraphDirectory",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/additionalSymbolGraphFiles",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/allowArbitraryCatalogDirectories",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/analyze",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/defaultCodeListingLanguage",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/dependencies",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/diagnosticLevel",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/documentationBundle",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/diagnosticsOutputPath",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/documentationCatalog",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/emitDigest",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/emitFixits",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/emitLMDBIndex",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalJSONIndex",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalObjectiveCSupport",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalDeviceFrameSupport",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalLinkHierarchySerialization",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalMentionedIn",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalOverloadedSymbolPresentation",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableInheritedDocs",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableParametersAndReturnsValidation",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/experimentalDocumentationCoverageOptions",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/experimentalEnableCustomTemplates",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/experimentalModifyCatalogWithGeneratedCuration",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/fallbackBundleDisplayName",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/fallbackBundleIdentifier",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/fallbackBundleVersion",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/fallbackDefaultModuleKind",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/index",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/formatConsoleOutputForTools",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/outOfProcessLinkResolverOption",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/outputURL",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/platforms",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/providedOutputURL",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/sourceRepositoryArguments",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/templateOption",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/transformForStaticHosting"
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/transformForStaticHosting",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/warningsAsErrors"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/run()-6n6ql",
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/run()",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/validate()-1hb4l"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/configuration-1ow2d"
       ],
       "title" : "Type Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/AsyncParsableCommand-Implementations",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/ParsableArguments-Implementations",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/ParsableCommand-Implementations"
       ],
@@ -181,6 +203,11 @@
 "doc://SwiftDocCUtilities/14ArgumentParser17ParsableArgumentsP": {
   "identifier" : "doc:\/\/SwiftDocCUtilities\/14ArgumentParser17ParsableArgumentsP",
   "title" : "ArgumentParser.ParsableArguments",
+  "type" : "unresolvable"
+},
+"doc://SwiftDocCUtilities/14ArgumentParser20AsyncParsableCommandP": {
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/14ArgumentParser20AsyncParsableCommandP",
+  "title" : "ArgumentParser.AsyncParsableCommand",
   "type" : "unresolvable"
 },
 "doc://SwiftDocCUtilities/Se": {
@@ -239,7 +266,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],
@@ -269,6 +296,17 @@
   "title" : "Docc.Convert",
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/AsyncParsableCommand-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/AsyncParsableCommand-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncParsableCommand Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/asyncparsablecommand-implementations"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/ParsableArguments-Implementations": {
   "abstract" : [
@@ -333,10 +371,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/additionalsymbolgraphdirectory"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/additionalSymbolGraphFiles": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/allowArbitraryCatalogDirectories": {
   "abstract" : [
     {
-      "text" : "A user-provided list o path to additional symbol graph files that the convert action will process.",
+      "text" : "A user-provided value that is true if additional metadata files should be produced.",
       "type" : "text"
     }
   ],
@@ -351,28 +389,24 @@
     },
     {
       "kind" : "identifier",
-      "text" : "additionalSymbolGraphFiles"
+      "text" : "allowArbitraryCatalogDirectories"
     },
     {
       "kind" : "text",
-      "text" : ": ["
+      "text" : ": "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
-      "text" : "URL"
-    },
-    {
-      "kind" : "text",
-      "text" : "]"
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/additionalSymbolGraphFiles",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/allowArbitraryCatalogDirectories",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "additionalSymbolGraphFiles",
+  "title" : "allowArbitraryCatalogDirectories",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/additionalsymbolgraphfiles"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/allowarbitrarycatalogdirectories"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/analyze": {
   "abstract" : [
@@ -494,9 +528,53 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/defaultcodelistinglanguage"
 },
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/dependencies": {
+  "abstract" : [
+    {
+      "text" : "A list of URLs to documentation archives that the local documentation depends on.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "dependencies"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/dependencies",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "dependencies",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/dependencies"
+},
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/diagnosticLevel": {
   "abstract" : [
-
+    {
+      "text" : "The diagnostic severity level to filter",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -532,18 +610,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/diagnosticlevel"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/documentationBundle": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/diagnosticsOutputPath": {
   "abstract" : [
     {
-      "text" : "The user-provided path to a ",
-      "type" : "text"
-    },
-    {
-      "code" : ".docc",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " documentation bundle.",
+      "text" : "A user-provided location where the convert action writes the diagnostics file.",
       "type" : "text"
     }
   ],
@@ -558,7 +628,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "documentationBundle"
+      "text" : "diagnosticsOutputPath"
     },
     {
       "kind" : "text",
@@ -566,16 +636,65 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18SwiftDocCUtilities25DocumentationBundleOptionV",
-      "text" : "DocumentationBundleOption"
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/documentationBundle",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/diagnosticsOutputPath",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "documentationBundle",
+  "title" : "diagnosticsOutputPath",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/documentationbundle"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/diagnosticsoutputpath"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/documentationCatalog": {
+  "abstract" : [
+    {
+      "text" : "The user-provided path to a ",
+      "type" : "text"
+    },
+    {
+      "code" : ".docc",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " documentation catalog.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "documentationCatalog"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18SwiftDocCUtilities26DocumentationCatalogOptionV",
+      "text" : "DocumentationCatalogOption"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/documentationCatalog",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "documentationCatalog",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/documentationcatalog"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/emitDigest": {
   "abstract" : [
@@ -614,55 +733,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/emitdigest"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/emitFixits": {
-  "abstract" : [
-    {
-      "text" : "A user-provided value that is true if fix-its should be written to output.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "emitFixits"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sb",
-      "text" : "Bool"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/emitFixits",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "emitFixits",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/emitfixits"
-},
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/emitLMDBIndex": {
   "abstract" : [
     {
-      "text" : "A user-provided value that is true if the LMDB representation of the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "navigator index should be produced.",
+      "text" : "A user-provided value that is true if the LMDB representation of the navigator index should be produced.",
       "type" : "text"
     }
   ],
@@ -696,10 +770,84 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/emitlmdbindex"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalJSONIndex": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalDeviceFrameSupport": {
   "abstract" : [
     {
-      "text" : "A user-provided value that is true if the user enables experimental support for emitting",
+      "text" : "A user-provided value that is true if the user enables experimental support for device frames.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "enableExperimentalDeviceFrameSupport"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalDeviceFrameSupport",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "enableExperimentalDeviceFrameSupport",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentaldeviceframesupport"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalLinkHierarchySerialization": {
+  "abstract" : [
+    {
+      "text" : "A user-provided value that is true if the user enables experimental serialization of the local link resolution information.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "enableExperimentalLinkHierarchySerialization"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalLinkHierarchySerialization",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "enableExperimentalLinkHierarchySerialization",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentallinkhierarchyserialization"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalMentionedIn": {
+  "abstract" : [
+    {
+      "text" : "A user-provided value that is true if the user enables experimental automatically generated “mentioned in”",
       "type" : "text"
     },
     {
@@ -707,11 +855,10 @@
       "type" : "text"
     },
     {
-      "text" : "a JSON index.",
+      "text" : "links on symbols.",
       "type" : "text"
     }
   ],
-  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -723,7 +870,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "enableExperimentalJSONIndex"
+      "text" : "enableExperimentalMentionedIn"
     },
     {
       "kind" : "text",
@@ -735,17 +882,17 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalJSONIndex",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalMentionedIn",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "enableExperimentalJSONIndex",
+  "title" : "enableExperimentalMentionedIn",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentaljsonindex"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentalmentionedin"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalObjectiveCSupport": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableExperimentalOverloadedSymbolPresentation": {
   "abstract" : [
     {
-      "text" : "A user-provided value that is true if the user enables experimental Objective-C language support.",
+      "text" : "A user-provided value that is true if the user enables experimental serialization of the local link resolution information.",
       "type" : "text"
     }
   ],
@@ -760,7 +907,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "enableExperimentalObjectiveCSupport"
+      "text" : "enableExperimentalOverloadedSymbolPresentation"
     },
     {
       "kind" : "text",
@@ -772,12 +919,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalObjectiveCSupport",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableExperimentalOverloadedSymbolPresentation",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "enableExperimentalObjectiveCSupport",
+  "title" : "enableExperimentalOverloadedSymbolPresentation",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentalobjectivecsupport"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableexperimentaloverloadedsymbolpresentation"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableInheritedDocs": {
   "abstract" : [
@@ -815,6 +962,43 @@
   "title" : "enableInheritedDocs",
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableinheriteddocs"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/enableParametersAndReturnsValidation": {
+  "abstract" : [
+    {
+      "text" : "A user-provided value that is true if the user enables experimental validation for parameters and return value documentation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "enableParametersAndReturnsValidation"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/enableParametersAndReturnsValidation",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "enableParametersAndReturnsValidation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/enableparametersandreturnsvalidation"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/experimentalDocumentationCoverageOptions": {
   "abstract" : [
@@ -890,6 +1074,43 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/experimentalenablecustomtemplates"
 },
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/experimentalModifyCatalogWithGeneratedCuration": {
+  "abstract" : [
+    {
+      "text" : "A user-provided value that is true if the user wants to in-place modify the provided documentation catalog to write generated curation to documentation extension files.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "experimentalModifyCatalogWithGeneratedCuration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/experimentalModifyCatalogWithGeneratedCuration",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "experimentalModifyCatalogWithGeneratedCuration",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/experimentalmodifycatalogwithgeneratedcuration"
+},
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/fallbackBundleDisplayName": {
   "abstract" : [
     {
@@ -934,7 +1155,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/fallbackBundleIdentifier": {
   "abstract" : [
     {
-      "text" : "A user-provided fallback display name for the documentation bundle.",
+      "text" : "A user-provided fallback identifier for the documentation bundle.",
       "type" : "text"
     }
   ],
@@ -972,50 +1193,12 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/fallbackbundleidentifier"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/fallbackBundleVersion": {
-  "abstract" : [
-    {
-      "text" : "A user-provided fallback version for the documentation bundle.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "fallbackBundleVersion"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/fallbackBundleVersion",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "fallbackBundleVersion",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/fallbackbundleversion"
-},
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/fallbackDefaultModuleKind": {
   "abstract" : [
-
+    {
+      "text" : "A user-provided default kind description for the module.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -1051,18 +1234,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/fallbackdefaultmodulekind"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/index": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/formatConsoleOutputForTools": {
   "abstract" : [
     {
-      "text" : "This value is provided for backwards compatibility with existing clients but",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "will be removed soon. Renamed to ‘–emit-lmdb-index’.",
+      "text" : "A user-provided value that is true if output to the console should be formatted for an IDE or other tool to parse.",
       "type" : "text"
     }
   ],
@@ -1077,7 +1252,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "index"
+      "text" : "formatConsoleOutputForTools"
     },
     {
       "kind" : "text",
@@ -1089,12 +1264,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/index",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/formatConsoleOutputForTools",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "index",
+  "title" : "formatConsoleOutputForTools",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/index"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/formatconsoleoutputfortools"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/init()": {
   "abstract" : [
@@ -1136,7 +1311,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -1274,7 +1449,48 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/platforms"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/run()-6n6ql": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/providedOutputURL": {
+  "abstract" : [
+    {
+      "text" : "A user-provided location where the convert action writes the built documentation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "providedOutputURL"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:10Foundation3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/providedOutputURL",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "providedOutputURL",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/providedoutputurl"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/run()": {
   "abstract" : [
 
   ],
@@ -1297,15 +1513,60 @@
     },
     {
       "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
       "text" : "throws"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/run()-6n6ql",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/run()",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "run()",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/run()-6n6ql"
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/run()"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/sourceRepositoryArguments": {
+  "abstract" : [
+    {
+      "text" : "Arguments for specifying information about the source code repository that hosts the documented project’s code.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sourceRepositoryArguments"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:18SwiftDocCUtilities25SourceRepositoryArgumentsV",
+      "text" : "SourceRepositoryArguments"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/sourceRepositoryArguments",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sourceRepositoryArguments",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/sourcerepositoryarguments"
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/templateOption": {
   "abstract" : [
@@ -1347,15 +1608,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/transformForStaticHosting": {
   "abstract" : [
     {
-      "text" : "A Boolean value that is true if the DocC archive produced by this conversion",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "will support static hosting environments.",
+      "text" : "A Boolean value that is true if the DocC archive produced by this conversion will support static hosting environments.",
       "type" : "text"
     }
   ],
@@ -1421,6 +1674,43 @@
   "title" : "validate()",
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/validate()-1hb4l"
+},
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert/warningsAsErrors": {
+  "abstract" : [
+    {
+      "text" : "Treat warning as errors.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "warningsAsErrors"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/Docc\/Convert\/warningsAsErrors",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "warningsAsErrors",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdoccutilities\/docc\/convert\/warningsaserrors"
 }
 }
 }

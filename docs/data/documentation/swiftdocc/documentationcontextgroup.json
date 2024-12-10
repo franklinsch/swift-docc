@@ -24,6 +24,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Documentation Context"
   },
   "primaryContentSections" : [
@@ -38,7 +39,15 @@
         {
           "inlineContent" : [
             {
-              "text" : "The documentation context generally manages the in-memory documentation including:",
+              "text" : "A documentation context is the the in-memory representation of a “unit” of documentation (for example a module, package, or technology).",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The context is generally responsible for:",
               "type" : "text"
             }
           ],
@@ -90,11 +99,11 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "Resolving links to external documentation via ",
+                      "text" : "Resolving links to external documentation sources via ",
                       "type" : "text"
                     },
                     {
-                      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalReferenceResolver",
+                      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalDocumentationSource",
                       "isActive" : true,
                       "type" : "reference"
                     },
@@ -103,7 +112,7 @@
                       "type" : "text"
                     },
                     {
-                      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalSymbolResolver",
+                      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GlobalExternalSymbolResolver",
                       "isActive" : true,
                       "type" : "reference"
                     },
@@ -139,21 +148,34 @@
           "type" : "heading"
         },
         {
-          "code" : [
-            "let workspace = DocumentationWorkspace()",
-            "let context = try DocumentationContext(dataProvider: workspace)"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
-        },
-        {
           "inlineContent" : [
             {
-              "text" : "During initialization the context will inspect the available bundles in the workspace and load any symbol graph files and markup files.",
+              "text" : "Use ",
+              "type" : "text"
+            },
+            {
+              "code" : "DocumentationContext\/init(bundle:dataProvider:diagnosticEngine:configuration:)",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to create a context for a given bundle:",
               "type" : "text"
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let inputsProvider = DocumentationContext.InputsProvider()",
+            "let (bundle, dataProvider) = try inputsProvider.inputsAndDataProvider(",
+            "    startingPoint: catalogURL, ",
+            "    options: bundleDiscoveryOptions",
+            ")",
+            "",
+            "let context = try DocumentationContext(bundle: bundle, dataProvider: dataProvider)"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
         },
         {
           "anchor" : "Accessing-Documentation",
@@ -182,7 +204,7 @@
         {
           "code" : [
             "let reference = ResolvedTopicReference(",
-            "    bundleIdentifier: \"com.mybundle\",",
+            "    bundleID: \"com.mybundle\",",
             "    path: \"\/documentation\/ValidationKit\/EmailValidator\",",
             "    fragment: nil,",
             "    sourceLanguage: .swift)",
@@ -206,22 +228,6 @@
           ],
           "syntax" : "swift",
           "type" : "codeListing"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "And finally to print all known paths in the context:",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        },
-        {
-          "code" : [
-            "context.knownIdentifiers.forEach({ print($0) })"
-          ],
-          "syntax" : "swift",
-          "type" : "codeListing"
         }
       ],
       "kind" : "content"
@@ -237,24 +243,25 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Content-Discovery",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery"
       ],
       "title" : "Content Discovery"
     }
   ],
   "topicSections" : [
     {
+      "anchor" : "Documentation-Context",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextDataProvider",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextDataProviderDelegate",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticCuration"
       ],
       "title" : "Documentation Context"
     },
     {
+      "anchor" : "Documentation-Nodes",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNode",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Section",
@@ -266,20 +273,23 @@
       "title" : "Documentation Nodes"
     },
     {
+      "anchor" : "Rendering-URLs",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NodeURLGenerator"
       ],
       "title" : "Rendering URLs"
     },
     {
+      "anchor" : "External-Documentation-Sources",
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalReferenceResolver",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalSymbolResolver",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalDocumentationSource",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GlobalExternalSymbolResolver",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/OutOfProcessReferenceResolver"
       ],
-      "title" : "External Documentation"
+      "title" : "External Documentation Sources"
     },
     {
+      "anchor" : "Code-Listings",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AttributedCodeListing",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/UnresolvedCodeListingReference",
@@ -324,6 +334,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -515,74 +526,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/entity(with:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextDataProvider": {
-  "abstract" : [
-    {
-      "text" : "A type that provides information about documentation bundles and their content.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationContextDataProvider"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextDataProvider",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationContextDataProvider"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "DocumentationContextDataProvider",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextdataprovider"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextDataProviderDelegate": {
-  "abstract" : [
-    {
-      "text" : "An object that responds to changes in available documentation bundles for a specific provider.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationContextDataProviderDelegate"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextDataProviderDelegate",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationContextDataProviderDelegate"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "DocumentationContextDataProviderDelegate",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextdataproviderdelegate"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationNode": {
   "abstract" : [
     {
@@ -617,87 +560,87 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationnode"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationWorkspaceGroup": {
+"doc://SwiftDocC/documentation/SwiftDocC/ExternalDocumentationSource": {
   "abstract" : [
     {
-      "text" : "Learn how to explore a documentation workspace and discover bundles.",
+      "text" : "A type that resolves references to documentation from other sources.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup",
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ExternalDocumentationSource"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalDocumentationSource",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ExternalDocumentationSource"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ExternalDocumentationSource",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/externaldocumentationsource"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/GlobalExternalSymbolResolver": {
+  "abstract" : [
+    {
+      "text" : "A type that resolves symbol identifiers for symbols in all non-local modules.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "GlobalExternalSymbolResolver"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GlobalExternalSymbolResolver",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "GlobalExternalSymbolResolver"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "GlobalExternalSymbolResolver",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/globalexternalsymbolresolver"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
+  "abstract" : [
+    {
+      "text" : "Learn how to discover documentation inputs on the file system.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Bundle Discovery",
+  "title" : "Input Discovery",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationworkspacegroup"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/ExternalReferenceResolver": {
-  "abstract" : [
-    {
-      "text" : "A type that resolves references to documentation outside of the documentation bundle, and creates documentation nodes with basic information about the resolved references.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "ExternalReferenceResolver"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalReferenceResolver",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "ExternalReferenceResolver"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "ExternalReferenceResolver",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/externalreferenceresolver"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/ExternalSymbolResolver": {
-  "abstract" : [
-    {
-      "text" : "A type that resolves references to symbols outside of the documentation bundle and creates documentation nodes with basic information about the resolved symbol.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "ExternalSymbolResolver"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ExternalSymbolResolver",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "ExternalSymbolResolver"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "ExternalSymbolResolver",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/externalsymbolresolver"
+  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/NodeURLGenerator": {
   "abstract" : [

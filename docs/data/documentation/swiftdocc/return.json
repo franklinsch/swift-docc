@@ -46,6 +46,10 @@
         "text" : "Return"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Return.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Semantics\/Return.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -90,6 +94,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Callouts",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SimpleTag",
@@ -101,12 +106,17 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(contents:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(contents:range:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/contents"
       ],
@@ -245,7 +255,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": ["
+      "text" : ": [any "
     },
     {
       "kind" : "typeIdentifier",
@@ -264,7 +274,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/return\/contents"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Return/init(contents:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Return/init(_:)": {
+  "abstract" : [
+    {
+      "text" : "Initialize a value to describe documentation about a symbol’s return value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14DoxygenReturnsV",
+      "text" : "DoxygenReturns"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(_:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/return\/init(_:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Return/init(contents:range:)": {
   "abstract" : [
     {
       "text" : "Initialize a value to describe documentation about a symbol’s return value.",
@@ -286,7 +329,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": ["
+      "text" : ": [any "
     },
     {
       "kind" : "typeIdentifier",
@@ -295,15 +338,32 @@
     },
     {
       "kind" : "text",
-      "text" : "])"
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "range"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown11SourceRangea",
+      "text" : "SourceRange"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(contents:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Return\/init(contents:range:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(contents:)",
+  "title" : "init(contents:range:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/return\/init(contents:)"
+  "url" : "\/documentation\/swiftdocc\/return\/init(contents:range:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/SimpleTag": {
   "abstract" : [

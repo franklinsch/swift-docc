@@ -53,6 +53,10 @@
         "name" : "SwiftDocCUtilities"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Convert.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Subcommands\/Convert.swift#L361"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -126,7 +130,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "If the documentation bundle’s Info.plist file contains a bundle display name, the documentation bundle ignores this fallback name.",
+              "text" : "If the documentation catalogs’s Info.plist file contains a bundle display name, the documentation catalog ignores this fallback name.",
               "type" : "text"
             }
           ],
@@ -209,7 +213,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],

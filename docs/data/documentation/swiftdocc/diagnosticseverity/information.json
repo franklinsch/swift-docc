@@ -40,6 +40,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DiagnosticSeverity.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Diagnostics\/DiagnosticSeverity.swift#L41"
+    },
     "role" : "symbol",
     "roleHeading" : "Case",
     "symbolKind" : "case",
@@ -103,7 +107,7 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "this maps to ",
+                  "text" : "This maps to ",
                   "type" : "text"
                 },
                 {

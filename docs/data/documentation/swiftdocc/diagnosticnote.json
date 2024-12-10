@@ -45,6 +45,10 @@
         "text" : "DiagnosticNote"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DiagnosticNote.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Diagnostics\/DiagnosticNote.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -79,16 +83,6 @@
       "kind" : "declarations"
     }
   ],
-  "relationshipsSections" : [
-    {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/s23CustomStringConvertibleP"
-      ],
-      "kind" : "relationships",
-      "title" : "Conforms To",
-      "type" : "conformsTo"
-    }
-  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -99,6 +93,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Diagnostics",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Problem",
@@ -112,8 +107,9 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticNote\/description",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticNote\/message",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticNote\/range",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticNote\/source"
@@ -284,40 +280,6 @@
   "title" : "DiagnosticNote",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnosticnote"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DiagnosticNote/description": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "description"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticNote\/description",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "description",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/diagnosticnote\/description"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DiagnosticNote/message": {
   "abstract" : [
@@ -527,11 +489,6 @@
   "title" : "Problem",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/problem"
-},
-"doc://SwiftDocC/s23CustomStringConvertibleP": {
-  "identifier" : "doc:\/\/SwiftDocC\/s23CustomStringConvertibleP",
-  "title" : "Swift.CustomStringConvertible",
-  "type" : "unresolvable"
 }
 }
 }

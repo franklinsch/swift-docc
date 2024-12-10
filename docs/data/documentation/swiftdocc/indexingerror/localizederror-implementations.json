@@ -20,6 +20,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "LocalizedError Implementations"
   },
   "schemaVersion" : {
@@ -32,9 +33,9 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription-663xm",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/failureReason",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/helpAnchor",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/recoverySuggestion"
@@ -114,44 +115,6 @@
   "title" : "IndexingError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/indexingerror"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/IndexingError/errorDescription-663xm": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "errorDescription"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    },
-    {
-      "kind" : "text",
-      "text" : "?"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription-663xm",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "errorDescription",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/indexingerror\/errordescription-663xm"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/IndexingError/failureReason": {
   "abstract" : [

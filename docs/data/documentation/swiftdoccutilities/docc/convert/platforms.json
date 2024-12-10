@@ -53,6 +53,10 @@
         "name" : "SwiftDocCUtilities"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Convert.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Subcommands\/Convert.swift#L151"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -140,6 +144,23 @@
           "type" : "codeListing"
         },
         {
+          "inlineContent" : [
+            {
+              "text" : "Optionally, the platform name\/version pair can include a ",
+              "type" : "text"
+            },
+            {
+              "code" : "beta={true|false}",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " component. If no beta information is provided the platform is considered not in beta.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
           "anchor" : "Example",
           "level" : 1,
           "text" : "Example",
@@ -147,7 +168,8 @@
         },
         {
           "code" : [
-            "\"name=macOS,version=10.1.2\""
+            "\"name=macOS,version=10.1.2\"",
+            "\"name=macOS,version=10.1.2,beta=true\""
           ],
           "syntax" : null,
           "type" : "codeListing"
@@ -229,7 +251,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],

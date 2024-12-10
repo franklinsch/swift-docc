@@ -70,7 +70,7 @@
       },
       {
         "kind" : "text",
-        "text" : " -> "
+        "text" : " -> any "
       },
       {
         "kind" : "typeIdentifier",
@@ -80,9 +80,16 @@
     ],
     "modules" : [
       {
-        "name" : "SwiftDocCUtilities"
+        "name" : "SwiftDocCUtilities",
+        "relatedModules" : [
+          "ArgumentParser"
+        ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ParsableCommand.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/.build\/checkouts\/swift-argument-parser\/Sources\/ArgumentParser\/Parsable%20Types\/ParsableCommand.swift#L62"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Method",
     "symbolKind" : "method",
@@ -154,7 +161,7 @@
             },
             {
               "kind" : "text",
-              "text" : " -> "
+              "text" : " -> any "
             },
             {
               "kind" : "typeIdentifier",
@@ -292,7 +299,7 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : " -> any "
     },
     {
       "kind" : "typeIdentifier",

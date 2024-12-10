@@ -45,6 +45,10 @@
         "text" : "DirectiveNames"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Tile.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Technology\/Resources\/Tile.swift#L40"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -102,6 +106,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Tile\/DirectiveNames\/documentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Tile\/DirectiveNames\/downloads",
@@ -112,12 +118,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Tile\/DirectiveNames\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Tile\/DirectiveNames\/Equatable-Implementations",

@@ -21,7 +21,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC17VariantCollectionV0C0V5patchSayAA0C14PatchOperationOyqd__GGvp",
+    "externalID" : "s:9SwiftDocC17VariantCollectionV0C0V5patchSayAA0C14PatchOperationOyxGGvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -62,6 +62,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "VariantCollection+Variant.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection+Variant.swift#L20"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

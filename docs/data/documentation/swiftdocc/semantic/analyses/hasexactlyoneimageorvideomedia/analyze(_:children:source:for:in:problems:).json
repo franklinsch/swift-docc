@@ -29,7 +29,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC8SemanticC8AnalysesO30HasExactlyOneImageOrVideoMediaV7analyze_8children6source3for2in8problemsAA0K0CSg_AA15MarkupContainerC9remaindert8Markdown14BlockDirectiveV_qd__10Foundation3URLVSgAA19DocumentationBundleVAA0Z7ContextCSayAA7ProblemVGztSTRd__AT0R0_p7ElementRtd__lF",
+    "externalID" : "s:9SwiftDocC8SemanticC8AnalysesO30HasExactlyOneImageOrVideoMediaV7analyze_8children6source3for2in8problemsAA0K0_pSg_AA15MarkupContainerC9remaindert8Markdown14BlockDirectiveV_qd__10Foundation3URLVSgAA19DocumentationBundleVAA0Z7ContextCSayAA7ProblemVGztSTRd__AS0R0_p7ElementRtd__lF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -45,15 +45,7 @@
       },
       {
         "kind" : "text",
-        "text" : "<"
-      },
-      {
-        "kind" : "genericParameter",
-        "text" : "Children"
-      },
-      {
-        "kind" : "text",
-        "text" : ">("
+        "text" : "("
       },
       {
         "kind" : "typeIdentifier",
@@ -70,15 +62,25 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": some "
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "Children"
+        "preciseIdentifier" : "s:ST",
+        "text" : "Sequence"
       },
       {
         "kind" : "text",
-        "text" : ", "
+        "text" : "<any "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:8Markdown6MarkupP",
+        "text" : "Markup"
+      },
+      {
+        "kind" : "text",
+        "text" : ">, "
       },
       {
         "kind" : "externalParam",
@@ -154,16 +156,16 @@
       },
       {
         "kind" : "text",
-        "text" : "]) -> ("
+        "text" : "]) -> ((any "
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC5MediaC",
+        "preciseIdentifier" : "s:9SwiftDocC5MediaP",
         "text" : "Media"
       },
       {
         "kind" : "text",
-        "text" : "?, remainder"
+        "text" : ")?, remainder"
       },
       {
         "kind" : "text",
@@ -184,6 +186,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "HasExactlyOne.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/General%20Purpose%20Analyses\/HasExactlyOne.swift#L154"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
@@ -214,15 +220,7 @@
             },
             {
               "kind" : "text",
-              "text" : "<"
-            },
-            {
-              "kind" : "genericParameter",
-              "text" : "Children"
-            },
-            {
-              "kind" : "text",
-              "text" : ">("
+              "text" : "("
             },
             {
               "kind" : "externalParam",
@@ -255,15 +253,25 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": some "
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "Children"
+              "preciseIdentifier" : "s:ST",
+              "text" : "Sequence"
             },
             {
               "kind" : "text",
-              "text" : ", "
+              "text" : "<any "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:8Markdown6MarkupP",
+              "text" : "Markup"
+            },
+            {
+              "kind" : "text",
+              "text" : ">, "
             },
             {
               "kind" : "externalParam",
@@ -358,17 +366,17 @@
             },
             {
               "kind" : "text",
-              "text" : "]) -> ("
+              "text" : "]) -> ((any "
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Media",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC5MediaC",
+              "preciseIdentifier" : "s:9SwiftDocC5MediaP",
               "text" : "Media"
             },
             {
               "kind" : "text",
-              "text" : "?, remainder"
+              "text" : ")?, remainder"
             },
             {
               "kind" : "text",
@@ -382,53 +390,7 @@
             },
             {
               "kind" : "text",
-              "text" : ") "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "where"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Children"
-            },
-            {
-              "kind" : "text",
-              "text" : " : "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:ST",
-              "text" : "Sequence"
-            },
-            {
-              "kind" : "text",
-              "text" : ", "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Children"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "text" : "Element"
-            },
-            {
-              "kind" : "text",
-              "text" : " == "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:8Markdown6MarkupP",
-              "text" : "Markup"
+              "text" : ")"
             }
           ]
         }
@@ -475,7 +437,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationBundle": {
   "abstract" : [
     {
-      "text" : "A documentation bundle.",
+      "text" : "A collection of the build inputs for a unit of documentation.",
       "type" : "text"
     }
   ],
@@ -592,7 +554,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "protocol"
     },
     {
       "kind" : "text",
@@ -768,15 +730,7 @@
     },
     {
       "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "genericParameter",
-      "text" : "Children"
-    },
-    {
-      "kind" : "text",
-      "text" : ">("
+      "text" : "("
     },
     {
       "kind" : "typeIdentifier",
@@ -793,15 +747,25 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": some "
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Children"
+      "preciseIdentifier" : "s:ST",
+      "text" : "Sequence"
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : "<any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown6MarkupP",
+      "text" : "Markup"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
     },
     {
       "kind" : "externalParam",
@@ -877,16 +841,16 @@
     },
     {
       "kind" : "text",
-      "text" : "]) -> ("
+      "text" : "]) -> ((any "
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC5MediaC",
+      "preciseIdentifier" : "s:9SwiftDocC5MediaP",
       "text" : "Media"
     },
     {
       "kind" : "text",
-      "text" : "?, remainder"
+      "text" : ")?, remainder"
     },
     {
       "kind" : "text",

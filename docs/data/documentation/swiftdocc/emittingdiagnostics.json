@@ -24,6 +24,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Emitting Diagnostics"
   },
   "primaryContentSections" : [
@@ -109,6 +110,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Diagnostics-and-Analysis",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
@@ -119,6 +121,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Diagnostics",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Problem",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic",
@@ -130,6 +133,7 @@
       "title" : "Diagnostics"
     },
     {
+      "anchor" : "Suggested-Recovery-Solutions",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Solution",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Replacement"

@@ -44,6 +44,10 @@
         "text" : "PreviewOptions"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "PreviewOptions.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Options\/PreviewOptions.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -128,6 +132,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/init()",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/init(from:)"
@@ -135,20 +141,24 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/convertCommand",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/externalConnectionOptions",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/port"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/validate()-2prs9"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/ParsableArguments-Implementations"
@@ -197,7 +207,7 @@
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Docc/Convert": {
   "abstract" : [
     {
-      "text" : "Converts a documentation bundle.",
+      "text" : "Converts documentation markup, assets, and symbol information into a documentation archive.",
       "type" : "text"
     }
   ],
@@ -362,43 +372,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/previewoptions\/convertcommand"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewOptions/externalConnectionOptions": {
-  "abstract" : [
-    {
-      "text" : "The options used when configuring the preview server for external connections.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "externalConnectionOptions"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:18SwiftDocCUtilities32PreviewExternalConnectionOptionsV",
-      "text" : "PreviewExternalConnectionOptions"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/PreviewOptions\/externalConnectionOptions",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "externalConnectionOptions",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/previewoptions\/externalconnectionoptions"
-},
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/PreviewOptions/init()": {
   "abstract" : [
 
@@ -439,7 +412,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

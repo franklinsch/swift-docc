@@ -17,7 +17,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformVersion",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Version",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Version\/Collection-Implementations"
@@ -63,7 +63,7 @@
       ]
     },
     "extendedModule" : "Swift",
-    "externalID" : "s:Sl17_StringProcessingSQ7ElementRpzrlE6ranges2ofSaySny5IndexQzGGqd___tSTRd__ABQyd__ACRSlF::SYNTHESIZED::s:9SwiftDocC7VersionV",
+    "externalID" : "s:Sl17_StringProcessingSQ7ElementRpzrlE6ranges2ofSaySny5IndexQzGGqd___tSlRd__ABQyd__ACRSlF::SYNTHESIZED::s:9SwiftDocC7VersionV",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -83,7 +83,7 @@
       },
       {
         "kind" : "genericParameter",
-        "text" : "S"
+        "text" : "C"
       },
       {
         "kind" : "text",
@@ -99,7 +99,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "text" : "S"
+        "text" : "C"
       },
       {
         "kind" : "text",
@@ -124,6 +124,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:Sl5IndexQa",
         "text" : "Index"
       },
       {
@@ -133,7 +134,10 @@
     ],
     "modules" : [
       {
-        "name" : "SwiftDocC"
+        "name" : "SwiftDocC",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "platforms" : [
@@ -200,7 +204,7 @@
             },
             {
               "kind" : "genericParameter",
-              "text" : "S"
+              "text" : "C"
             },
             {
               "kind" : "text",
@@ -224,7 +228,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "S"
+              "text" : "C"
             },
             {
               "kind" : "text",
@@ -249,6 +253,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sl5IndexQa",
               "text" : "Index"
             },
             {
@@ -265,7 +270,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "S"
+              "text" : "C"
             },
             {
               "kind" : "text",
@@ -273,8 +278,8 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:ST",
-              "text" : "Sequence"
+              "preciseIdentifier" : "s:Sl",
+              "text" : "Collection"
             },
             {
               "kind" : "text",
@@ -290,6 +295,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:ST7ElementQa",
               "text" : "Element"
             },
             {
@@ -298,7 +304,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "text" : "S"
+              "text" : "C"
             },
             {
               "kind" : "text",
@@ -306,6 +312,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:ST7ElementQa",
               "text" : "Element"
             }
           ]
@@ -350,19 +357,19 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationWorkspaceGroup": {
+"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
   "abstract" : [
     {
-      "text" : "Learn how to explore a documentation workspace and discover bundles.",
+      "text" : "Learn how to discover documentation inputs on the file system.",
       "type" : "text"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationWorkspaceGroup",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Bundle Discovery",
+  "title" : "Input Discovery",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationworkspacegroup"
+  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PlatformVersion": {
   "abstract" : [
@@ -498,7 +505,7 @@
     },
     {
       "kind" : "genericParameter",
-      "text" : "S"
+      "text" : "C"
     },
     {
       "kind" : "text",
@@ -514,7 +521,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "S"
+      "text" : "C"
     },
     {
       "kind" : "text",
@@ -539,6 +546,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sl5IndexQa",
       "text" : "Index"
     },
     {

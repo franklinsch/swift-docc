@@ -45,6 +45,10 @@
         "text" : "DiagnosticEngine"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DiagnosticEngine.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Diagnostics\/DiagnosticEngine.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",
@@ -97,6 +101,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Diagnostics",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Problem",
@@ -110,12 +115,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/init(filterLevel:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/init(filterLevel:treatWarningsAsErrors:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/filterLevel",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/problems"
@@ -123,11 +132,15 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/add(_:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/clearDiagnostics()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/emit(_:)-1xqdb",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/emit(_:)-5rcke",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/flush()",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/hasConsumer(matching:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/remove(_:)"
       ],
       "title" : "Instance Methods"
@@ -285,7 +298,7 @@
     },
     {
       "kind" : "text",
-      "text" : "("
+      "text" : "(any "
     },
     {
       "kind" : "typeIdentifier",
@@ -455,7 +468,115 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnosticengine\/filterlevel"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/init(filterLevel:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/flush()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flush"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/flush()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flush()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/diagnosticengine\/flush()"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/hasConsumer(matching:)": {
+  "abstract" : [
+    {
+      "text" : "Returns a Boolean value indicating whether the engine contains a consumer that satisfies the given predicate.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "hasConsumer"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "matching"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC18DiagnosticConsumerP",
+      "text" : "DiagnosticConsumer"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "rethrows"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/hasConsumer(matching:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "hasConsumer(matching:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/diagnosticengine\/hasconsumer(matching:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/init(filterLevel:treatWarningsAsErrors:)": {
   "abstract" : [
     {
       "text" : "Creates a new diagnostic engine instance with no consumers.",
@@ -486,15 +607,32 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "treatWarningsAsErrors"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    },
+    {
+      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/init(filterLevel:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine\/init(filterLevel:treatWarningsAsErrors:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(filterLevel:)",
+  "title" : "init(filterLevel:treatWarningsAsErrors:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/diagnosticengine\/init(filterlevel:)"
+  "url" : "\/documentation\/swiftdocc\/diagnosticengine\/init(filterlevel:treatwarningsaserrors:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/problems": {
   "abstract" : [
@@ -559,7 +697,7 @@
     },
     {
       "kind" : "text",
-      "text" : "("
+      "text" : "(any "
     },
     {
       "kind" : "typeIdentifier",

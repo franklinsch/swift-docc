@@ -45,6 +45,10 @@
         "text" : "Checksum"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Checksum.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Utility\/Checksum.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -89,6 +93,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Auxiliary",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/FeatureFlags"
@@ -98,6 +103,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checksum\/md5(of:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checksum\/sha512(of:)"

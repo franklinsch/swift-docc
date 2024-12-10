@@ -1,17 +1,13 @@
 {
-  "abstract" : [
+  "deprecationSummary" : [
     {
-      "text" : "Visit a ",
-      "type" : "text"
-    },
-    {
-      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Technology",
-      "isActive" : true,
-      "type" : "reference"
-    },
-    {
-      "text" : " and return the result.",
-      "type" : "text"
+      "inlineContent" : [
+        {
+          "text" : "Use 'visitTutorialTableOfContents(_:)' instead. This deprecated API will be removed after 6.2 is released",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
     }
   ],
   "hierarchy" : {
@@ -28,7 +24,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC15SemanticVisitorP15visitTechnologyy6ResultQzAA0F0CF",
+    "externalID" : "s:9SwiftDocC15SemanticVisitorP15visitTechnologyy6ResultQzAA23TutorialTableOfContentsCF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -48,8 +44,8 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC10TechnologyC",
-        "text" : "Technology"
+        "preciseIdentifier" : "s:9SwiftDocC23TutorialTableOfContentsC",
+        "text" : "TutorialTableOfContents"
       },
       {
         "kind" : "text",
@@ -65,6 +61,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC15SemanticVisitorP6ResultQa",
         "text" : "Result"
       }
     ],
@@ -73,6 +70,13 @@
         "name" : "SwiftDocC"
       }
     ],
+    "platforms" : [
+
+    ],
+    "remoteSource" : {
+      "fileName" : "SemanticVisitor.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Visitor\/SemanticVisitor.swift#L91"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -131,10 +135,10 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Technology",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TutorialTableOfContents",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC10TechnologyC",
-              "text" : "Technology"
+              "preciseIdentifier" : "s:9SwiftDocC23TutorialTableOfContentsC",
+              "text" : "TutorialTableOfContents"
             },
             {
               "kind" : "text",
@@ -149,7 +153,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticVisitor\/Result",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC15SemanticVisitorP6ResultQa",
               "text" : "Result"
             }
           ]
@@ -271,22 +277,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semanticvisitor"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/SemanticVisitor/visitTechnology(_:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/SemanticVisitor/Result": {
   "abstract" : [
     {
-      "text" : "Visit a ",
-      "type" : "text"
-    },
-    {
-      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Technology",
-      "isActive" : true,
-      "type" : "reference"
-    },
-    {
-      "text" : " and return the result.",
+      "text" : "The result type returned when visiting a node.",
       "type" : "text"
     }
   ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticVisitor\/Result",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "Result",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semanticvisitor\/result"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/SemanticVisitor/visitTechnology(_:)": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -306,8 +330,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC10TechnologyC",
-      "text" : "Technology"
+      "preciseIdentifier" : "s:9SwiftDocC23TutorialTableOfContentsC",
+      "text" : "TutorialTableOfContents"
     },
     {
       "kind" : "text",
@@ -323,6 +347,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC15SemanticVisitorP6ResultQa",
       "text" : "Result"
     }
   ],
@@ -334,10 +359,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semanticvisitor\/visittechnology(_:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Technology": {
+"doc://SwiftDocC/documentation/SwiftDocC/TutorialTableOfContents": {
   "abstract" : [
     {
-      "text" : "An overview of the educational materials under a specific technology or technology area.",
+      "text" : "A top-level page that organizes a collection of tutorials into a hierarchy of volumes and chapters.",
       "type" : "text"
     }
   ],
@@ -352,21 +377,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Technology"
+      "text" : "TutorialTableOfContents"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Technology",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TutorialTableOfContents",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Technology"
+      "text" : "TutorialTableOfContents"
     }
   ],
   "role" : "symbol",
-  "title" : "Technology",
+  "title" : "TutorialTableOfContents",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/technology"
+  "url" : "\/documentation\/swiftdocc\/tutorialtableofcontents"
 }
 }
 }

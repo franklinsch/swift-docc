@@ -44,6 +44,10 @@
         "text" : "ConvertServiceError"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ConvertServiceError.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/DocumentationService\/Models\/Services\/Convert\/ConvertServiceError.swift#L14"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -103,20 +107,26 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/init(from:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/description",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/errorDescription-37615",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/errorDescription",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/identifier"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/conversionError(underlyingError:)",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/invalidRequest(underlyingError:)",
@@ -126,9 +136,9 @@
       "title" : "Type Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/LocalizedError-Implementations"
       ],
@@ -211,17 +221,6 @@
   "title" : "ConvertServiceError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/convertserviceerror"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/ConvertServiceError/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/convertserviceerror\/describederror-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ConvertServiceError/Error-Implementations": {
   "abstract" : [
@@ -344,7 +343,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/convertserviceerror\/description"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/ConvertServiceError/errorDescription-37615": {
+"doc://SwiftDocC/documentation/SwiftDocC/ConvertServiceError/errorDescription": {
   "abstract" : [
 
   ],
@@ -371,12 +370,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/errorDescription-37615",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ConvertServiceError\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/convertserviceerror\/errordescription-37615"
+  "url" : "\/documentation\/swiftdocc\/convertserviceerror\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ConvertServiceError/identifier": {
   "abstract" : [
@@ -434,7 +433,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",

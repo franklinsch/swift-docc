@@ -24,6 +24,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Persisting Documentation"
   },
   "primaryContentSections" : [
@@ -59,7 +60,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Converter",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNodeConverter",
               "isActive" : true,
               "type" : "reference"
             },
@@ -73,8 +74,7 @@
         {
           "code" : [
             "let converter = DocumentationNodeConverter(bundle: myBundle, context: myContext)",
-            "let renderNode = converter.convert(documentationNode, ",
-            "    at: sourceURL, from: bundle)"
+            "let renderNode = converter.convert(documentationNode)"
           ],
           "syntax" : "swift",
           "type" : "codeListing"
@@ -128,6 +128,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Rendering",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel"
@@ -137,16 +138,17 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Node-Persistence",
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Converter",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNodeConverter",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LinkDestinationSummary"
       ],
       "title" : "Node Persistence"
     },
     {
+      "anchor" : "Render-Node-Rewriter",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeTransforming",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveUnusedReferencesTransformation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeTransformationComposition",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeTransformationContext",
@@ -183,18 +185,17 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Converter": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationNodeConverter": {
   "abstract" : [
     {
-      "text" : "A converter that coverts documentation nodes to render nodes.",
+      "text" : "A converter from documentation nodes to render nodes.",
       "type" : "text"
     }
   ],
-  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "typealias"
+      "text" : "struct"
     },
     {
       "kind" : "text",
@@ -202,21 +203,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Converter"
+      "text" : "DocumentationNodeConverter"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Converter",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationNodeConverter",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Converter"
+      "text" : "DocumentationNodeConverter"
     }
   ],
   "role" : "symbol",
-  "title" : "Converter",
+  "title" : "DocumentationNodeConverter",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/converter"
+  "url" : "\/documentation\/swiftdocc\/documentationnodeconverter"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/LinkDestinationSummary": {
   "abstract" : [
@@ -251,40 +252,6 @@
   "title" : "LinkDestinationSummary",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/linkdestinationsummary"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation": {
-  "abstract" : [
-    {
-      "text" : "A transformation that removes automatically curated See Also sections.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "RemoveAutomaticallyCuratedSeeAlsoSectionsTransformation",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/removeautomaticallycuratedseealsosectionstransformation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RemoveUnusedReferencesTransformation": {
   "abstract" : [

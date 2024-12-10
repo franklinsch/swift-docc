@@ -39,6 +39,10 @@
         "text" : "IndexingError"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "IndexingError.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Indexing\/IndexingError.swift#L13"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -96,6 +100,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Search-Index",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Indexable",
@@ -109,21 +114,25 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/missingTitle(_:)"
       ],
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription-evx1"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/DescribedError-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/Error-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/LocalizedError-Implementations"
       ],
@@ -276,17 +285,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/indexingerror"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/IndexingError/DescribedError-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/DescribedError-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DescribedError Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/indexingerror\/describederror-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/IndexingError/Error-Implementations": {
   "abstract" : [
 
@@ -309,7 +307,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/indexingerror\/localizederror-implementations"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/IndexingError/errorDescription-evx1": {
+"doc://SwiftDocC/documentation/SwiftDocC/IndexingError/errorDescription": {
   "abstract" : [
 
   ],
@@ -336,12 +334,12 @@
       "text" : "String"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription-evx1",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/IndexingError\/errorDescription",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "errorDescription",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/indexingerror\/errordescription-evx1"
+  "url" : "\/documentation\/swiftdocc\/indexingerror\/errordescription"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/IndexingError/missingTitle(_:)": {
   "abstract" : [

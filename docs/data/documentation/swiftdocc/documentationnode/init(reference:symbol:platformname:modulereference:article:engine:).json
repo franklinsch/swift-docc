@@ -147,6 +147,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DocumentationNode.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/DocumentationNode.swift#L705"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",
@@ -327,28 +331,28 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "The names of the platforms for which the node is available.",
+                  "text" : "The names of the platform that the symbol is available for.",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "name" : "platformNames"
+          "name" : "platformName"
         },
         {
           "content" : [
             {
               "inlineContent" : [
                 {
-                  "text" : "The name of the module that the symbol belongs to.",
+                  "text" : "A reference to the module that the symbol belongs to.",
                   "type" : "text"
                 }
               ],
               "type" : "paragraph"
             }
           ],
-          "name" : "moduleName"
+          "name" : "moduleReference"
         },
         {
           "content" : [
@@ -377,20 +381,6 @@
             }
           ],
           "name" : "engine"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "An optional list of cross-import module names.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "bystanderModules"
         }
       ]
     }

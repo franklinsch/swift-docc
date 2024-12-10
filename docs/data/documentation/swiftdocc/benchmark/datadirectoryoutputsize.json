@@ -46,6 +46,10 @@
         "text" : "DataDirectoryOutputSize"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "OutputSize.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Metrics\/OutputSize.swift#L26"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -100,6 +104,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Default-Metrics",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/Duration",
@@ -113,18 +118,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/DataDirectoryOutputSize\/init(dataDirectory:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/DataDirectoryOutputSize\/result"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/DataDirectoryOutputSize\/displayName",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/DataDirectoryOutputSize\/identifier"
@@ -391,7 +402,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/Benchmark/ExternalTopicsHash": {
   "abstract" : [
     {
-      "text" : "A hash metric produced off the externally resolved links and symbols.",
+      "text" : "A hash metric produced off the externally resolved links.",
       "type" : "text"
     }
   ],

@@ -44,6 +44,10 @@
         "text" : "DirectoryPathOption"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DirectoryPathOption.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/ArgumentParsing\/Options\/DirectoryPathOption.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",
@@ -97,7 +101,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "This option validates the the provided path exists and that it’s a directory.",
+              "text" : "This option validates the provided path exists and that it’s a directory.",
               "type" : "text"
             }
           ],
@@ -120,7 +124,7 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocCArchiveOption",
-        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationBundleOption"
+        "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCatalogOption"
       ],
       "kind" : "relationships",
       "title" : "Conforming Types",
@@ -137,6 +141,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DirectoryPathOption\/url",
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DirectoryPathOption\/urlOrFallback"
@@ -144,6 +150,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DirectoryPathOption\/ParsableArguments-Implementations"
@@ -356,10 +363,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdoccutilities\/doccarchiveoption"
 },
-"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationBundleOption": {
+"doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/DocumentationCatalogOption": {
   "abstract" : [
     {
-      "text" : "Resolves and validates a URL value that provides the path to a documentation bundle.",
+      "text" : "Resolves and validates a URL value that provides the path to a documentation catalog.",
       "type" : "text"
     }
   ],
@@ -374,21 +381,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "DocumentationBundleOption"
+      "text" : "DocumentationCatalogOption"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationBundleOption",
+  "identifier" : "doc:\/\/SwiftDocCUtilities\/documentation\/SwiftDocCUtilities\/DocumentationCatalogOption",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "DocumentationBundleOption"
+      "text" : "DocumentationCatalogOption"
     }
   ],
   "role" : "symbol",
-  "title" : "DocumentationBundleOption",
+  "title" : "DocumentationCatalogOption",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdoccutilities\/documentationbundleoption"
+  "url" : "\/documentation\/swiftdoccutilities\/documentationcatalogoption"
 }
 }
 }

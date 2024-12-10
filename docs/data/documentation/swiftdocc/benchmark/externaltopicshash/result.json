@@ -61,6 +61,10 @@
         "name" : "SwiftDocC"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "ExternalTopicsHash.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Metrics\/ExternalTopicsHash.swift#L43"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -148,7 +152,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/Benchmark/ExternalTopicsHash": {
   "abstract" : [
     {
-      "text" : "A hash metric produced off the externally resolved links and symbols.",
+      "text" : "A hash metric produced off the externally resolved links.",
       "type" : "text"
     }
   ],

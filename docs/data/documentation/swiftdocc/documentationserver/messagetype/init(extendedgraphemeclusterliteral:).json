@@ -90,6 +90,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
         "text" : "StringLiteralType"
       },
       {
@@ -99,7 +100,10 @@
     ],
     "modules" : [
       {
-        "name" : "SwiftDocC"
+        "name" : "SwiftDocC",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",
@@ -152,6 +156,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
               "text" : "StringLiteralType"
             },
             {
@@ -342,6 +347,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
       "text" : "StringLiteralType"
     },
     {

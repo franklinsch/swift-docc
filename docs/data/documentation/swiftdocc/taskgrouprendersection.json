@@ -46,6 +46,10 @@
         "text" : "TaskGroupRenderSection"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "TaskGroupRenderSection.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Symbol\/TaskGroupRenderSection.swift#L12"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
@@ -86,6 +90,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderSection",
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE",
+        "doc:\/\/SwiftDocC\/SQ",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TextIndexing"
       ],
       "kind" : "relationships",
@@ -103,6 +108,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Generic-Sections",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GroupedSection",
@@ -113,15 +119,20 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/init(from:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/init(title:abstract:discussion:identifiers:generated:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/init(title:abstract:discussion:identifiers:generated:anchor:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/abstract",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/anchor",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/discussion",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/generated",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/identifiers",
@@ -131,14 +142,18 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/encode(to:)"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/Equatable-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/TextIndexing-Implementations"
       ],
       "title" : "Default Implementations"
@@ -161,6 +176,11 @@
 "doc://SwiftDocC/SE": {
   "identifier" : "doc:\/\/SwiftDocC\/SE",
   "title" : "Swift.Encodable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDocC/SQ": {
+  "identifier" : "doc:\/\/SwiftDocC\/SQ",
+  "title" : "Swift.Equatable",
   "type" : "unresolvable"
 },
 "doc://SwiftDocC/Se": {
@@ -343,6 +363,17 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/taskgrouprendersection"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/equatable-implementations"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/TextIndexing-Implementations": {
   "abstract" : [
 
@@ -395,10 +426,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/abstract"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/discussion": {
+"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/anchor": {
   "abstract" : [
     {
-      "text" : "An optional discussion for the section.",
+      "text" : "An optional anchor that can be used to link to the task group.",
       "type" : "text"
     }
   ],
@@ -413,11 +444,52 @@
     },
     {
       "kind" : "identifier",
-      "text" : "discussion"
+      "text" : "anchor"
     },
     {
       "kind" : "text",
       "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/anchor",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "anchor",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/anchor"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/discussion": {
+  "abstract" : [
+    {
+      "text" : "An optional discussion for the section.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "discussion"
+    },
+    {
+      "kind" : "text",
+      "text" : ": (any "
     },
     {
       "kind" : "typeIdentifier",
@@ -426,7 +498,7 @@
     },
     {
       "kind" : "text",
-      "text" : "?"
+      "text" : ")?"
     }
   ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/discussion",
@@ -463,7 +535,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -583,7 +655,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": any "
     },
     {
       "kind" : "typeIdentifier",
@@ -606,7 +678,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/init(from:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/init(title:abstract:discussion:identifiers:generated:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/init(title:abstract:discussion:identifiers:generated:anchor:)": {
   "abstract" : [
     {
       "text" : "Creates a new task group.",
@@ -662,7 +734,7 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": (any "
     },
     {
       "kind" : "typeIdentifier",
@@ -671,7 +743,7 @@
     },
     {
       "kind" : "text",
-      "text" : "?, "
+      "text" : ")?, "
     },
     {
       "kind" : "externalParam",
@@ -705,15 +777,32 @@
     },
     {
       "kind" : "text",
-      "text" : ")"
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "anchor"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?)"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/init(title:abstract:discussion:identifiers:generated:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TaskGroupRenderSection\/init(title:abstract:discussion:identifiers:generated:anchor:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(title:abstract:discussion:identifiers:generated:)",
+  "title" : "init(title:abstract:discussion:identifiers:generated:anchor:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/init(title:abstract:discussion:identifiers:generated:)"
+  "url" : "\/documentation\/swiftdocc\/taskgrouprendersection\/init(title:abstract:discussion:identifiers:generated:anchor:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/TaskGroupRenderSection/kind": {
   "abstract" : [

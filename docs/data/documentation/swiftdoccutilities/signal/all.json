@@ -60,6 +60,10 @@
         "name" : "SwiftDocCUtilities"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Signal.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocCUtilities\/Utility\/Signal.swift#L17"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Property",
     "symbolKind" : "property",
@@ -153,10 +157,7 @@
 },
 "doc://SwiftDocCUtilities/documentation/SwiftDocCUtilities/Signal": {
   "abstract" : [
-    {
-      "text" : "A handler that intercepts system signal-events.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {

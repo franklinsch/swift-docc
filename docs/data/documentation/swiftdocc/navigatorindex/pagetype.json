@@ -46,6 +46,10 @@
         "text" : "PageType"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "NavigatorIndex.swift",
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Indexing\/Navigator\/NavigatorIndex.swift#L254"
+    },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
     "symbolKind" : "enum",
@@ -92,15 +96,15 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "This information is stored as UInt8 to decrease the required size to store it and make",
+                  "text" : "This information is stored as ",
                   "type" : "text"
                 },
                 {
-                  "text" : " ",
-                  "type" : "text"
+                  "code" : "UInt8",
+                  "type" : "codeVoice"
                 },
                 {
-                  "text" : "the comparision faster between types.",
+                  "text" : " to decrease the required size to store it and make the comparison faster between types.",
                   "type" : "text"
                 }
               ],
@@ -137,6 +141,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Enumeration-Cases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/article",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/associatedType",
@@ -160,6 +166,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/learn",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/localVariable",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/macro",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/namespace",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/operator",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/overview",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/propertyListKey",
@@ -181,19 +188,15 @@
       "title" : "Enumeration Cases"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/project",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/property"
-      ],
-      "title" : "Type Properties"
-    },
-    {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/Equatable-Implementations",
@@ -969,6 +972,31 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/navigatorindex\/pagetype\/macro"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/NavigatorIndex/PageType/namespace": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "namespace"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/namespace",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "NavigatorIndex.PageType.namespace",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/navigatorindex\/pagetype\/namespace"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/NavigatorIndex/PageType/operator": {
   "abstract" : [
 
@@ -1018,110 +1046,6 @@
   "title" : "NavigatorIndex.PageType.overview",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/navigatorindex\/pagetype\/overview"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/NavigatorIndex/PageType/project": {
-  "abstract" : [
-
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "let"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "project"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14NavigatorIndexC",
-      "text" : "NavigatorIndex"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14NavigatorIndexC8PageTypeO",
-      "text" : "PageType"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/project",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "project",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/navigatorindex\/pagetype\/project"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/NavigatorIndex/PageType/property": {
-  "abstract" : [
-
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "let"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "property"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14NavigatorIndexC",
-      "text" : "NavigatorIndex"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14NavigatorIndexC8PageTypeO",
-      "text" : "PageType"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorIndex\/PageType\/property",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "property",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/navigatorindex\/pagetype\/property"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/NavigatorIndex/PageType/propertyListKey": {
   "abstract" : [
