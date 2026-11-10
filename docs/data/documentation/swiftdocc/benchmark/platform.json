@@ -3,7 +3,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmarking",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark"
       ]
     ]
@@ -45,7 +44,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Benchmark.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Benchmark.swift#L42"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Benchmark.swift#L46"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -60,7 +59,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -193,20 +192,6 @@
   "title" : "platform",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/benchmark\/platform"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Benchmarking": {
-  "abstract" : [
-    {
-      "text" : "Produce performance metrics to improve the compilation pipeline and track regressions.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmarking",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Benchmarking",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/benchmarking"
 }
 }
 }

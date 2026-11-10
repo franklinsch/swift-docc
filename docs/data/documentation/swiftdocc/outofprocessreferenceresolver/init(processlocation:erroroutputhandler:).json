@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/OutOfProcessReferenceResolver"
       ]
     ]
@@ -20,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC29OutOfProcessReferenceResolverC15processLocation18errorOutputHandlerAC10Foundation3URLV_ySSctKcfc",
+    "externalID" : "s:9SwiftDocC29OutOfProcessReferenceResolverC15processLocation18errorOutputHandlerAC20FoundationEssentials3URLV_ySSctKcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -40,7 +39,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       },
       {
@@ -85,7 +84,7 @@
     ],
     "remoteSource" : {
       "fileName" : "OutOfProcessReferenceResolver.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/OutOfProcessReferenceResolver.swift#L70"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/OutOfProcessReferenceResolver.swift#L109"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -100,7 +99,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -121,7 +120,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             },
             {
@@ -137,7 +136,7 @@
               "text" : ": "
             },
             {
-              "kind" : "keyword",
+              "kind" : "attribute",
               "text" : "@escaping"
             },
             {
@@ -217,6 +216,19 @@
             {
               "text" : "Initializing the resolver will also launch the other executable. The other executable will remain running for the lifetime of this object.",
               "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "This and the rest of the communication between DocC and the link resolver executable is described in ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/OutOfProcessReferenceResolver#Launching-and-responding-to-requests",
+              "isActive" : true,
+              "type" : "reference"
             }
           ],
           "type" : "paragraph"
@@ -277,20 +289,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextGroup": {
-  "abstract" : [
-    {
-      "text" : "Build and query the in-memory documentation model.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Context",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextgroup"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/OutOfProcessReferenceResolver": {
   "abstract" : [
     {
@@ -325,6 +323,16 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/outofprocessreferenceresolver"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/OutOfProcessReferenceResolver#Launching-and-responding-to-requests": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/OutOfProcessReferenceResolver#Launching-and-responding-to-requests",
+  "kind" : "section",
+  "title" : "Launching and responding to requests",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/outofprocessreferenceresolver#Launching-and-responding-to-requests"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/OutOfProcessReferenceResolver/init(processLocation:errorOutputHandler:)": {
   "abstract" : [
     {
@@ -351,7 +359,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {

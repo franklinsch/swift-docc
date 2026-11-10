@@ -17,7 +17,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformVersion"
       ]
     ]
@@ -59,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "ExternalMetadata.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalMetadata.swift#L56"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalMetadata.swift#L54"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -74,7 +73,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -139,20 +138,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PlatformVersion": {
   "abstract" : [

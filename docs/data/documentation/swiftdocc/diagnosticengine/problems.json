@@ -1,15 +1,19 @@
 {
-  "abstract" : [
+  "deprecationSummary" : [
     {
-      "text" : "A convenience accessor for retrieving all of the diagnostics this engine currently holds.",
-      "type" : "text"
+      "inlineContent" : [
+        {
+          "text" : "Use 'diagnostics' instead. This deprecated API will be removed after 6.5 is released.",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
     }
   ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine"
       ]
     ]
@@ -55,7 +59,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DiagnosticEngine.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Diagnostics\/DiagnosticEngine.swift#L50"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Diagnostics\/DiagnosticEngine.swift#L68"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -70,7 +74,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -185,11 +189,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/problems": {
   "abstract" : [
-    {
-      "text" : "A convenience accessor for retrieving all of the diagnostics this engine currently holds.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -224,20 +226,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnosticengine\/problems"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/EmittingDiagnostics": {
-  "abstract" : [
-    {
-      "text" : "Vend warnings and errors as part of an operation’s result.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Emitting Diagnostics",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/emittingdiagnostics"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Problem": {
   "abstract" : [
     {
@@ -245,6 +233,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

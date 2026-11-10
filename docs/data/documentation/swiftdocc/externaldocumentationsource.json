@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -47,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "ExternalDocumentationSource.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalDocumentationSource.swift#L31"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalDocumentationSource.swift#L29"
     },
     "role" : "symbol",
     "roleHeading" : "Protocol",
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -81,6 +80,12 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "mentions",
+      "mentions" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LinkResolution"
+      ]
     },
     {
       "content" : [
@@ -106,7 +111,7 @@
                 {
                   "inlineContent" : [
                     {
-                      "text" : "Resolve references for the bundle identifier for which it’s registered.",
+                      "text" : "Resolve references for the source identifier for which it’s registered.",
                       "type" : "text"
                     }
                   ],
@@ -141,12 +146,12 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct\/sources",
               "isActive" : true,
               "type" : "reference"
             },
             {
-              "text" : " for the bundle identifier of the unresolved reference. If there is, that source is asked to attempt to resolve the reference.",
+              "text" : " for the source identifier of the unresolved reference. If there is, that source is asked to attempt to resolve the reference.",
               "type" : "text"
             }
           ],
@@ -163,7 +168,7 @@
               "type" : "text"
             },
             {
-              "text" : "for the external entity with the documentation content for that reference. Because this content isn’t part of the compiled bundle, it won’t have its own page in the build output.",
+              "text" : "for the external entity with the documentation content for that reference. Because this content isn’t part of the compiled inputs, it won’t have its own page in the build output.",
               "type" : "text"
             }
           ],
@@ -204,7 +209,7 @@
     {
       "anchor" : "Related-Documentation",
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct\/sources",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/GlobalExternalSymbolResolver",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TopicReferenceResolutionResult"
       ],
@@ -258,11 +263,13 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/externalDocumentationSources": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/ExternalDocumentationConfiguration-swift.struct/sources": {
   "abstract" : [
-
+    {
+      "text" : "The lookup of external documentation sources by their source identifiers.",
+      "type" : "text"
+    }
   ],
-  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -274,7 +281,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "externalDocumentationSources"
+      "text" : "sources"
     },
     {
       "kind" : "text",
@@ -282,12 +289,38 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC16BundleIdentifiera",
-      "text" : "BundleIdentifier"
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
+      "text" : "DocumentationContext"
     },
     {
       "kind" : "text",
-      "text" : " : any "
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV",
+      "text" : "Inputs"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV10IdentifierV",
+      "text" : "Identifier"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -299,26 +332,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct\/sources",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "externalDocumentationSources",
+  "title" : "sources",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontext\/externaldocumentationsources"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextGroup": {
-  "abstract" : [
-    {
-      "text" : "Build and query the in-memory documentation model.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Context",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextgroup"
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/externaldocumentationconfiguration-swift.struct\/sources"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ExternalDocumentationSource": {
   "abstract" : [
@@ -434,6 +453,20 @@
   "title" : "GlobalExternalSymbolResolver",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/globalexternalsymbolresolver"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/LinkResolution": {
+  "abstract" : [
+    {
+      "text" : "Connect documentation pages with documentation links.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/LinkResolution",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Linking Between Documentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/linkresolution"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/OutOfProcessReferenceResolver": {
   "abstract" : [

@@ -1,15 +1,14 @@
 {
   "abstract" : [
     {
-      "text" : "A collection of modules and the default platform availability for symbols in that module.",
+      "text" : "A collection of default platform availability.",
       "type" : "text"
     }
   ],
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -47,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DefaultAvailability.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Workspace\/DefaultAvailability.swift#L44"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Workspace\/DefaultAvailability.swift#L41"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -102,7 +101,7 @@
         {
           "inlineContent" : [
             {
-              "text" : "This information can be authored in the bundle’s Info.plist file, as a dictionary of module names to arrays of platform “name” and “version” pairs,",
+              "text" : "This information can be authored in the catalog’s Info.plist file, as an array of platform “name” and “version” pairs,",
               "type" : "text"
             },
             {
@@ -119,30 +118,33 @@
         {
           "code" : [
             "<key>CDAppleDefaultAvailability<\/key>",
-            "<dict>",
-            "    <key>Module Name<\/key>",
-            "    <array>",
-            "        <dict>",
-            "            <key>name<\/key>",
-            "            <string>Platform Name<\/string>",
-            "            <key>version<\/key>",
-            "            <string>Version Number<\/string>",
-            "        <\/dict>",
-            "        <dict>",
-            "            <key>name<\/key>",
-            "            <string>Platform Name<\/string>",
-            "        <\/dict>",
-            "        <dict>",
-            "            <key>name<\/key>",
-            "            <string>Other Platform Name<\/string>",
-            "            <key>unavailable<\/key>",
-            "            <true\/>",
-            "        <\/dict>",
-            "    <\/array>",
-            "<\/dict>"
+            "<array>",
+            "    <dict>",
+            "        <key>name<\/key>",
+            "        <string>Platform Name<\/string>",
+            "        <key>version<\/key>",
+            "        <string>Version Number<\/string>",
+            "    <\/dict>",
+            "    <dict>",
+            "        <key>name<\/key>",
+            "        <string>Platform Name<\/string>",
+            "    <\/dict>",
+            "    <dict>",
+            "        <key>name<\/key>",
+            "        <string>Other Platform Name<\/string>",
+            "        <key>unavailable<\/key>",
+            "        <true\/>",
+            "    <\/dict>",
+            "<\/array>"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -193,7 +195,8 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(from:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)-66y36",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)-69d2u"
       ],
       "title" : "Initializers"
     },
@@ -206,12 +209,12 @@
       "title" : "Instance Methods"
     },
     {
-      "anchor" : "Default-Implementations",
+      "anchor" : "Type-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/Equatable-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/fallbackPlatforms"
       ],
-      "title" : "Default Implementations"
+      "title" : "Type Properties"
     }
   ],
   "variants" : [
@@ -260,7 +263,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability": {
   "abstract" : [
     {
-      "text" : "A collection of modules and the default platform availability for symbols in that module.",
+      "text" : "A collection of default platform availability.",
       "type" : "text"
     }
   ],
@@ -290,17 +293,6 @@
   "title" : "DefaultAvailability",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/defaultavailability"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/defaultavailability\/equatable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/ModuleAvailability": {
   "abstract" : [
@@ -363,7 +355,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -386,6 +386,72 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/defaultavailability\/encode(to:)"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/fallbackPlatforms": {
+  "abstract" : [
+    {
+      "text" : "Fallback availability information for platforms we either don’t emit SGFs for",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "or have the same availability information as another platform.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fallbackPlatforms"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12PlatformNameV",
+      "text" : "PlatformName"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12PlatformNameV",
+      "text" : "PlatformName"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/fallbackPlatforms",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fallbackPlatforms",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/defaultavailability\/fallbackplatforms"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/init(from:)": {
   "abstract" : [
 
@@ -405,7 +471,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -428,13 +502,52 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/defaultavailability\/init(from:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/init(with:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/init(with:)-66y36": {
   "abstract" : [
     {
-      "text" : "Creates a default availability module.",
+      "text" : "Creates a default availability container.",
       "type" : "text"
     }
   ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "with"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DefaultAvailabilityV06ModuleD0V",
+      "text" : "ModuleAvailability"
+    },
+    {
+      "kind" : "text",
+      "text" : "])"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)-66y36",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(with:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/defaultavailability\/init(with:)-66y36"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability/init(with:)-69d2u": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "identifier",
@@ -463,15 +576,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DefaultAvailabilityV",
-      "text" : "DefaultAvailability"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC19DefaultAvailabilityV06ModuleD0V",
       "text" : "ModuleAvailability"
     },
@@ -480,12 +584,12 @@
       "text" : "]])"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DefaultAvailability\/init(with:)-69d2u",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "init(with:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/defaultavailability\/init(with:)"
+  "url" : "\/documentation\/swiftdocc\/defaultavailability\/init(with:)-69d2u"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ExternalMetadata": {
   "abstract" : [
@@ -520,20 +624,6 @@
   "title" : "ExternalMetadata",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/externalmetadata"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PlatformVersion": {
   "abstract" : [

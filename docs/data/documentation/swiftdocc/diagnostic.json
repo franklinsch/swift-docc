@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -81,6 +80,12 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "kind" : "mentions",
+      "mentions" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Adding-Diagnostics"
+      ]
     }
   ],
   "schemaVersion" : {
@@ -107,10 +112,18 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/Note"
+      ],
+      "title" : "Structures"
+    },
+    {
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/init(source:severity:range:identifier:summary:explanation:notes:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/init(source:severity:range:identifier:groupIdentifier:summary:explanation:notes:solutions:)"
       ],
       "title" : "Initializers"
     },
@@ -119,10 +132,12 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/explanation",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/groupIdentifier",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/identifier",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/notes",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/range",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/severity",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/solutions",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/source",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/summary"
       ],
@@ -166,6 +181,20 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/Adding-Diagnostics": {
+  "abstract" : [
+    {
+      "text" : "Display information to the developer about actionable issues with their documentation.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Adding-Diagnostics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Adding user-facing diagnostics",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/adding-diagnostics"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Diagnostic": {
   "abstract" : [
     {
@@ -199,6 +228,40 @@
   "title" : "Diagnostic",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnostic"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/Note": {
+  "abstract" : [
+    {
+      "text" : "A supplementary message, related to a diagnostic, to associate with a location in a certain file.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Note"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/Note",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Note"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Diagnostic.Note",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/diagnostic\/note"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/explanation": {
   "abstract" : [
@@ -241,10 +304,75 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnostic\/explanation"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/groupIdentifier": {
+  "abstract" : [
+    {
+      "text" : "A unique string that identifies a group of diagnostics whose severity can be controlled by passing ",
+      "type" : "text"
+    },
+    {
+      "code" : "--Werror",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " and ",
+      "type" : "text"
+    },
+    {
+      "code" : "--Wwarning",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " flags to ",
+      "type" : "text"
+    },
+    {
+      "code" : "docc",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "groupIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/groupIdentifier",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "groupIdentifier",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/diagnostic\/groupidentifier"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/identifier": {
   "abstract" : [
     {
-      "text" : "A unique reverse-DNS-style string identifier used for looking up explanations for diagnostics.",
+      "text" : "An opaque identifier that diagnostic consumers and tools can use to identify specific types of diagnostics.",
       "type" : "text"
     }
   ],
@@ -278,7 +406,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnostic\/identifier"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/init(source:severity:range:identifier:summary:explanation:notes:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/init(source:severity:range:identifier:groupIdentifier:summary:explanation:notes:solutions:)": {
   "abstract" : [
 
   ],
@@ -301,7 +429,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -361,6 +489,23 @@
     },
     {
       "kind" : "externalParam",
+      "text" : "groupIdentifier"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
       "text" : "summary"
     },
     {
@@ -403,20 +548,37 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14DiagnosticNoteV",
-      "text" : "DiagnosticNote"
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV4NoteV",
+      "text" : "Note"
+    },
+    {
+      "kind" : "text",
+      "text" : "], "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "solutions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SolutionV",
+      "text" : "Solution"
     },
     {
       "kind" : "text",
       "text" : "])"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/init(source:severity:range:identifier:summary:explanation:notes:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/init(source:severity:range:identifier:groupIdentifier:summary:explanation:notes:solutions:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(source:severity:range:identifier:summary:explanation:notes:)",
+  "title" : "init(source:severity:range:identifier:groupIdentifier:summary:explanation:notes:solutions:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/diagnostic\/init(source:severity:range:identifier:summary:explanation:notes:)"
+  "url" : "\/documentation\/swiftdocc\/diagnostic\/init(source:severity:range:identifier:groupidentifier:summary:explanation:notes:solutions:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/notes": {
   "abstract" : [
@@ -444,8 +606,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC14DiagnosticNoteV",
-      "text" : "DiagnosticNote"
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV4NoteV",
+      "text" : "Note"
     },
     {
       "kind" : "text",
@@ -612,6 +774,47 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnostic\/severity"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/solutions": {
+  "abstract" : [
+    {
+      "text" : "A list of possible solutions that the end-use can take to resolve the problem or issue.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "solutions"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SolutionV",
+      "text" : "Solution"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Diagnostic\/solutions",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "solutions",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/diagnostic\/solutions"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Diagnostic/source": {
   "abstract" : [
     {
@@ -638,7 +841,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -832,15 +1035,13 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DiagnosticNote": {
   "abstract" : [
-    {
-      "text" : "A diagnostic note is a simple string message that should appear somewhere in a document.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "struct"
+      "text" : "typealias"
     },
     {
       "kind" : "text",
@@ -898,20 +1099,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnosticseverity"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/EmittingDiagnostics": {
-  "abstract" : [
-    {
-      "text" : "Vend warnings and errors as part of an operation’s result.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Emitting Diagnostics",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/emittingdiagnostics"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Problem": {
   "abstract" : [
     {
@@ -919,6 +1106,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

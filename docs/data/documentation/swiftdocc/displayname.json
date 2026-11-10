@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -212,8 +211,14 @@
             "   @DisplayName(\"Custom Symbol Name\", style: conceptual)",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -251,6 +256,7 @@
       "anchor" : "Child-Directives",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationExtension",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TechnologyRoot",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage",
@@ -290,14 +296,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayName\/Style-swift.enum"
       ],
       "title" : "Enumerations"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayName\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -332,6 +330,40 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AlternateRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A directive that configures an alternate language representation of a symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlternateRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/alternaterepresentation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/CallToAction": {
   "abstract" : [
@@ -434,17 +466,6 @@
   "title" : "DisplayName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/displayname"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DisplayName/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayName\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/displayname\/directiveconvertible-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DisplayName/Style-swift.enum": {
   "abstract" : [
@@ -669,15 +690,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC11DisplayNameC",
-      "text" : "DisplayName"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

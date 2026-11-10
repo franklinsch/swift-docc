@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer\/Collection-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer"
       ]
     ]
   },
@@ -45,16 +44,15 @@
       },
       {
         "kind" : "text",
-        "text" : ": "
+        "text" : ": ["
       },
       {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:Sa",
-        "text" : "Array"
+        "kind" : "keyword",
+        "text" : "any"
       },
       {
         "kind" : "text",
-        "text" : "<any "
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -63,7 +61,7 @@
       },
       {
         "kind" : "text",
-        "text" : ">."
+        "text" : "]."
       },
       {
         "kind" : "typeIdentifier",
@@ -93,7 +91,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -110,16 +108,15 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
+              "text" : ": ["
             },
             {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:Sa",
-              "text" : "Array"
+              "kind" : "keyword",
+              "text" : "any"
             },
             {
               "kind" : "text",
-              "text" : "<any "
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -128,7 +125,7 @@
             },
             {
               "kind" : "text",
-              "text" : ">."
+              "text" : "]."
             },
             {
               "kind" : "typeIdentifier",
@@ -231,17 +228,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/markupcontainer"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/MarkupContainer/Collection-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer\/Collection-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Collection Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/markupcontainer\/collection-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/MarkupContainer/endIndex": {
   "abstract" : [
 
@@ -261,16 +247,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": ["
     },
     {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:Sa",
-      "text" : "Array"
+      "kind" : "keyword",
+      "text" : "any"
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -279,7 +264,7 @@
     },
     {
       "kind" : "text",
-      "text" : ">."
+      "text" : "]."
     },
     {
       "kind" : "typeIdentifier",

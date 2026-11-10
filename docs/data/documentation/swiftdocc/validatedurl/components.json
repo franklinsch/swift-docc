@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Utilities",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ValidatedURL"
       ]
     ]
@@ -20,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC12ValidatedURLV10components10Foundation13URLComponentsVvp",
+    "externalID" : "s:9SwiftDocC12ValidatedURLV10components20FoundationEssentials13URLComponentsVvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -40,7 +39,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation13URLComponentsV",
+        "preciseIdentifier" : "s:20FoundationEssentials13URLComponentsV",
         "text" : "URLComponents"
       }
     ],
@@ -66,7 +65,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -87,7 +86,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation13URLComponentsV",
+              "preciseIdentifier" : "s:20FoundationEssentials13URLComponentsV",
               "text" : "URLComponents"
             },
             {
@@ -135,17 +134,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Utilities": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Utilities",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Utility APIs",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/utilities"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ValidatedURL": {
   "abstract" : [
@@ -207,7 +195,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation13URLComponentsV",
+      "preciseIdentifier" : "s:20FoundationEssentials13URLComponentsV",
       "text" : "URLComponents"
     }
   ],

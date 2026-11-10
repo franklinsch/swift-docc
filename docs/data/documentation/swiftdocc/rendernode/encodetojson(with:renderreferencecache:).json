@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNode"
       ]
     ]
@@ -21,7 +20,7 @@
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "SwiftDocC",
-    "externalID" : "s:9SwiftDocC10RenderNodeV12encodeToJSON4with20renderReferenceCache10Foundation4DataVAG11JSONEncoderC_AA12SynchronizedCySDySSAI9reference_SayAA15VariantOverrideVG9overridestGGSgtKF",
+    "externalID" : "s:9SwiftDocC10RenderNodeV12encodeToJSON4with20renderReferenceCache20FoundationEssentials4DataVAG11JSONEncoderC_AA12SynchronizedCySDySSAI9reference_SayAA15VariantOverrideVG9overridestGGSgtKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -49,7 +48,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+        "preciseIdentifier" : "s:20FoundationEssentials11JSONEncoderC",
         "text" : "JSONEncoder"
       },
       {
@@ -83,7 +82,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation4DataV",
+        "preciseIdentifier" : "s:20FoundationEssentials4DataV",
         "text" : "Data"
       }
     ],
@@ -94,7 +93,7 @@
     ],
     "remoteSource" : {
       "fileName" : "RenderNode+Coding.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/RenderNode+Coding.swift#L209"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/RenderNode+Coding.swift#L207"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -109,7 +108,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -146,7 +145,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+              "preciseIdentifier" : "s:20FoundationEssentials11JSONEncoderC",
               "text" : "JSONEncoder"
             },
             {
@@ -181,7 +180,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation4DataV",
+              "preciseIdentifier" : "s:20FoundationEssentials4DataV",
               "text" : "Data"
             }
           ]
@@ -425,7 +424,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation11JSONEncoderC",
+      "preciseIdentifier" : "s:20FoundationEssentials11JSONEncoderC",
       "text" : "JSONEncoder"
     },
     {
@@ -459,7 +458,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation4DataV",
+      "preciseIdentifier" : "s:20FoundationEssentials4DataV",
       "text" : "Data"
     }
   ],
@@ -503,20 +502,6 @@
   "title" : "RenderReferenceCache",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderreferencecache"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
 }
 }
 }

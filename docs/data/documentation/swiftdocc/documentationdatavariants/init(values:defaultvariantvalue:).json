@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationDataVariants"
       ]
     ]
@@ -49,6 +48,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
         "text" : "Variant"
       },
       {
@@ -65,6 +65,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
         "text" : "Variant"
       },
       {
@@ -79,7 +80,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DocumentationDataVariants.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/DocumentationDataVariants.swift#L44"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/DocumentationDataVariants.swift#L72"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -94,7 +95,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -125,6 +126,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
               "text" : "Variant"
             },
             {
@@ -141,6 +143,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
               "text" : "Variant"
             },
             {
@@ -291,6 +294,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
       "text" : "Variant"
     },
     {
@@ -307,6 +311,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV7Variantxmfp",
       "text" : "Variant"
     },
     {
@@ -354,40 +359,6 @@
   "title" : "DocumentationDataVariantsTrait",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationdatavariantstrait"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol": {
-  "abstract" : [
-    {
-      "text" : "A programming symbol semantic type.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Symbol"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Symbol"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Symbol",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol"
 }
 }
 }

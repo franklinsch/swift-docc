@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BundleData"
       ]
     ]
@@ -20,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC10BundleDataV3url10Foundation3URLVvp",
+    "externalID" : "s:9SwiftDocC10BundleDataV3url20FoundationEssentials3URLVvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -40,7 +39,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       }
     ],
@@ -66,7 +65,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -87,7 +86,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             }
           ]
@@ -192,7 +191,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     }
   ],
@@ -202,20 +201,6 @@
   "title" : "url",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/bundledata\/url"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 }
 }
 }

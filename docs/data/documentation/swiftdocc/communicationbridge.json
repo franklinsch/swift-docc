@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Communication"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -47,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "CommunicationBridge.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Communication\/CommunicationBridge.swift#L16"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Communication\/CommunicationBridge.swift#L14"
     },
     "role" : "symbol",
     "roleHeading" : "Protocol",
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -103,16 +102,6 @@
       "kind" : "content"
     }
   ],
-  "relationshipsSections" : [
-    {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge"
-      ],
-      "kind" : "relationships",
-      "title" : "Conforming Types",
-      "type" : "conformingTypes"
-    }
-  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -126,9 +115,7 @@
       "anchor" : "Communication-Bridge",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CommunicationBridgeError",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationSchemeHandler",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MessageType",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColors",
@@ -258,20 +245,6 @@
   "title" : "CodeColorsPreferenceKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/codecolorspreferencekey"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Communication": {
-  "abstract" : [
-    {
-      "text" : "Offer native integration of DocC in your IDE.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Communication",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Communication Bridge",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/communication"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/CommunicationBridge": {
   "abstract" : [
@@ -421,14 +394,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "text" : "Self"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC19CommunicationBridgeP11SendHandlerQa",
       "text" : "SendHandler"
     },
@@ -482,37 +447,6 @@
   "title" : "CommunicationBridgeError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/communicationbridgeerror"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationSchemeHandler": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationSchemeHandler"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationSchemeHandler",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationSchemeHandler"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "DocumentationSchemeHandler",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationschemehandler"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Message": {
   "abstract" : [
@@ -581,40 +515,6 @@
   "title" : "MessageType",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/messagetype"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/WebKitCommunicationBridge": {
-  "abstract" : [
-    {
-      "text" : "Provides bi-directional communication with a documentation renderer via JavaScript calls in a web view.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "WebKitCommunicationBridge"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "WebKitCommunicationBridge"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "WebKitCommunicationBridge",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/webkitcommunicationbridge"
 }
 }
 }

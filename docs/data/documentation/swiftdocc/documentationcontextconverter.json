@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DocumentationContextConverter.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/DocumentationContextConverter.swift#L19"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Converter\/DocumentationContextConverter.swift#L17"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -149,7 +149,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/init(bundle:context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/init(context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)"
       ],
       "title" : "Initializers"
     },
@@ -157,8 +157,7 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/renderNode(for:)",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/renderNode(for:at:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/renderNode(for:)"
       ],
       "title" : "Instance Methods"
     }
@@ -225,10 +224,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontextconverter"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextConverter/init(bundle:context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextConverter/init(context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)": {
   "abstract" : [
     {
-      "text" : "Creates a new node converter for the given bundle and context.",
+      "text" : "Creates a new node converter for the given context.",
       "type" : "text"
     }
   ],
@@ -240,23 +239,6 @@
     {
       "kind" : "text",
       "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "bundle"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
-      "text" : "DocumentationBundle"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
     },
     {
       "kind" : "externalParam",
@@ -361,12 +343,12 @@
       "text" : "]?)"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/init(bundle:context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/init(context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(bundle:context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)",
+  "title" : "init(context:renderContext:emitSymbolSourceFileURIs:emitSymbolAccessLevels:sourceRepository:symbolIdentifiersWithExpandedDocumentation:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextconverter\/init(bundle:context:rendercontext:emitsymbolsourcefileuris:emitsymbolaccesslevels:sourcerepository:symbolidentifierswithexpandeddocumentation:)"
+  "url" : "\/documentation\/swiftdocc\/documentationcontextconverter\/init(context:rendercontext:emitsymbolsourcefileuris:emitsymbolaccesslevels:sourcerepository:symbolidentifierswithexpandeddocumentation:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextConverter/renderNode(for:)": {
   "abstract" : [
@@ -425,87 +407,6 @@
   "title" : "renderNode(for:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontextconverter\/rendernode(for:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextConverter/renderNode(for:at:)": {
-  "abstract" : [
-
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "renderNode"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "for"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17DocumentationNodeV",
-      "text" : "DocumentationNode"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "at"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
-      "text" : "URL"
-    },
-    {
-      "kind" : "text",
-      "text" : "?) "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC10RenderNodeV",
-      "text" : "RenderNode"
-    },
-    {
-      "kind" : "text",
-      "text" : "?"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextConverter\/renderNode(for:at:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "renderNode(for:at:)",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextconverter\/rendernode(for:at:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationNodeConverter": {
   "abstract" : [

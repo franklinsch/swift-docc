@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -47,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "ExternalMetadata.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalMetadata.swift#L69"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/External%20Data\/ExternalMetadata.swift#L67"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -146,7 +145,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DefaultAvailability": {
   "abstract" : [
     {
-      "text" : "A collection of modules and the default platform availability for symbols in that module.",
+      "text" : "A collection of default platform availability.",
       "type" : "text"
     }
   ],
@@ -354,7 +353,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : ", there is no source bundle on disk and the inputs were passed via command line parameters.",
+      "text" : ", there is no source catalog on disk and the inputs were passed via command line parameters.",
       "type" : "text"
     }
   ],
@@ -387,20 +386,6 @@
   "title" : "isGeneratedBundle",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/externalmetadata\/isgeneratedbundle"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PlatformVersion": {
   "abstract" : [

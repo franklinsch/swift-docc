@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -129,7 +129,6 @@
       "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTParametersRenderSection\/Equatable-Implementations",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTParametersRenderSection\/TextIndexing-Implementations"
       ],
       "title" : "Default Implementations"
@@ -211,17 +210,6 @@
   "title" : "RESTParametersRenderSection",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/restparametersrendersection"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RESTParametersRenderSection/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTParametersRenderSection\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/restparametersrendersection\/equatable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RESTParametersRenderSection/TextIndexing-Implementations": {
   "abstract" : [
@@ -395,7 +383,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "let"
+      "text" : "var"
     },
     {
       "kind" : "text",
@@ -473,7 +461,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "let"
+      "text" : "var"
     },
     {
       "kind" : "text",

@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext"
       ]
     ]
@@ -64,7 +63,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -98,6 +97,7 @@
       "anchor" : "Structures",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExperimentalCoverageConfiguration-swift.struct",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct"
       ],
       "title" : "Structures"
@@ -114,8 +114,10 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/experimentalCoverageConfiguration-swift.property",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/externalDocumentationConfiguration-swift.property",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/externalMetadata"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/externalMetadata",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/featureFlags"
       ],
       "title" : "Instance Properties"
     }
@@ -216,6 +218,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/ExperimentalCoverageConfiguration-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "A collection of configuration related to the experimental documentation coverage feature.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ExperimentalCoverageConfiguration"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExperimentalCoverageConfiguration-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ExperimentalCoverageConfiguration"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DocumentationContext.Configuration.ExperimentalCoverageConfiguration",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/experimentalcoverageconfiguration-swift.struct"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/ExternalDocumentationConfiguration-swift.struct": {
   "abstract" : [
     {
@@ -249,6 +285,61 @@
   "title" : "DocumentationContext.Configuration.ExternalDocumentationConfiguration",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/externaldocumentationconfiguration-swift.struct"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/experimentalCoverageConfiguration-swift.property": {
+  "abstract" : [
+    {
+      "text" : "Configuration related to the experimental documentation coverage feature.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "experimentalCoverageConfiguration"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
+      "text" : "DocumentationContext"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC13ConfigurationV",
+      "text" : "Configuration"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC13ConfigurationV020ExperimentalCoverageE0V",
+      "text" : "ExperimentalCoverageConfiguration"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/experimentalCoverageConfiguration-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "experimentalCoverageConfiguration",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/experimentalcoverageconfiguration-swift.property"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/externalDocumentationConfiguration-swift.property": {
   "abstract" : [
@@ -342,6 +433,43 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/externalmetadata"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/featureFlags": {
+  "abstract" : [
+    {
+      "text" : "A collection of feature flags.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "featureFlags"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12FeatureFlagsV",
+      "text" : "FeatureFlags"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/featureFlags",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "featureFlags",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/featureflags"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/init()": {
   "abstract" : [
     {
@@ -365,20 +493,6 @@
   "title" : "init()",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/init()"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextGroup": {
-  "abstract" : [
-    {
-      "text" : "Build and query the in-memory documentation model.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Context",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextgroup"
 }
 }
 }

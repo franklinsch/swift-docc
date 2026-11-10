@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/VariantContainer"
       ]
     ]
@@ -49,6 +48,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
         "text" : "Value"
       },
       {
@@ -91,6 +91,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
         "text" : "Value"
       },
       {
@@ -120,7 +121,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -173,6 +174,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
               "text" : "Value"
             },
             {
@@ -216,6 +218,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
               "text" : "Value"
             },
             {
@@ -301,20 +304,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/VariantCollection": {
   "abstract" : [
@@ -418,6 +407,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -460,6 +450,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {

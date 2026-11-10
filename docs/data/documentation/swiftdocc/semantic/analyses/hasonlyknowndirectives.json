@@ -64,7 +64,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -137,16 +137,6 @@
       "kind" : "declarations"
     }
   ],
-  "relationshipsSections" : [
-    {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis"
-      ],
-      "kind" : "relationships",
-      "title" : "Conforms To",
-      "type" : "conformsTo"
-    }
-  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -168,7 +158,8 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:for:in:problems:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:diagnostics:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:problems:)"
       ],
       "title" : "Instance Methods"
     }
@@ -337,7 +328,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasonlyknowndirectives"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasOnlyKnownDirectives/analyze(_:children:source:for:in:problems:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasOnlyKnownDirectives/analyze(_:children:source:diagnostics:)": {
   "abstract" : [
 
   ],
@@ -373,7 +364,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -382,7 +381,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -403,7 +410,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -412,16 +419,63 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "for"
+      "text" : "diagnostics"
     },
     {
       "kind" : "text",
       "text" : ": "
     },
     {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " ["
+    },
+    {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
-      "text" : "DocumentationBundle"
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV",
+      "text" : "Diagnostic"
+    },
+    {
+      "kind" : "text",
+      "text" : "])"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:diagnostics:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "analyze(_:children:source:diagnostics:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasonlyknowndirectives\/analyze(_:children:source:diagnostics:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasOnlyKnownDirectives/analyze(_:children:source:problems:)": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "analyze"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14BlockDirectiveV",
+      "text" : "BlockDirective"
     },
     {
       "kind" : "text",
@@ -429,7 +483,49 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "in"
+      "text" : "children"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST",
+      "text" : "Sequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown6MarkupP",
+      "text" : "Markup"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "source"
     },
     {
       "kind" : "text",
@@ -437,12 +533,12 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
-      "text" : "DocumentationContext"
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
+      "text" : "URL"
     },
     {
       "kind" : "text",
-      "text" : ", "
+      "text" : "?, "
     },
     {
       "kind" : "externalParam",
@@ -470,12 +566,12 @@
       "text" : "])"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:for:in:problems:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasOnlyKnownDirectives\/analyze(_:children:source:problems:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "analyze(_:children:source:for:in:problems:)",
+  "title" : "analyze(_:children:source:problems:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasonlyknowndirectives\/analyze(_:children:source:for:in:problems:)"
+  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasonlyknowndirectives\/analyze(_:children:source:problems:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasOnlyKnownDirectives/init(severityIfFound:allowedDirectives:allowsMarkup:allowsStructuredMarkup:)": {
   "abstract" : [
@@ -565,48 +661,6 @@
   "title" : "init(severityIfFound:allowedDirectives:allowsMarkup:allowsStructuredMarkup:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasonlyknowndirectives\/init(severityiffound:alloweddirectives:allowsmarkup:allowsstructuredmarkup:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SemanticAnalysis": {
-  "abstract" : [
-    {
-      "text" : "A focused semantic analysis of a ",
-      "type" : "text"
-    },
-    {
-      "code" : "BlockDirective",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", recording problems and producing a result.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "SemanticAnalysis"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SemanticAnalysis"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SemanticAnalysis",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semanticanalysis"
 }
 }
 }

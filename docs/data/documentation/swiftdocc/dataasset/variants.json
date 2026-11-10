@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset"
       ]
     ]
@@ -20,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC9DataAssetV8variantsSDyAA0C15TraitCollectionV10Foundation3URLVGvp",
+    "externalID" : "s:9SwiftDocC9DataAssetV8variantsSDyAA0C15TraitCollectionV20FoundationEssentials3URLVGvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -49,7 +48,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       },
       {
@@ -79,7 +78,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -110,7 +109,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             },
             {
@@ -264,7 +263,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -312,20 +311,6 @@
   "title" : "DataTraitCollection",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/datatraitcollection"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 }
 }
 }

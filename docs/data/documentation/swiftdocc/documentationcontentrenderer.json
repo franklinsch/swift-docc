@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -103,7 +103,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContentRenderer\/init(documentationContext:bundle:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContentRenderer\/init(context:)"
       ],
       "title" : "Initializers"
     }
@@ -204,10 +204,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontentrenderer\/referencegroup"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContentRenderer/init(documentationContext:bundle:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContentRenderer/init(context:)": {
   "abstract" : [
     {
-      "text" : "Creates a new content renderer for the given documentation context and bundle.",
+      "text" : "Creates a new content renderer for the given documentation context.",
       "type" : "text"
     }
   ],
@@ -222,7 +222,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "documentationContext"
+      "text" : "context"
     },
     {
       "kind" : "text",
@@ -235,32 +235,15 @@
     },
     {
       "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "bundle"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
-      "text" : "DocumentationBundle"
-    },
-    {
-      "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContentRenderer\/init(documentationContext:bundle:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContentRenderer\/init(context:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(documentationContext:bundle:)",
+  "title" : "init(context:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontentrenderer\/init(documentationcontext:bundle:)"
+  "url" : "\/documentation\/swiftdocc\/documentationcontentrenderer\/init(context:)"
 }
 }
 }

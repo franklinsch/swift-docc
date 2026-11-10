@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -128,7 +127,6 @@
       "anchor" : "Predefined-Checks",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AbstractContainsFormattedTextOnly",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DuplicateTopicsSections",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InvalidAdditionalTitle",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MissingAbstract",
@@ -159,7 +157,7 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/problems"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/diagnostics"
       ],
       "title" : "Instance Properties"
     },
@@ -167,9 +165,9 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitCodeBlock(_:)-494bl",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitInlineCode(_:)-8s5lb",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitText(_:)-7v8az"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitCodeBlock(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitInlineCode(_:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitText(_:)"
       ],
       "title" : "Instance Methods"
     },
@@ -180,16 +178,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/severity"
       ],
       "title" : "Type Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/Checker-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/MarkupVisitor-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/MarkupWalker-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -230,40 +218,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/AbstractContainsFormattedTextOnly": {
-  "abstract" : [
-    {
-      "text" : "A document’s abstract may only contain formatted text. Images and links are not allowed.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "AbstractContainsFormattedTextOnly"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AbstractContainsFormattedTextOnly",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "AbstractContainsFormattedTextOnly"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "AbstractContainsFormattedTextOnly",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/abstractcontainsformattedtextonly"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Checker": {
   "abstract" : [
     {
@@ -301,15 +255,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DuplicateTopicsSections": {
   "abstract" : [
     {
-      "text" : "A ",
-      "type" : "text"
-    },
-    {
-      "code" : "Document",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " may only have one level-2 “Topics” heading at the top level, since it serves as structured data for a documentation bundle’s hierarchy.",
+      "text" : "A checker that warns about multiple “Topics” sections.",
       "type" : "text"
     }
   ],
@@ -343,7 +289,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/InvalidAdditionalTitle": {
   "abstract" : [
     {
-      "text" : "A document should have a single title, i.e. a single first-level heading.",
+      "text" : "A checker that warns about additional first-level headings.",
       "type" : "text"
     }
   ],
@@ -442,39 +388,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/Checker-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/Checker-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Checker Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/checker-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/MarkupVisitor-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/MarkupVisitor-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "MarkupVisitor Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/markupvisitor-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/MarkupWalker-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/MarkupWalker-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "MarkupWalker Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/markupwalker-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/Term": {
   "abstract" : [
     {
@@ -509,6 +422,44 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/term"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/diagnostics": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "diagnostics"
+    },
+    {
+      "kind" : "text",
+      "text" : ": ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV",
+      "text" : "Diagnostic"
+    },
+    {
+      "kind" : "text",
+      "text" : "]"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/diagnostics",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "diagnostics",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/diagnostics"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/init(sourceFile:terms:)": {
   "abstract" : [
 
@@ -532,7 +483,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -546,15 +497,6 @@
     {
       "kind" : "text",
       "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC27NonInclusiveLanguageCheckerV",
-      "text" : "NonInclusiveLanguageChecker"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -572,44 +514,6 @@
   "title" : "init(sourceFile:terms:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/init(sourcefile:terms:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/problems": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "problems"
-    },
-    {
-      "kind" : "text",
-      "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC7ProblemV",
-      "text" : "Problem"
-    },
-    {
-      "kind" : "text",
-      "text" : "]"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/problems",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "problems",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/problems"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/severity": {
   "abstract" : [
@@ -656,7 +560,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/severity"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitCodeBlock(_:)-494bl": {
+"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitCodeBlock(_:)": {
   "abstract" : [
 
   ],
@@ -687,14 +591,14 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitCodeBlock(_:)-494bl",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitCodeBlock(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "visitCodeBlock(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visitcodeblock(_:)-494bl"
+  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visitcodeblock(_:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitInlineCode(_:)-8s5lb": {
+"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitInlineCode(_:)": {
   "abstract" : [
 
   ],
@@ -725,14 +629,14 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitInlineCode(_:)-8s5lb",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitInlineCode(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "visitInlineCode(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visitinlinecode(_:)-8s5lb"
+  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visitinlinecode(_:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitText(_:)-7v8az": {
+"doc://SwiftDocC/documentation/SwiftDocC/NonInclusiveLanguageChecker/visitText(_:)": {
   "abstract" : [
 
   ],
@@ -763,12 +667,12 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitText(_:)-7v8az",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NonInclusiveLanguageChecker\/visitText(_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "visitText(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visittext(_:)-7v8az"
+  "url" : "\/documentation\/swiftdocc\/noninclusivelanguagechecker\/visittext(_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/NonOverviewHeadingChecker": {
   "abstract" : [
@@ -831,20 +735,6 @@
   "title" : "SeeAlsoInTopicsHeadingChecker",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/seealsointopicsheadingchecker"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/StaticAnalysis": {
-  "abstract" : [
-    {
-      "text" : "Run static analysis checks on markup files.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Static Analysis",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/staticanalysis"
 }
 }
 }

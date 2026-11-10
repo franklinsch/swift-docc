@@ -1,6 +1,6 @@
 {
-  "bundleDisplayName" : "SwiftDocC",
-  "bundleIdentifier" : "SwiftDocC",
+  "bundleDisplayName" : "DocCCommon",
+  "bundleID" : "DocCCommon",
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,

@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -184,6 +184,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Article",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Assessments",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticArticleSubheading",
@@ -259,6 +260,20 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Semantic-Elements",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticVisitor",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticWalker",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupConvertible",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible"
+      ],
+      "title" : "Semantic Elements"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Operators",
@@ -292,14 +307,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses"
       ],
       "title" : "Enumerations"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -334,6 +341,40 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AlternateRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A directive that configures an alternate language representation of a symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlternateRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/alternaterepresentation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Article": {
   "abstract" : [
@@ -1141,6 +1182,41 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/markupcontainer"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/MarkupConvertible": {
+  "abstract" : [
+    {
+      "text" : "A type that can be initialized from markup.",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MarkupConvertible"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupConvertible",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MarkupConvertible"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MarkupConvertible",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/markupconvertible"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Media": {
   "abstract" : [
     {
@@ -1700,17 +1776,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic\/analyses"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semantic\/equatable-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Semantic/accept(_:)": {
   "abstract" : [
     {
@@ -1762,6 +1827,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SemanticC6accepty6ResultQzxzAA0C7VisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -1770,6 +1836,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SemanticC6accepty6ResultQzxzAA0C7VisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -1893,6 +1960,49 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semanticvisitor"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/SemanticWalker": {
+  "abstract" : [
+    {
+      "text" : "An interface for walking a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " tree without altering it.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SemanticWalker"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticWalker",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SemanticWalker"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SemanticWalker",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semanticwalker"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Small": {
   "abstract" : [
     {
@@ -1937,7 +2047,10 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Snippet": {
   "abstract" : [
-
+    {
+      "text" : "Embeds a code example from the project’s code snippets.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

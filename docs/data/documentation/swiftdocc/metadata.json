@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Metadata.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Metadata\/Metadata.swift#L32"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Metadata\/Metadata.swift#L33"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -137,10 +137,22 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Metadata-Directives",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationExtension",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TechnologyRoot"
+      ],
+      "title" : "Metadata Directives"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Child-Directives",
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationExtension",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TechnologyRoot",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayName",
@@ -169,14 +181,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata\/introducedVersion"
       ],
       "title" : "Type Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -211,6 +215,40 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AlternateRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A directive that configures an alternate language representation of a symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlternateRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/alternaterepresentation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/CallToAction": {
   "abstract" : [
@@ -415,17 +453,6 @@
   "title" : "Metadata.Availability",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/metadata\/availability"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Metadata/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/metadata\/directiveconvertible-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Metadata/PageKind": {
   "abstract" : [

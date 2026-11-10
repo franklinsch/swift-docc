@@ -97,8 +97,14 @@
           "code" : [
             "swift run --package-path bin\/benchmark benchmark --docc-arguments convert MyFramework.docc"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -138,8 +144,14 @@
           "code" : [
             "swift run --package-path bin\/benchmark benchmark compare-to <commit-ish> --docc-arguments convert MyFramework.docc"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -195,8 +207,14 @@
           "code" : [
             "swift run --package-path bin\/benchmark benchmark measure --base-benchmark benchmark-<commit-hash>.json --docc-arguments convert MyFramework.docc"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -261,8 +279,14 @@
             "  }",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "swift",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -286,8 +310,14 @@
           "code" : [
             "benchmark(add: BundlesCount(context: context))"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "swift",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -307,6 +337,7 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Adding-Diagnostics",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis"
       ],
       "title" : "Diagnostics and Analysis"
@@ -371,6 +402,20 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Adding-Diagnostics": {
+  "abstract" : [
+    {
+      "text" : "Display information to the developer about actionable issues with their documentation.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Adding-Diagnostics",
+  "kind" : "article",
+  "role" : "article",
+  "title" : "Adding user-facing diagnostics",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/adding-diagnostics"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Benchmark": {
   "abstract" : [
@@ -759,14 +804,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark3add0C3LogyxyXK_AA9BenchmarkCtAA0F6MetricRzlF1EL_xmfp",
       "text" : "E"
     },
     {
@@ -840,14 +886,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark5begin0C3LogxSgxyXK_AA9BenchmarkCtAA0F11BlockMetricRzlF1EL_xmfp",
       "text" : "E"
     },
     {
@@ -873,6 +920,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark5begin0C3LogxSgxyXK_AA9BenchmarkCtAA0F11BlockMetricRzlF1EL_xmfp",
       "text" : "E"
     },
     {
@@ -929,14 +977,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark3end0C3LogyxSgyXK_AA9BenchmarkCtAA0F11BlockMetricRzlF1EL_xmfp",
       "text" : "E"
     },
     {
@@ -1015,14 +1064,15 @@
     },
     {
       "kind" : "attribute",
-      "text" : "@autoclosure "
+      "text" : "@autoclosure"
     },
     {
       "kind" : "text",
-      "text" : "() -> "
+      "text" : " () -> "
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark4wrap0C3Log4bodyq_xyXK_AA9BenchmarkCq_yKXEtKAA0G11BlockMetricRzr0_lF1EL_xmfp",
       "text" : "E"
     },
     {
@@ -1064,6 +1114,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark4wrap0C3Log4bodyq_xyXK_AA9BenchmarkCq_yKXEtKAA0G11BlockMetricRzr0_lF6ResultL_q_mfp",
       "text" : "Result"
     },
     {
@@ -1080,6 +1131,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC9benchmark4wrap0C3Log4bodyq_xyXK_AA9BenchmarkCq_yKXEtKAA0G11BlockMetricRzr0_lF6ResultL_q_mfp",
       "text" : "Result"
     }
   ],

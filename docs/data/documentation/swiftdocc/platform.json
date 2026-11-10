@@ -2,8 +2,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -56,7 +55,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -106,7 +105,6 @@
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityIndex",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeDataExtractor",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeProvider",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Serializable",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyCodable",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AnyMetadata",
@@ -145,14 +143,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Platform\/version-swift.property"
       ],
       "title" : "Instance Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Platform\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -355,20 +345,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/availabilityindex"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationIndexing": {
-  "abstract" : [
-    {
-      "text" : "Create documentation indexes optimized for text search or navigation.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Indexing",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationindexing"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/InterfaceLanguage": {
   "abstract" : [
     {
@@ -467,17 +443,6 @@
   "title" : "Platform",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/platform"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Platform/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Platform\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/platform\/equatable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Platform/Name-swift.struct": {
   "abstract" : [
@@ -651,15 +616,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC8PlatformV",
-      "text" : "Platform"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC8PlatformV4NameV",
       "text" : "Name"
     },
@@ -674,15 +630,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC8PlatformV",
-      "text" : "Platform"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -751,15 +698,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC8PlatformV",
-      "text" : "Platform"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC8PlatformV4NameV",
       "text" : "Name"
     }
@@ -821,15 +759,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC8PlatformV",
-      "text" : "Platform"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC8PlatformV7VersionV",
       "text" : "Version"
     }
@@ -874,41 +803,6 @@
   "title" : "RenderNodeDataExtractor",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendernodedataextractor"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderNodeProvider": {
-  "abstract" : [
-    {
-      "text" : "A protocol to provide data to be indexed.",
-      "type" : "text"
-    }
-  ],
-  "deprecated" : true,
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "RenderNodeProvider"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderNodeProvider",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "RenderNodeProvider"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "RenderNodeProvider",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/rendernodeprovider"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Serializable": {
   "abstract" : [

@@ -8,9 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolReferenceRendering"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -63,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -87,6 +85,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/DocCCommon\/documentation\/DocCCommon\/FastJSONDecodable",
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE",
         "doc:\/\/SwiftDocC\/SQ",
@@ -128,9 +127,11 @@
       "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/beta",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/deprecated",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/introduced",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/isBeta",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/isUnconditionallyDeprecated",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/message",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/name",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/obsoleted",
@@ -152,7 +153,7 @@
       "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/Equatable-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/FastJSONDecodable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -171,6 +172,48 @@
   ]
 , 
 "references": {
+"doc://DocCCommon/documentation/DocCCommon/FastJSONDecodable": {
+  "abstract" : [
+    {
+      "text" : "A protocol for types that can be decoded using a ",
+      "type" : "text"
+    },
+    {
+      "code" : "FastSymbolGraphJSONDecoder",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "FastJSONDecodable"
+    }
+  ],
+  "identifier" : "doc:\/\/DocCCommon\/documentation\/DocCCommon\/FastJSONDecodable",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "text",
+      "text" : "FastJSONDecodable"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "FastJSONDecodable",
+  "type" : "topic",
+  "url" : "\/documentation\/docccommon\/fastjsondecodable"
+},
 "doc://SwiftDocC/SE": {
   "identifier" : "doc:\/\/SwiftDocC\/SE",
   "title" : "Swift.Encodable",
@@ -239,16 +282,61 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/availabilityrenderitem"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/Equatable-Implementations": {
+"doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/FastJSONDecodable-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/Equatable-Implementations",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/FastJSONDecodable-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
+  "title" : "FastJSONDecodable Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/availabilityrenderitem\/equatable-implementations"
+  "url" : "\/documentation\/swiftdocc\/availabilityrenderitem\/fastjsondecodable-implementations"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/beta": {
+  "abstract" : [
+    {
+      "text" : "If ",
+      "type" : "text"
+    },
+    {
+      "code" : "true",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", the symbol is introduced in a beta version of this platform.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "beta"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/beta",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "beta",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/availabilityrenderitem\/beta"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/deprecated": {
   "abstract" : [
@@ -318,7 +406,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -360,7 +456,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -426,19 +530,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/isBeta": {
   "abstract" : [
-    {
-      "text" : "If ",
-      "type" : "text"
-    },
-    {
-      "code" : "true",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", the symbol is introduced in a beta version of this platform.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -473,6 +567,51 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/availabilityrenderitem\/isbeta"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/isUnconditionallyDeprecated": {
+  "abstract" : [
+    {
+      "text" : "If ",
+      "type" : "text"
+    },
+    {
+      "code" : "true",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", the symbol is deprecated on this or all platforms.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isUnconditionallyDeprecated"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityRenderItem\/isUnconditionallyDeprecated",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isUnconditionallyDeprecated",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/availabilityrenderitem\/isunconditionallydeprecated"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/message": {
   "abstract" : [
     {
@@ -480,6 +619,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -562,6 +702,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -603,6 +744,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -639,19 +781,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AvailabilityRenderItem/unconditionallyDeprecated": {
   "abstract" : [
-    {
-      "text" : "If ",
-      "type" : "text"
-    },
-    {
-      "code" : "true",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", the symbol is deprecated on this or all platforms.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -701,6 +833,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -768,34 +901,6 @@
   "title" : "DiffAvailability",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diffavailability"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SymbolReferenceRendering": {
-  "abstract" : [
-    {
-      "text" : "Render rich reference documentation for programming symbols.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolReferenceRendering",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Symbol Reference Rendering",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbolreferencerendering"
 }
 }
 }

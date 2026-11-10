@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -85,6 +85,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Assessments",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticArticleSubheading",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticSeeAlso",
@@ -148,12 +149,28 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Semantic-Elements",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticVisitor",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticWalker",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupConvertible"
+      ],
+      "title" : "Semantic Elements"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:in:problems:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:featureFlags:diagnostics:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:featureFlags:problems:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:problems:)"
       ],
       "title" : "Initializers"
     },
@@ -178,7 +195,7 @@
       "anchor" : "Type-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/canConvertDirective(_:)-4s1ii"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/canConvertDirective(_:)"
       ],
       "title" : "Type Methods"
     }
@@ -210,6 +227,40 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/AlternateRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A directive that configures an alternate language representation of a symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlternateRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/alternaterepresentation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Assessments": {
   "abstract" : [
@@ -704,7 +755,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/directiveconvertible"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/canConvertDirective(_:)-4s1ii": {
+"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/canConvertDirective(_:)": {
   "abstract" : [
     {
       "text" : "Returns a Boolean value indicating whether the ",
@@ -760,13 +811,13 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/canConvertDirective(_:)-4s1ii",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/canConvertDirective(_:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
   "title" : "canConvertDirective(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/canconvertdirective(_:)-4s1ii"
+  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/canconvertdirective(_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/directiveName": {
   "abstract" : [
@@ -822,13 +873,14 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/directiveconvertible\/directivename"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/init(from:source:for:in:problems:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/init(from:source:for:featureFlags:diagnostics:)": {
   "abstract" : [
     {
       "text" : "Creates a semantic object from the parsed block directive markup and performs semantic analysis to verify that the semantic object is valid.",
       "type" : "text"
     }
   ],
+  "defaultImplementations" : 1,
   "fragments" : [
     {
       "kind" : "identifier",
@@ -865,7 +917,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -882,7 +934,133 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
+      "text" : "DocumentationContext"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV",
+      "text" : "Inputs"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "featureFlags"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12FeatureFlagsV",
+      "text" : "FeatureFlags"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "diagnostics"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV",
+      "text" : "Diagnostic"
+    },
+    {
+      "kind" : "text",
+      "text" : "])"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:featureFlags:diagnostics:)",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "init(from:source:for:featureFlags:diagnostics:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/init(from:source:for:featureflags:diagnostics:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/init(from:source:for:featureFlags:problems:)": {
+  "abstract" : [
+
+  ],
+  "defaultImplementations" : 1,
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "from"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14BlockDirectiveV",
+      "text" : "BlockDirective"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "source"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundlea",
       "text" : "DocumentationBundle"
     },
     {
@@ -891,7 +1069,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "in"
+      "text" : "featureFlags"
     },
     {
       "kind" : "text",
@@ -899,8 +1077,8 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
-      "text" : "DocumentationContext"
+      "preciseIdentifier" : "s:9SwiftDocC12FeatureFlagsV",
+      "text" : "FeatureFlags"
     },
     {
       "kind" : "text",
@@ -932,13 +1110,113 @@
       "text" : "])"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:in:problems:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:featureFlags:problems:)",
   "kind" : "symbol",
   "required" : true,
   "role" : "symbol",
-  "title" : "init(from:source:for:in:problems:)",
+  "title" : "init(from:source:for:featureFlags:problems:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/init(from:source:for:in:problems:)"
+  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/init(from:source:for:featureflags:problems:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/init(from:source:for:problems:)": {
+  "abstract" : [
+
+  ],
+  "defaultImplementations" : 1,
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "?("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "from"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14BlockDirectiveV",
+      "text" : "BlockDirective"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "source"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundlea",
+      "text" : "DocumentationBundle"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "problems"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC7ProblemV",
+      "text" : "Problem"
+    },
+    {
+      "kind" : "text",
+      "text" : "])"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DirectiveConvertible\/init(from:source:for:problems:)",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "init(from:source:for:problems:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/directiveconvertible\/init(from:source:for:problems:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DirectiveConvertible/introducedVersion": {
   "abstract" : [
@@ -1277,6 +1555,83 @@
   "title" : "Links",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/links"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/MarkupContainer": {
+  "abstract" : [
+    {
+      "text" : "A general purpose ",
+      "type" : "text"
+    },
+    {
+      "code" : "Markup",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " semantic container.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MarkupContainer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupContainer",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MarkupContainer"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MarkupContainer",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/markupcontainer"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/MarkupConvertible": {
+  "abstract" : [
+    {
+      "text" : "A type that can be initialized from markup.",
+      "type" : "text"
+    }
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "MarkupConvertible"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MarkupConvertible",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "MarkupConvertible"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "MarkupConvertible",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/markupconvertible"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Metadata": {
   "abstract" : [
@@ -1702,6 +2057,92 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/SemanticVisitor": {
+  "abstract" : [
+    {
+      "text" : "Visits ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " nodes and returns a result.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SemanticVisitor"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticVisitor",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SemanticVisitor"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SemanticVisitor",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semanticvisitor"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/SemanticWalker": {
+  "abstract" : [
+    {
+      "text" : "An interface for walking a ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : " tree without altering it.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SemanticWalker"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticWalker",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "SemanticWalker"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "SemanticWalker",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semanticwalker"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Small": {
   "abstract" : [
     {
@@ -1746,7 +2187,10 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Snippet": {
   "abstract" : [
-
+    {
+      "text" : "Embeds a code example from the project’s code snippets.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

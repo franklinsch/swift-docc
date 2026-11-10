@@ -9,8 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayScale"
       ]
     ]
@@ -43,7 +41,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DataAssetManager.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Bundle%20Assets\/DataAssetManager.swift#L314"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Infrastructure\/Bundle%20Assets\/DataAssetManager.swift#L330"
     },
     "role" : "symbol",
     "roleHeading" : "Case",
@@ -58,7 +56,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -114,40 +112,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DataAsset": {
-  "abstract" : [
-    {
-      "text" : "A container for a collection of data that represent multiple ways to describe a single asset.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "DataAsset"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DataAsset",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "DataAsset"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "DataAsset",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/dataasset"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DisplayScale": {
   "abstract" : [
@@ -210,20 +174,6 @@
   "title" : "DisplayScale.triple",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/displayscale\/triple"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/InputDiscovery": {
-  "abstract" : [
-    {
-      "text" : "Learn how to discover documentation inputs on the file system.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/InputDiscovery",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Input Discovery",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/inputdiscovery"
 }
 }
 }

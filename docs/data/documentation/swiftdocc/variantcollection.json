@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -47,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "VariantCollection.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection.swift#L21"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection.swift#L19"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -207,7 +206,6 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/s8CopyableP",
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE",
         "doc:\/\/SwiftDocC\/SQ"
@@ -482,20 +480,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendernode\/variantoverrides"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/VariantCollection": {
   "abstract" : [
     {
@@ -641,6 +625,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     }
   ],
@@ -678,7 +663,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -727,6 +720,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -740,23 +734,6 @@
     {
       "kind" : "text",
       "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV",
-      "text" : "VariantCollection"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -794,7 +771,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -916,6 +901,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -933,6 +919,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -950,6 +937,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value3L_qd_1_mfp",
       "text" : "Value3"
     },
     {
@@ -975,6 +963,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -983,6 +972,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -991,6 +981,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from__9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GAIyqd_1_GxAA0ghI5TraitV_qd__qd_0_qd_1_tXEtcr1_lufc6Value3L_qd_1_mfp",
       "text" : "Value3"
     },
     {
@@ -999,6 +990,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1104,6 +1096,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from_9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GxAA0ghI5TraitV_qd__qd_0_tXEtcr0_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1121,6 +1114,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from_9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GxAA0ghI5TraitV_qd__qd_0_tXEtcr0_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1146,6 +1140,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from_9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GxAA0ghI5TraitV_qd__qd_0_tXEtcr0_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1154,6 +1149,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from_9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AIyqd_0_GxAA0ghI5TraitV_qd__qd_0_tXEtcr0_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1162,6 +1158,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1268,6 +1265,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1293,6 +1291,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1406,6 +1405,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1431,6 +1431,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1456,6 +1457,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1464,6 +1466,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1472,6 +1475,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1577,6 +1581,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AJyqd_0_GxAA0ijK5TraitV_qd__qd_0_SgtXEtcr0_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1602,6 +1607,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AJyqd_0_GxAA0ijK5TraitV_qd__qd_0_SgtXEtcr0_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1627,6 +1633,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AJyqd_0_GxAA0ijK5TraitV_qd__qd_0_SgtXEtcr0_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -1635,6 +1642,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_AJyqd_0_GxAA0ijK5TraitV_qd__qd_0_SgtXEtcr0_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -1643,6 +1651,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1740,6 +1749,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from9transformACyqd__SgGAA25DocumentationDataVariantsVyqd__G_AfA0ghI5TraitV_AFtXEtcAFRszSeRd__SERd__lufc7WrappedL_qd__mfp",
       "text" : "Wrapped"
     },
     {
@@ -1765,6 +1775,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1773,6 +1784,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -1870,6 +1882,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_xAA0ghI5TraitV_qd__tXEtclufc11SymbolValueL_qd__mfp",
       "text" : "SymbolValue"
     },
     {
@@ -1895,6 +1908,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from9transformACyxGSgAA25DocumentationDataVariantsVyqd__G_xAA0ghI5TraitV_qd__tXEtclufc11SymbolValueL_qd__mfp",
       "text" : "SymbolValue"
     },
     {
@@ -1903,6 +1917,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2000,6 +2015,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from9transformACyxGAA25DocumentationDataVariantsVyqd__G_xAA0ghI5TraitV_qd__tSgXEtclufc11SymbolValueL_qd__mfp",
       "text" : "SymbolValue"
     },
     {
@@ -2025,6 +2041,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from9transformACyxGAA25DocumentationDataVariantsVyqd__G_xAA0ghI5TraitV_qd__tSgXEtclufc11SymbolValueL_qd__mfp",
       "text" : "SymbolValue"
     },
     {
@@ -2033,6 +2050,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2122,6 +2140,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2147,6 +2166,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2155,6 +2175,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2203,6 +2224,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -2211,6 +2233,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV9mapValuesyACyqd__Gqd__xXESeRd__SERd__lF16TransformedValueL_qd__mfp",
       "text" : "TransformedValue"
     },
     {
@@ -2228,6 +2251,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV9mapValuesyACyqd__Gqd__xXESeRd__SERd__lF16TransformedValueL_qd__mfp",
       "text" : "TransformedValue"
     },
     {
@@ -2265,23 +2289,6 @@
     {
       "kind" : "text",
       "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV",
-      "text" : "VariantCollection"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",
@@ -2435,11 +2442,6 @@
   "title" : "VariantPatchOperation",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/variantpatchoperation"
-},
-"doc://SwiftDocC/s8CopyableP": {
-  "identifier" : "doc:\/\/SwiftDocC\/s8CopyableP",
-  "title" : "Swift.Copyable",
-  "type" : "unresolvable"
 }
 }
 }

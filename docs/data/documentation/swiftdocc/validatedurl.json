@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Utilities"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -243,14 +242,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ValidatedURL\/components"
       ],
       "title" : "Instance Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ValidatedURL\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -291,17 +282,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Utilities": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Utilities",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Utility APIs",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/utilities"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/ValidatedURL": {
   "abstract" : [
     {
@@ -336,17 +316,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/validatedurl"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/ValidatedURL/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/ValidatedURL\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/validatedurl\/equatable-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/ValidatedURL/components": {
   "abstract" : [
     {
@@ -373,7 +342,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation13URLComponentsV",
+      "preciseIdentifier" : "s:20FoundationEssentials13URLComponentsV",
       "text" : "URLComponents"
     }
   ],

@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -400,8 +399,14 @@
             "    @CallToAction(url: \"https:\/\/example.com\/sample.zip\", purpose: download)",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "markdown",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -439,6 +444,7 @@
       "anchor" : "Child-Directives",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationExtension",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/TechnologyRoot",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DisplayName",
@@ -488,14 +494,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CallToAction\/Purpose-swift.enum"
       ],
       "title" : "Enumerations"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CallToAction\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -531,6 +529,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/AlternateRepresentation": {
+  "abstract" : [
+    {
+      "text" : "A directive that configures an alternate language representation of a symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AlternateRepresentation",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "AlternateRepresentation"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "AlternateRepresentation",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/alternaterepresentation"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/CallToAction": {
   "abstract" : [
     {
@@ -564,17 +596,6 @@
   "title" : "CallToAction",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/calltoaction"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/CallToAction/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CallToAction\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/calltoaction\/directiveconvertible-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/CallToAction/Purpose-swift.enum": {
   "abstract" : [
@@ -841,7 +862,11 @@
     },
     {
       "kind" : "text",
-      "text" : ": "
+      "text" : ": Markdown"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -879,15 +904,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC12CallToActionC",
-      "text" : "CallToAction"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -932,7 +948,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {

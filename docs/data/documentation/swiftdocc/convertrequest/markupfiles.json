@@ -19,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC14ConvertRequestV11markupFilesSay10Foundation4DataVGvp",
+    "externalID" : "s:9SwiftDocC14ConvertRequestV11markupFilesSay20FoundationEssentials4DataVGvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -39,7 +39,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation4DataV",
+        "preciseIdentifier" : "s:20FoundationEssentials4DataV",
         "text" : "Data"
       },
       {
@@ -69,7 +69,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -90,7 +90,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation4DataV",
+              "preciseIdentifier" : "s:20FoundationEssentials4DataV",
               "text" : "Data"
             },
             {
@@ -115,7 +115,7 @@
     {
       "anchor" : "Related-Documentation",
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationBundle\/markupURLs"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Inputs\/markupURLs"
       ],
       "title" : "Related Documentation"
     }
@@ -208,7 +208,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation4DataV",
+      "preciseIdentifier" : "s:20FoundationEssentials4DataV",
       "text" : "Data"
     },
     {
@@ -223,7 +223,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/convertrequest\/markupfiles"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationBundle/markupURLs": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Inputs/markupURLs": {
   "abstract" : [
     {
       "text" : "Documentation markup input files for this unit of documentation.",
@@ -249,7 +249,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -257,12 +257,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationBundle\/markupURLs",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Inputs\/markupURLs",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "markupURLs",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationbundle\/markupurls"
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/inputs\/markupurls"
 }
 }
 }

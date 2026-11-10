@@ -8,9 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/JSONPatchOperation"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -48,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "PatchOperation.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/PatchOperation.swift#L19"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/PatchOperation.swift#L17"
     },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
@@ -63,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -177,15 +175,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PatchOperation\/init(rawValue:)"
       ],
       "title" : "Initializers"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PatchOperation\/Equatable-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PatchOperation\/RawRepresentable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -241,40 +230,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/JSONPatchOperation": {
-  "abstract" : [
-    {
-      "text" : "A patch operation to update a JSON value.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "enum"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "JSONPatchOperation"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/JSONPatchOperation",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "JSONPatchOperation"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "JSONPatchOperation",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/jsonpatchoperation"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/PatchOperation": {
   "abstract" : [
     {
@@ -308,28 +263,6 @@
   "title" : "PatchOperation",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/patchoperation"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PatchOperation/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PatchOperation\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/patchoperation\/equatable-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PatchOperation/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PatchOperation\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/patchoperation\/rawrepresentable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PatchOperation/add": {
   "abstract" : [
@@ -452,20 +385,6 @@
   "title" : "PatchOperation.replace",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/patchoperation\/replace"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
 },
 "https://datatracker.ietf.org/doc/html/rfc6902": {
   "identifier" : "https:\/\/datatracker.ietf.org\/doc\/html\/rfc6902",

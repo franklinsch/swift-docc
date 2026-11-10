@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage"
       ]
     ]
@@ -48,7 +47,7 @@
     ],
     "remoteSource" : {
       "fileName" : "PageImage.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Metadata\/PageImage.swift#L47"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Metadata\/PageImage.swift#L57"
     },
     "role" : "symbol",
     "roleHeading" : "Enumeration",
@@ -63,7 +62,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -122,15 +121,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage\/Purpose-swift.enum\/init(rawValue:)"
       ],
       "title" : "Initializers"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage\/Purpose-swift.enum\/Equatable-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage\/Purpose-swift.enum\/RawRepresentable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -175,40 +165,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Metadata": {
-  "abstract" : [
-    {
-      "text" : "A directive that contains various metadata about a page.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Metadata"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Metadata",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Metadata"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Metadata",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/metadata"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PageImage": {
   "abstract" : [
@@ -277,28 +233,6 @@
   "title" : "PageImage.Purpose",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/pageimage\/purpose-swift.enum"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PageImage/Purpose-swift.enum/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage\/Purpose-swift.enum\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/pageimage\/purpose-swift.enum\/equatable-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PageImage/Purpose-swift.enum/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PageImage\/Purpose-swift.enum\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/pageimage\/purpose-swift.enum\/rawrepresentable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PageImage/Purpose-swift.enum/card": {
   "abstract" : [

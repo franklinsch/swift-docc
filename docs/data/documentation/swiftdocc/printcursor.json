@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -108,7 +108,7 @@
       "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/_(_:_:)-1q572"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/_(_:_:)"
       ],
       "title" : "Operators"
     },
@@ -130,15 +130,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/line"
       ],
       "title" : "Instance Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/Comparable-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -218,29 +209,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/printcursor"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/PrintCursor/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/printcursor\/comparable-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PrintCursor/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/printcursor\/equatable-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PrintCursor/_(_:_:)-1q572": {
+"doc://SwiftDocC/documentation/SwiftDocC/PrintCursor/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -297,12 +266,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/_(_:_:)-1q572",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PrintCursor\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/printcursor\/_(_:_:)-1q572"
+  "url" : "\/documentation\/swiftdocc\/printcursor\/_(_:_:)"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/PrintCursor/column": {
   "abstract" : [

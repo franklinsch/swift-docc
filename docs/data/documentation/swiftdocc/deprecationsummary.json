@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DeprecationSummary.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/DeprecationSummary.swift#L32"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/DeprecationSummary.swift#L34"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -145,8 +145,14 @@
             "    Use ``getBytes(_:length:)`` or ``getBytes(_:range:)`` instead.",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "md",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -164,6 +170,30 @@
             }
           ],
           "type" : "paragraph"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "Before Swift-DocC 6.1, ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "@DeprecationSummary",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " was not supported in documentation comments.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "Earlier versions",
+          "style" : "note",
+          "type" : "aside"
         },
         {
           "content" : [
@@ -236,6 +266,17 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Symbol-Reference-Directives",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformName",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol"
+      ],
+      "title" : "Symbol Reference Directives"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Instance-Properties",
@@ -261,14 +302,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecationSummary\/introducedVersion"
       ],
       "title" : "Type Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecationSummary\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -338,17 +371,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/deprecationsummary"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DeprecationSummary/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecationSummary\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/deprecationsummary\/directiveconvertible-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/DeprecationSummary/accept(_:)": {
   "abstract" : [
 
@@ -388,6 +410,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC18DeprecationSummaryC6accepty6ResultQzxzAA15SemanticVisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -396,6 +419,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC18DeprecationSummaryC6accepty6ResultQzxzAA15SemanticVisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -562,6 +586,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/directiveconvertible"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/PlatformName": {
+  "abstract" : [
+    {
+      "text" : "A supported platform’s name representation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PlatformName"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformName",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PlatformName"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PlatformName",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/platformname"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Semantic": {
   "abstract" : [
     {
@@ -595,6 +653,40 @@
   "title" : "Semantic",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol": {
+  "abstract" : [
+    {
+      "text" : "A programming symbol semantic type.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Symbol"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Symbol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Symbol",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/symbol"
 }
 }
 }

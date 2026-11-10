@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTResponseRenderSection",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTResponseRenderSection\/TextIndexing-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTResponseRenderSection"
       ]
     ]
   },
@@ -62,7 +61,15 @@
       },
       {
         "kind" : "text",
-        "text" : " : any "
+        "text" : " : "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -101,7 +108,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -135,7 +142,15 @@
             },
             {
               "kind" : "text",
-              "text" : " : any "
+              "text" : " : "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReference",
@@ -228,17 +243,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/restresponserendersection"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RESTResponseRenderSection/TextIndexing-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RESTResponseRenderSection\/TextIndexing-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "TextIndexing Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/restresponserendersection\/textindexing-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/RESTResponseRenderSection/rawIndexableTextContent(references:)": {
   "abstract" : [
 
@@ -275,7 +279,15 @@
     },
     {
       "kind" : "text",
-      "text" : " : any "
+      "text" : " : "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",

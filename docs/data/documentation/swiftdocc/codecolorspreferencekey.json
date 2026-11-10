@@ -8,12 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Communication"
-      ],
-      [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -66,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -129,7 +124,9 @@
         "doc:\/\/SwiftDocC\/Se",
         "doc:\/\/SwiftDocC\/SE",
         "doc:\/\/SwiftDocC\/SQ",
-        "doc:\/\/SwiftDocC\/SH"
+        "doc:\/\/SwiftDocC\/SH",
+        "doc:\/\/SwiftDocC\/s8SendableP",
+        "doc:\/\/SwiftDocC\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -149,10 +146,8 @@
       "anchor" : "Communication-Bridge",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CommunicationBridge",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CommunicationBridgeError",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationSchemeHandler",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Message",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/MessageType",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColors"
@@ -200,14 +195,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColorsPreferenceKey\/typeAnnotation"
       ],
       "title" : "Type Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColorsPreferenceKey\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -325,17 +312,6 @@
   "title" : "CodeColorsPreferenceKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/codecolorspreferencekey"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/CodeColorsPreferenceKey/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/CodeColorsPreferenceKey\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/codecolorspreferencekey\/equatable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/CodeColorsPreferenceKey/background": {
   "abstract" : [
@@ -679,7 +655,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -766,7 +750,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": any "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -1190,20 +1182,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/codecolorspreferencekey\/typeannotation"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Communication": {
-  "abstract" : [
-    {
-      "text" : "Offer native integration of DocC in your IDE.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Communication",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Communication Bridge",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/communication"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/CommunicationBridge": {
   "abstract" : [
     {
@@ -1271,51 +1249,6 @@
   "title" : "CommunicationBridgeError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/communicationbridgeerror"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContextGroup": {
-  "abstract" : [
-    {
-      "text" : "Build and query the in-memory documentation model.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContextGroup",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Context",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontextgroup"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationSchemeHandler": {
-  "abstract" : [
-
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationSchemeHandler"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationSchemeHandler",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "DocumentationSchemeHandler"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "DocumentationSchemeHandler",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationschemehandler"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Message": {
   "abstract" : [
@@ -1385,39 +1318,15 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/messagetype"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/WebKitCommunicationBridge": {
-  "abstract" : [
-    {
-      "text" : "Provides bi-directional communication with a documentation renderer via JavaScript calls in a web view.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "struct"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "WebKitCommunicationBridge"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/WebKitCommunicationBridge",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "WebKitCommunicationBridge"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "WebKitCommunicationBridge",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/webkitcommunicationbridge"
+"doc://SwiftDocC/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDocC\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
+},
+"doc://SwiftDocC/s8SendableP": {
+  "identifier" : "doc:\/\/SwiftDocC\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

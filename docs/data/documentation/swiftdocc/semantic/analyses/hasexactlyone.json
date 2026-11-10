@@ -5,9 +5,8 @@
       "type" : "text"
     },
     {
-      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis\/Result",
-      "isActive" : true,
-      "type" : "reference"
+      "code" : "SemanticAnalysis\/Result",
+      "type" : "codeVoice"
     },
     {
       "text" : ". If so, return that child and the remainder.",
@@ -73,7 +72,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -190,16 +189,6 @@
       "kind" : "declarations"
     }
   ],
-  "relationshipsSections" : [
-    {
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis"
-      ],
-      "kind" : "relationships",
-      "title" : "Conforms To",
-      "type" : "conformsTo"
-    }
-  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -213,7 +202,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/init(severityIfNotFound:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/init(severityIfNotFound:featureFlags:)"
       ],
       "title" : "Initializers"
     },
@@ -221,7 +210,8 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:in:problems:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:diagnostics:)",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:problems:)"
       ],
       "title" : "Instance Methods"
     }
@@ -363,9 +353,8 @@
       "type" : "text"
     },
     {
-      "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis\/Result",
-      "isActive" : true,
-      "type" : "reference"
+      "code" : "SemanticAnalysis\/Result",
+      "type" : "codeVoice"
     },
     {
       "text" : ". If so, return that child and the remainder.",
@@ -399,7 +388,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasExactlyOne/analyze(_:children:source:for:in:problems:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasExactlyOne/analyze(_:children:source:for:diagnostics:)": {
   "abstract" : [
 
   ],
@@ -435,7 +424,15 @@
     },
     {
       "kind" : "text",
-      "text" : ": some "
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -444,7 +441,15 @@
     },
     {
       "kind" : "text",
-      "text" : "<any "
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -465,7 +470,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -482,8 +487,17 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundleV",
-      "text" : "DocumentationBundle"
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
+      "text" : "DocumentationContext"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV",
+      "text" : "Inputs"
     },
     {
       "kind" : "text",
@@ -491,7 +505,37 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "in"
+      "text" : "diagnostics"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "inout"
+    },
+    {
+      "kind" : "text",
+      "text" : " ["
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC10DiagnosticV",
+      "text" : "Diagnostic"
+    },
+    {
+      "kind" : "text",
+      "text" : "]) -> ("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SemanticC8AnalysesO13HasExactlyOneV5Childq_mfp",
+      "text" : "Child"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, remainder"
     },
     {
       "kind" : "text",
@@ -499,8 +543,123 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
-      "text" : "DocumentationContext"
+      "preciseIdentifier" : "s:9SwiftDocC15MarkupContainerC",
+      "text" : "MarkupContainer"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:diagnostics:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "analyze(_:children:source:for:diagnostics:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone\/analyze(_:children:source:for:diagnostics:)"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasExactlyOne/analyze(_:children:source:for:problems:)": {
+  "abstract" : [
+
+  ],
+  "deprecated" : true,
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "analyze"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown14BlockDirectiveV",
+      "text" : "BlockDirective"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "children"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "some"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ST",
+      "text" : "Sequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:8Markdown6MarkupP",
+      "text" : "Markup"
+    },
+    {
+      "kind" : "text",
+      "text" : ">, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "source"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
+      "text" : "URL"
+    },
+    {
+      "kind" : "text",
+      "text" : "?, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC19DocumentationBundlea",
+      "text" : "DocumentationBundle"
     },
     {
       "kind" : "text",
@@ -533,6 +692,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC8SemanticC8AnalysesO13HasExactlyOneV5Childq_mfp",
       "text" : "Child"
     },
     {
@@ -553,14 +713,14 @@
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:in:problems:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/analyze(_:children:source:for:problems:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "analyze(_:children:source:for:in:problems:)",
+  "title" : "analyze(_:children:source:for:problems:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone\/analyze(_:children:source:for:in:problems:)"
+  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone\/analyze(_:children:source:for:problems:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasExactlyOne/init(severityIfNotFound:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Semantic/Analyses/HasExactlyOne/init(severityIfNotFound:featureFlags:)": {
   "abstract" : [
 
   ],
@@ -588,86 +748,32 @@
     },
     {
       "kind" : "text",
-      "text" : "?)"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/init(severityIfNotFound:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "init(severityIfNotFound:)",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone\/init(severityifnotfound:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SemanticAnalysis": {
-  "abstract" : [
-    {
-      "text" : "A focused semantic analysis of a ",
-      "type" : "text"
+      "text" : "?, "
     },
     {
-      "code" : "BlockDirective",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : ", recording problems and producing a result.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "protocol"
+      "kind" : "externalParam",
+      "text" : "featureFlags"
     },
     {
       "kind" : "text",
-      "text" : " "
+      "text" : ": "
     },
     {
-      "kind" : "identifier",
-      "text" : "SemanticAnalysis"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "SemanticAnalysis"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "SemanticAnalysis",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semanticanalysis"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SemanticAnalysis/Result": {
-  "abstract" : [
-    {
-      "text" : "The result of the analysis.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "associatedtype"
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12FeatureFlagsV",
+      "text" : "FeatureFlags"
     },
     {
       "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Result"
+      "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SemanticAnalysis\/Result",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Semantic\/Analyses\/HasExactlyOne\/init(severityIfNotFound:featureFlags:)",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
-  "title" : "Result",
+  "title" : "init(severityIfNotFound:featureFlags:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/semanticanalysis\/result"
+  "url" : "\/documentation\/swiftdocc\/semantic\/analyses\/hasexactlyone\/init(severityifnotfound:featureflags:)"
 }
 }
 }

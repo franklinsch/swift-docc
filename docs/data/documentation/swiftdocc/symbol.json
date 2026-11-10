@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Symbol.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/Symbol.swift#L98"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/Symbol.swift#L92"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -179,11 +179,23 @@
   "sections" : [
 
   ],
+  "seeAlsoSections" : [
+    {
+      "anchor" : "Symbol-Reference-Directives",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecationSummary",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformName"
+      ],
+      "title" : "Symbol Reference Directives"
+    }
+  ],
   "topicSections" : [
     {
       "anchor" : "Properties",
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/titleVariants",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/proseVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/subHeadingVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/navigatorVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/roleHeadingVariants",
@@ -209,13 +221,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/seeAlsoVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/returnsSectionVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/parametersSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/dictionaryKeysSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/possibleValuesSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpEndpointSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpParametersSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpResponsesSectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpBodySectionVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/redirectsVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/abstractVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/isDeprecatedVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/isSPIVariants"
@@ -275,7 +280,13 @@
       "identifiers" : [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/alternateDeclarationVariants",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/alternateSignatureVariants",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/crossImportOverlayModule"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/crossImportOverlayModule",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/dictionaryKeysSection",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpBodySection",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpEndpointSection",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpParametersSection",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpResponsesSection",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/possibleValuesSection"
       ],
       "title" : "Instance Properties"
     },
@@ -287,15 +298,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/addSwiftExtensionConstraint(extendedModule:extendedSymbolKind:constraint:)"
       ],
       "title" : "Instance Methods"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/Abstracted-Implementations",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/Redirected-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -330,6 +332,40 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/DeprecationSummary": {
+  "abstract" : [
+    {
+      "text" : "A directive that specifies a custom deprecation summary message to an already deprecated symbol.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "DeprecationSummary"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DeprecationSummary",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "DeprecationSummary"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "DeprecationSummary",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/deprecationsummary"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/DocumentationDataVariants": {
   "abstract" : [
@@ -399,6 +435,40 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationdatavariantstrait"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/PlatformName": {
+  "abstract" : [
+    {
+      "text" : "A supported platform’s name representation.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PlatformName"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PlatformName",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PlatformName"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PlatformName",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/platformname"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Semantic": {
   "abstract" : [
     {
@@ -466,28 +536,6 @@
   "title" : "Symbol",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/Abstracted-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/Abstracted-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Abstracted Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/abstracted-implementations"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/Redirected-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/Redirected-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Redirected Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/redirected-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/abstract": {
   "abstract" : [
@@ -710,6 +758,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC6SymbolC6accepty6ResultQzxzAA15SemanticVisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -718,6 +767,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC6SymbolC6accepty6ResultQzxzAA15SemanticVisitorRzlF1VL_xmfp",
       "text" : "V"
     },
     {
@@ -1184,6 +1234,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1243,6 +1294,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -1830,10 +1882,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/deprecatedsummaryvariants"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/dictionaryKeysSectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/dictionaryKeysSection": {
   "abstract" : [
     {
-      "text" : "Any dictionary keys of the symbol, if the symbol accepts keys, in each language variant the symbol is available in.",
+      "text" : "Any dictionary keys of the symbol, if the symbol accepts keys.",
       "type" : "text"
     }
   ],
@@ -1848,20 +1900,11 @@
     },
     {
       "kind" : "identifier",
-      "text" : "dictionaryKeysSectionVariants"
+      "text" : "dictionaryKeysSection"
     },
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -1870,15 +1913,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/dictionaryKeysSectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/dictionaryKeysSection",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "dictionaryKeysSectionVariants",
+  "title" : "dictionaryKeysSection",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/dictionarykeyssectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/dictionarykeyssection"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/discussion": {
   "abstract" : [
@@ -2112,10 +2155,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/externalidvariants"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpBodySectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpBodySection": {
   "abstract" : [
     {
-      "text" : "The upload body of an HTTP request, in each language variant the symbol is available in.",
+      "text" : "The upload body of an HTTP request.",
       "type" : "text"
     }
   ],
@@ -2130,20 +2173,11 @@
     },
     {
       "kind" : "identifier",
-      "text" : "httpBodySectionVariants"
+      "text" : "httpBodySection"
     },
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -2152,20 +2186,20 @@
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpBodySectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpBodySection",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "httpBodySectionVariants",
+  "title" : "httpBodySection",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/httpbodysectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/httpbodysection"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpEndpointSectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpEndpointSection": {
   "abstract" : [
     {
-      "text" : "The HTTP endpoint of an HTTP request, in each language variant the symbol is available in.",
+      "text" : "The HTTP endpoint of an HTTP request.",
       "type" : "text"
     }
   ],
@@ -2180,20 +2214,11 @@
     },
     {
       "kind" : "identifier",
-      "text" : "httpEndpointSectionVariants"
+      "text" : "httpEndpointSection"
     },
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -2202,20 +2227,20 @@
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpEndpointSectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpEndpointSection",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "httpEndpointSectionVariants",
+  "title" : "httpEndpointSection",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/httpendpointsectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/httpendpointsection"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpParametersSectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpParametersSection": {
   "abstract" : [
     {
-      "text" : "The parameters of an HTTP request, in each language variant the symbol is available in.",
+      "text" : "The parameters of an HTTP request.",
       "type" : "text"
     }
   ],
@@ -2230,20 +2255,11 @@
     },
     {
       "kind" : "identifier",
-      "text" : "httpParametersSectionVariants"
+      "text" : "httpParametersSection"
     },
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -2252,20 +2268,20 @@
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpParametersSectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpParametersSection",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "httpParametersSectionVariants",
+  "title" : "httpParametersSection",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/httpparameterssectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/httpparameterssection"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpResponsesSectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/httpResponsesSection": {
   "abstract" : [
     {
-      "text" : "The responses of an HTTP request, in each language variant the symbol is available in.",
+      "text" : "The responses of an HTTP request.",
       "type" : "text"
     }
   ],
@@ -2280,20 +2296,11 @@
     },
     {
       "kind" : "identifier",
-      "text" : "httpResponsesSectionVariants"
+      "text" : "httpResponsesSection"
     },
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
     },
     {
       "kind" : "typeIdentifier",
@@ -2302,15 +2309,15 @@
     },
     {
       "kind" : "text",
-      "text" : ">"
+      "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpResponsesSectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/httpResponsesSection",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "httpResponsesSectionVariants",
+  "title" : "httpResponsesSection",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/httpresponsessectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/httpresponsessection"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/isDeprecated": {
   "abstract" : [
@@ -2319,6 +2326,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -2356,6 +2364,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -3227,6 +3236,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -3268,6 +3278,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -3311,10 +3322,10 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/platformnamevariants"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/possibleValuesSectionVariants": {
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/possibleValuesSection": {
   "abstract" : [
     {
-      "text" : "The symbol’s possible values in each language variant the symbol is available in.",
+      "text" : "The symbol’s possible values, if the symbol is a property list element with possible values.",
       "type" : "text"
     }
   ],
@@ -3329,7 +3340,48 @@
     },
     {
       "kind" : "identifier",
-      "text" : "possibleValuesSectionVariants"
+      "text" : "possibleValuesSection"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC33PropertyListPossibleValuesSectionV",
+      "text" : "PropertyListPossibleValuesSection"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/possibleValuesSection",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "possibleValuesSection",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/symbol\/possiblevaluessection"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Symbol/proseVariants": {
+  "abstract" : [
+    {
+      "text" : "The prose form of the symbol’s title for use in inline links and documentation prose, in each language variant the symbol is available in.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "proseVariants"
     },
     {
       "kind" : "text",
@@ -3346,25 +3398,25 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC33PropertyListPossibleValuesSectionV",
-      "text" : "PropertyListPossibleValuesSection"
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
     },
     {
       "kind" : "text",
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/possibleValuesSectionVariants",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/proseVariants",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "possibleValuesSectionVariants",
+  "title" : "proseVariants",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/possiblevaluessectionvariants"
+  "url" : "\/documentation\/swiftdocc\/symbol\/prosevariants"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/redirects": {
   "abstract" : [
     {
-      "text" : "Any redirect information of the first variant of the symbol, if the symbol has been moved from another location.",
+      "text" : "Any redirect information of the symbol, if the symbol has been moved from another location.",
       "type" : "text"
     }
   ],
@@ -3402,56 +3454,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbol\/redirects"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Symbol/redirectsVariants": {
-  "abstract" : [
-    {
-      "text" : "Any redirect information of the symbol, if the symbol has been moved from another location, in each language variant the symbol is available in.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "redirectsVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC25DocumentationDataVariantsV",
-      "text" : "DocumentationDataVariants"
-    },
-    {
-      "kind" : "text",
-      "text" : "<["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC8RedirectC",
-      "text" : "Redirect"
-    },
-    {
-      "kind" : "text",
-      "text" : "]>"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Symbol\/redirectsVariants",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "redirectsVariants",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbol\/redirectsvariants"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/Symbol/relationships": {
   "abstract" : [
     {
@@ -3459,6 +3461,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",

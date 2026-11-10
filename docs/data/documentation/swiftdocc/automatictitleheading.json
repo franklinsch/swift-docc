@@ -16,8 +16,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Options"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -70,7 +69,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -175,14 +174,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading\/Enabledness-swift.enum"
       ],
       "title" : "Enumerations"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -344,17 +335,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/automatictitleheading"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/AutomaticTitleHeading/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/automatictitleheading\/directiveconvertible-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/AutomaticTitleHeading/Enabledness-swift.enum": {
   "abstract" : [
     {
@@ -449,15 +429,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC",
-      "text" : "AutomaticTitleHeading"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -581,40 +552,6 @@
   "title" : "DirectiveConvertible",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/directiveconvertible"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Options": {
-  "abstract" : [
-    {
-      "text" : "A directive to adjust Swift-DocC’s default behaviors when rendering a page.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Options"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Options",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Options"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Options",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/options"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Semantic": {
   "abstract" : [

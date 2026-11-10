@@ -112,7 +112,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -176,7 +176,7 @@
               "text" : ": "
             },
             {
-              "kind" : "keyword",
+              "kind" : "attribute",
               "text" : "@escaping"
             },
             {

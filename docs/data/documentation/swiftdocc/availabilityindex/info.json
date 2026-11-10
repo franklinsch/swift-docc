@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityIndex"
       ]
     ]
@@ -64,7 +63,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -136,14 +135,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityIndex\/Info\/isIntroduced(on:)"
       ],
       "title" : "Instance Methods"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityIndex\/Info\/Equatable-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -277,17 +268,6 @@
   "title" : "AvailabilityIndex.Info",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/availabilityindex\/info"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/AvailabilityIndex/Info/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AvailabilityIndex\/Info\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/availabilityindex\/info\/equatable-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/AvailabilityIndex/Info/belongs(to:)": {
   "abstract" : [
@@ -788,20 +768,6 @@
   "title" : "platformName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/availabilityindex\/info\/platformname"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationIndexing": {
-  "abstract" : [
-    {
-      "text" : "Create documentation indexes optimized for text search or navigation.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Indexing",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationindexing"
 }
 }
 }

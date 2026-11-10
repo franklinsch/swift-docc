@@ -69,7 +69,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -175,8 +175,14 @@
             "    _Licensed under Apache License v2.0 with Runtime Library Exception._",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "md",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -226,14 +232,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Small\/introducedVersion"
       ],
       "title" : "Type Properties"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Small\/DirectiveConvertible-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -462,17 +460,6 @@
   "title" : "Small",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/small"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Small/DirectiveConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Small\/DirectiveConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "DirectiveConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/small\/directiveconvertible-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Small/content": {
   "abstract" : [

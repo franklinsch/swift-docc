@@ -61,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -127,8 +127,14 @@
             "\/\/ Access the value",
             "let value = index.sync { $0[\"key\"] }"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "swift",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         }
       ],
       "kind" : "content"
@@ -147,6 +153,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/init()",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/init(_:)"
       ],
       "title" : "Initializers"
@@ -155,7 +162,8 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)-2zm7p",
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)-b3sw"
       ],
       "title" : "Instance Methods"
     }
@@ -222,6 +230,62 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/synchronized"
 },
+"doc://SwiftDocC/documentation/SwiftDocC/Synchronized/init()": {
+  "abstract" : [
+    {
+      "text" : "Creates a new lock.",
+      "type" : "text"
+    }
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "()",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/synchronized\/init()"
+},
 "doc://SwiftDocC/documentation/SwiftDocC/Synchronized/init(_:)": {
   "abstract" : [
     {
@@ -240,6 +304,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -254,7 +319,132 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/synchronized\/init(_:)"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/Synchronized/sync(_:)": {
+"doc://SwiftDocC/documentation/SwiftDocC/Synchronized/sync(_:)-2zm7p": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Value",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "()",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "sync"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedCAAytRszlE4syncyqd__qd__yqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFAEL_qd_0_mfp",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedCAAytRszlE4syncyqd__qd__yqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF6ResultL_qd__mfp",
+      "text" : "Result"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedCAAytRszlE4syncyqd__qd__yqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFAEL_qd_0_mfp",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedCAAytRszlE4syncyqd__qd__yqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF6ResultL_qd__mfp",
+      "text" : "Result"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)-2zm7p",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "sync(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdocc\/synchronized\/sync(_:)-2zm7p"
+},
+"doc://SwiftDocC/documentation/SwiftDocC/Synchronized/sync(_:)-b3sw": {
   "abstract" : [
     {
       "text" : "Performs a given block of code while synchronizing over the type’s stored value.",
@@ -284,6 +474,14 @@
     },
     {
       "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
       "text" : ">(("
     },
     {
@@ -296,6 +494,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -308,10 +507,20 @@
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC4syncyqd__qd__xzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFAEL_qd_0_mfp",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC4syncyqd__qd__xzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF6ResultL_qd__mfp",
       "text" : "Result"
     },
     {
@@ -320,23 +529,33 @@
     },
     {
       "kind" : "keyword",
-      "text" : "rethrows"
+      "text" : "throws"
     },
     {
       "kind" : "text",
-      "text" : " -> "
+      "text" : "("
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC4syncyqd__qd__xzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFAEL_qd_0_mfp",
+      "text" : "Error"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC4syncyqd__qd__xzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lF6ResultL_qd__mfp",
       "text" : "Result"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Synchronized\/sync(_:)-b3sw",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "sync(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/synchronized\/sync(_:)"
+  "url" : "\/documentation\/swiftdocc\/synchronized\/sync(_:)-b3sw"
 }
 }
 }

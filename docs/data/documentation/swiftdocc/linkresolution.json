@@ -152,10 +152,16 @@
           "code" : [
             "doc:\/\/com.example\/path\/to\/documentation\/page#optional-heading",
             "    ╰─────┬─────╯╰────────────┬────────────╯╰───────┬───────╯",
-            "      bundle ID     path in docs hierarchy    heading name "
+            "      catalog ID     path in docs hierarchy    heading name "
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "anchor" : "Resolving-a-Documentation-Link",
@@ -220,8 +226,14 @@
             "\/path\/to\/Something-enum",
             "\/path\/to\/Something-property"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -237,8 +249,14 @@
             "\/path\/to\/someFunction-abc123",
             "\/path\/to\/someFunction-def456"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : null,
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "inlineContent" : [
@@ -292,8 +310,14 @@
             "    func foo() { }",
             "}"
           ],
+          "copyToClipboard" : true,
+          "lineAnnotations" : [
+
+          ],
+          "showLineNumbers" : false,
           "syntax" : "swift",
-          "type" : "codeListing"
+          "type" : "codeListing",
+          "wrap" : 0
         },
         {
           "anchor" : "Resolving-Links-to-Other-Documentation-Sources",
@@ -317,7 +341,7 @@
               "type" : "text"
             },
             {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
+              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct\/sources",
               "isActive" : true,
               "type" : "reference"
             },
@@ -331,7 +355,7 @@
               "type" : "reference"
             },
             {
-              "text" : ". Links to external documentation sources need to be written with a bundle ID in the URI to identify which external resolver should handle the request.",
+              "text" : ". Links to external documentation sources need to be written with an ID in the URI to identify which external resolver should handle the request.",
               "type" : "text"
             }
           ],
@@ -428,11 +452,13 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationcontext"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/externalDocumentationSources": {
+"doc://SwiftDocC/documentation/SwiftDocC/DocumentationContext/Configuration-swift.struct/ExternalDocumentationConfiguration-swift.struct/sources": {
   "abstract" : [
-
+    {
+      "text" : "The lookup of external documentation sources by their source identifiers.",
+      "type" : "text"
+    }
   ],
-  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -444,7 +470,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "externalDocumentationSources"
+      "text" : "sources"
     },
     {
       "kind" : "text",
@@ -452,12 +478,38 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC16BundleIdentifiera",
-      "text" : "BundleIdentifier"
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC",
+      "text" : "DocumentationContext"
     },
     {
       "kind" : "text",
-      "text" : " : any "
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV",
+      "text" : "Inputs"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC20DocumentationContextC6InputsV10IdentifierV",
+      "text" : "Identifier"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -469,12 +521,12 @@
       "text" : "]"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/externalDocumentationSources",
+  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationContext\/Configuration-swift.struct\/ExternalDocumentationConfiguration-swift.struct\/sources",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "externalDocumentationSources",
+  "title" : "sources",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationcontext\/externaldocumentationsources"
+  "url" : "\/documentation\/swiftdocc\/documentationcontext\/configuration-swift.struct\/externaldocumentationconfiguration-swift.struct\/sources"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/ExternalDocumentationSource": {
   "abstract" : [

@@ -17,7 +17,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree"
       ]
     ]
@@ -28,7 +27,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC13NavigatorTreeC4read4from16bundleIdentifier7timeout5delay5queue012presentationH09broadcasty10Foundation3URLV_SSSgS2dSo012OS_dispatch_K0CAOySayAC4NodeCG_SbAC5ErrorOSgtcSgtKF",
+    "externalID" : "s:9SwiftDocC13NavigatorTreeC4read4from16bundleIdentifier7timeout5delay5queue012presentationH09broadcasty20FoundationEssentials3URLV_SSSgS2d8Dispatch0Q5QueueCAOySayAC4NodeCG_SbAC5ErrorOSgtcSgtKF",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -56,7 +55,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       },
       {
@@ -90,7 +89,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:@T@NSTimeInterval",
+        "preciseIdentifier" : "s:10Foundation12TimeIntervala",
         "text" : "TimeInterval"
       },
       {
@@ -107,7 +106,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:@T@NSTimeInterval",
+        "preciseIdentifier" : "s:10Foundation12TimeIntervala",
         "text" : "TimeInterval"
       },
       {
@@ -124,7 +123,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
+        "preciseIdentifier" : "s:8Dispatch0A5QueueC",
         "text" : "DispatchQueue"
       },
       {
@@ -155,15 +154,6 @@
       {
         "kind" : "text",
         "text" : ": "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC13NavigatorTreeC",
-        "text" : "NavigatorTree"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -201,7 +191,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -238,7 +228,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             },
             {
@@ -272,7 +262,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:@T@NSTimeInterval",
+              "preciseIdentifier" : "s:10Foundation12TimeIntervala",
               "text" : "TimeInterval"
             },
             {
@@ -289,7 +279,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:@T@NSTimeInterval",
+              "preciseIdentifier" : "s:10Foundation12TimeIntervala",
               "text" : "TimeInterval"
             },
             {
@@ -306,7 +296,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
+              "preciseIdentifier" : "s:8Dispatch0A5QueueC",
               "text" : "DispatchQueue"
             },
             {
@@ -337,16 +327,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC13NavigatorTreeC",
-              "text" : "NavigatorTree"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/NavigatorTree\/BroadcastCallback",
@@ -515,20 +495,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/DocumentationIndexing": {
-  "abstract" : [
-    {
-      "text" : "Create documentation indexes optimized for text search or navigation.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DocumentationIndexing",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Documentation Indexing",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/documentationindexing"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/NavigatorTree": {
   "abstract" : [
     {
@@ -647,7 +613,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -681,7 +647,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:@T@NSTimeInterval",
+      "preciseIdentifier" : "s:10Foundation12TimeIntervala",
       "text" : "TimeInterval"
     },
     {
@@ -698,7 +664,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:@T@NSTimeInterval",
+      "preciseIdentifier" : "s:10Foundation12TimeIntervala",
       "text" : "TimeInterval"
     },
     {
@@ -715,7 +681,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "c:objc(cs)OS_dispatch_queue",
+      "preciseIdentifier" : "s:8Dispatch0A5QueueC",
       "text" : "DispatchQueue"
     },
     {
@@ -746,15 +712,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC13NavigatorTreeC",
-      "text" : "NavigatorTree"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

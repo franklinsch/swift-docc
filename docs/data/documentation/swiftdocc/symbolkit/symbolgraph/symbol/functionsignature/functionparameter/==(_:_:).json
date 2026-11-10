@@ -21,8 +21,7 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol\/FunctionSignature",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol\/FunctionSignature\/FunctionParameter",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol\/FunctionSignature\/FunctionParameter\/Equatable-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol\/FunctionSignature\/FunctionParameter"
       ]
     ]
   },
@@ -61,75 +60,11 @@
       },
       {
         "kind" : "text",
-        "text" : "("
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-        "text" : "SymbolGraph"
+        "text" : "(`Self`"
       },
       {
         "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-        "text" : "Symbol"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-        "text" : "FunctionSignature"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-        "text" : "FunctionParameter"
-      },
-      {
-        "kind" : "text",
-        "text" : ", "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-        "text" : "SymbolGraph"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-        "text" : "Symbol"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-        "text" : "FunctionSignature"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-        "text" : "FunctionParameter"
+        "text" : ", `Self`"
       },
       {
         "kind" : "text",
@@ -151,7 +86,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Symbol.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/Symbol.swift#L761"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Semantics\/Symbol\/Symbol.swift#L786"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",
@@ -166,7 +101,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -203,39 +138,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-              "text" : "SymbolGraph"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-              "text" : "Symbol"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-              "text" : "FunctionSignature"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-              "text" : "FunctionParameter"
+              "text" : ": `Self`"
             },
             {
               "kind" : "text",
@@ -247,39 +150,7 @@
             },
             {
               "kind" : "text",
-              "text" : ": "
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-              "text" : "SymbolGraph"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-              "text" : "Symbol"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-              "text" : "FunctionSignature"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-              "text" : "FunctionParameter"
+              "text" : ": `Self`"
             },
             {
               "kind" : "text",
@@ -364,30 +235,6 @@
   "abstract" : [
 
   ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "extension"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-      "text" : "SymbolGraph"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "identifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-      "text" : "Symbol"
-    }
-  ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol",
   "kind" : "symbol",
   "navigatorTitle" : [
@@ -413,6 +260,14 @@
     {
       "kind" : "text",
       "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SymbolKit"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "identifier",
@@ -463,6 +318,14 @@
     {
       "kind" : "text",
       "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "SymbolKit"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
     },
     {
       "kind" : "identifier",
@@ -541,75 +404,11 @@
     },
     {
       "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-      "text" : "SymbolGraph"
+      "text" : "(`Self`"
     },
     {
       "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-      "text" : "Symbol"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-      "text" : "FunctionSignature"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-      "text" : "FunctionParameter"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV",
-      "text" : "SymbolGraph"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V",
-      "text" : "Symbol"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV",
-      "text" : "FunctionSignature"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SymbolKit0A5GraphV0A0V17FunctionSignatureV0D9ParameterV",
-      "text" : "FunctionParameter"
+      "text" : ", `Self`"
     },
     {
       "kind" : "text",
@@ -627,17 +426,6 @@
   "title" : "==(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/symbolkit\/symbolgraph\/symbol\/functionsignature\/functionparameter\/==(_:_:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SymbolKit/SymbolGraph/Symbol/FunctionSignature/FunctionParameter/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolKit\/SymbolGraph\/Symbol\/FunctionSignature\/FunctionParameter\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbolkit\/symbolgraph\/symbol\/functionsignature\/functionparameter\/equatable-implementations"
 }
 }
 }

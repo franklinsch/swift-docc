@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Creates a new checker that detects documents with multiple “Topics” sections.",
+      "text" : "Creates a new checker that warns about multiple “Topics” sections.",
       "type" : "text"
     }
   ],
@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DuplicateTopicsSections"
       ]
     ]
@@ -20,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC23DuplicateTopicsSectionsV10sourceFileAC10Foundation3URLVSg_tcfc",
+    "externalID" : "s:9SwiftDocC23DuplicateTopicsSectionsV10sourceFileAC20FoundationEssentials3URLVSg_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -40,7 +39,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       },
       {
@@ -55,7 +54,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DuplicateTopicsSection.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Checker\/Checkers\/DuplicateTopicsSection.swift#L25"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Checker\/Checkers\/DuplicateTopicsSection.swift#L23"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -70,7 +69,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -91,7 +90,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             },
             {
@@ -111,7 +110,7 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "The URL to the documentation file that the checker checks.",
+                  "text" : "The URL to the documentation file that the checker checks, for diagnostics purposes.",
                   "type" : "text"
                 }
               ],
@@ -162,15 +161,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DuplicateTopicsSections": {
   "abstract" : [
     {
-      "text" : "A ",
-      "type" : "text"
-    },
-    {
-      "code" : "Document",
-      "type" : "codeVoice"
-    },
-    {
-      "text" : " may only have one level-2 “Topics” heading at the top level, since it serves as structured data for a documentation bundle’s hierarchy.",
+      "text" : "A checker that warns about multiple “Topics” sections.",
       "type" : "text"
     }
   ],
@@ -204,7 +195,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DuplicateTopicsSections/init(sourceFile:)": {
   "abstract" : [
     {
-      "text" : "Creates a new checker that detects documents with multiple “Topics” sections.",
+      "text" : "Creates a new checker that warns about multiple “Topics” sections.",
       "type" : "text"
     }
   ],
@@ -227,7 +218,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -241,20 +232,6 @@
   "title" : "init(sourceFile:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/duplicatetopicssections\/init(sourcefile:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/StaticAnalysis": {
-  "abstract" : [
-    {
-      "text" : "Run static analysis checks on markup files.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Static Analysis",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/staticanalysis"
 }
 }
 }

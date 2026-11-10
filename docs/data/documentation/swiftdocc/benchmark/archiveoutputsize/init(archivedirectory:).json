@@ -3,7 +3,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmarking",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmark\/ArchiveOutputSize"
       ]
@@ -15,7 +14,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC9BenchmarkC17ArchiveOutputSizeV16archiveDirectoryAE10Foundation3URLV_tcfc",
+    "externalID" : "s:9SwiftDocC9BenchmarkC17ArchiveOutputSizeV16archiveDirectoryAE20FoundationEssentials3URLV_tcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -35,7 +34,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation3URLV",
+        "preciseIdentifier" : "s:20FoundationEssentials3URLV",
         "text" : "URL"
       },
       {
@@ -50,7 +49,7 @@
     ],
     "remoteSource" : {
       "fileName" : "OutputSize.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Metrics\/OutputSize.swift#L20"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Benchmark\/Metrics\/OutputSize.swift#L25"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -65,7 +64,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -86,7 +85,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation3URLV",
+              "preciseIdentifier" : "s:20FoundationEssentials3URLV",
               "text" : "URL"
             },
             {
@@ -226,7 +225,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation3URLV",
+      "preciseIdentifier" : "s:20FoundationEssentials3URLV",
       "text" : "URL"
     },
     {
@@ -240,20 +239,6 @@
   "title" : "init(archiveDirectory:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/benchmark\/archiveoutputsize\/init(archivedirectory:)"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Benchmarking": {
-  "abstract" : [
-    {
-      "text" : "Produce performance metrics to improve the compilation pipeline and track regressions.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Benchmarking",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Benchmarking",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/benchmarking"
 }
 }
 }

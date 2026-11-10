@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PersistingDocumentation"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -130,14 +129,6 @@
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveUnusedReferencesTransformation\/transform(renderNode:context:)"
       ],
       "title" : "Instance Methods"
-    },
-    {
-      "anchor" : "Default-Implementations",
-      "generated" : true,
-      "identifiers" : [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveUnusedReferencesTransformation\/RenderNodeTransforming-Implementations"
-      ],
-      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -167,20 +158,6 @@
   "title" : "SwiftDocC",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/PersistingDocumentation": {
-  "abstract" : [
-    {
-      "text" : "Save compiled documentation to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/PersistingDocumentation",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Persisting Documentation",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/persistingdocumentation"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RemoveUnusedReferencesTransformation": {
   "abstract" : [
@@ -215,17 +192,6 @@
   "title" : "RemoveUnusedReferencesTransformation",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/removeunusedreferencestransformation"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RemoveUnusedReferencesTransformation/RenderNodeTransforming-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RemoveUnusedReferencesTransformation\/RenderNodeTransforming-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RenderNodeTransforming Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/removeunusedreferencestransformation\/rendernodetransforming-implementations"
 },
 "doc://SwiftDocC/documentation/SwiftDocC/RemoveUnusedReferencesTransformation/init()": {
   "abstract" : [
@@ -308,15 +274,6 @@
     {
       "kind" : "text",
       "text" : ") -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC36RemoveUnusedReferencesTransformationV",
-      "text" : "RemoveUnusedReferencesTransformation"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

@@ -19,7 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC16BenchmarkResultsV12platformName9timestamp13doccArguments16unorderedMetricsACSS_10Foundation4DateVSaySSGSayAC6MetricVGtcfc",
+    "externalID" : "s:9SwiftDocC16BenchmarkResultsV12platformName9timestamp13doccArguments16unorderedMetricsACSS_20FoundationEssentials4DateVSaySSGSayAC6MetricVGtcfc",
     "fragments" : [
       {
         "kind" : "identifier",
@@ -56,7 +56,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:10Foundation4DateV",
+        "preciseIdentifier" : "s:20FoundationEssentials4DateV",
         "text" : "Date"
       },
       {
@@ -90,15 +90,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC16BenchmarkResultsV",
-        "text" : "BenchmarkResults"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:9SwiftDocC16BenchmarkResultsV6MetricV",
         "text" : "Metric"
       },
@@ -129,7 +120,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -167,7 +158,7 @@
             },
             {
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:10Foundation4DateV",
+              "preciseIdentifier" : "s:20FoundationEssentials4DateV",
               "text" : "Date"
             },
             {
@@ -198,16 +189,6 @@
             {
               "kind" : "text",
               "text" : ": ["
-            },
-            {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BenchmarkResults",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC16BenchmarkResultsV",
-              "text" : "BenchmarkResults"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/BenchmarkResults\/Metric",
@@ -433,7 +414,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:10Foundation4DateV",
+      "preciseIdentifier" : "s:20FoundationEssentials4DateV",
       "text" : "Date"
     },
     {
@@ -464,15 +445,6 @@
     {
       "kind" : "text",
       "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC16BenchmarkResultsV",
-      "text" : "BenchmarkResults"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

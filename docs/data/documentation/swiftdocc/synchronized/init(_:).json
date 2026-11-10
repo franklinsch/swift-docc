@@ -31,6 +31,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -45,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Synchronization.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Utility\/Synchronization.swift#L46"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Utility\/Synchronization.swift#L49"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -60,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -89,6 +90,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -208,6 +210,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC12SynchronizedC5Valuexmfp",
       "text" : "Value"
     },
     {

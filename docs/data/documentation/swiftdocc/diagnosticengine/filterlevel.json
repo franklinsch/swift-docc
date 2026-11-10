@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Determines which problems will be emitted to consumers.",
+      "text" : "Determines which diagnostics will be reported to consumers.",
       "type" : "text"
     }
   ],
@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/DiagnosticEngine"
       ]
     ]
@@ -66,7 +65,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -215,7 +214,7 @@
 "doc://SwiftDocC/documentation/SwiftDocC/DiagnosticEngine/filterLevel": {
   "abstract" : [
     {
-      "text" : "Determines which problems will be emitted to consumers.",
+      "text" : "Determines which diagnostics will be reported to consumers.",
       "type" : "text"
     }
   ],
@@ -310,20 +309,6 @@
   "title" : "DiagnosticSeverity.information",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/diagnosticseverity\/information"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/EmittingDiagnostics": {
-  "abstract" : [
-    {
-      "text" : "Vend warnings and errors as part of an operation’s result.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/EmittingDiagnostics",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Emitting Diagnostics",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/emittingdiagnostics"
 }
 }
 }

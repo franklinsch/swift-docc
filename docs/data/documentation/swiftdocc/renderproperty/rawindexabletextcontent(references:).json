@@ -17,10 +17,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolReferenceRendering",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderProperty",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderProperty\/TextIndexing-Implementations"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderProperty"
       ]
     ]
   },
@@ -64,7 +61,15 @@
       },
       {
         "kind" : "text",
-        "text" : " : any "
+        "text" : " : "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -103,7 +108,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -137,7 +142,15 @@
             },
             {
               "kind" : "text",
-              "text" : " : any "
+              "text" : " : "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderReference",
@@ -238,17 +251,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderproperty"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderProperty/TextIndexing-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderProperty\/TextIndexing-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "TextIndexing Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderproperty\/textindexing-implementations"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/RenderProperty/rawIndexableTextContent(references:)": {
   "abstract" : [
 
@@ -285,7 +287,15 @@
     },
     {
       "kind" : "text",
-      "text" : " : any "
+      "text" : " : "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -342,34 +352,6 @@
   "title" : "RenderReference",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/renderreference"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/SymbolReferenceRendering": {
-  "abstract" : [
-    {
-      "text" : "Render rich reference documentation for programming symbols.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/SymbolReferenceRendering",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Symbol Reference Rendering",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/symbolreferencerendering"
 }
 }
 }

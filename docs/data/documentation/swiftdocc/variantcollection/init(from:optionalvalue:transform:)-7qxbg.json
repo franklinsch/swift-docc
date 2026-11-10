@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/VariantCollection"
       ]
     ]
@@ -114,6 +113,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
         "text" : "Value1"
       },
       {
@@ -139,6 +139,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
         "text" : "Value2"
       },
       {
@@ -164,6 +165,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
         "text" : "Value1"
       },
       {
@@ -172,6 +174,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
         "text" : "Value2"
       },
       {
@@ -180,6 +183,7 @@
       },
       {
         "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
         "text" : "Value"
       },
       {
@@ -194,7 +198,7 @@
     ],
     "remoteSource" : {
       "fileName" : "VariantCollection+Symbol.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection+Symbol.swift#L165"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Model\/Rendering\/Variants\/VariantCollection+Symbol.swift#L163"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -209,7 +213,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -272,6 +276,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
               "text" : "Value1"
             },
             {
@@ -306,6 +311,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
               "text" : "Value2"
             },
             {
@@ -332,6 +338,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
               "text" : "Value1"
             },
             {
@@ -340,6 +347,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
               "text" : "Value2"
             },
             {
@@ -348,6 +356,7 @@
             },
             {
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
               "text" : "Value"
             },
             {
@@ -584,20 +593,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/documentationdatavariantstrait"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/VariantCollection": {
   "abstract" : [
     {
@@ -731,6 +726,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -756,6 +752,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -781,6 +778,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value1L_qd__mfp",
       "text" : "Value1"
     },
     {
@@ -789,6 +787,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV4from13optionalValue9transformACyqd_1_SgGSgAA25DocumentationDataVariantsVyqd__G_AKyqd_0_GAgA0ijK5TraitV_qd__qd_0_SgtXEtcAGRszSeRd_1_SERd_1_r1_lufc6Value2L_qd_0_mfp",
       "text" : "Value2"
     },
     {
@@ -797,6 +796,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV5Valuexmfp",
       "text" : "Value"
     },
     {
@@ -834,23 +834,6 @@
     {
       "kind" : "text",
       "text" : ": ["
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC17VariantCollectionV",
-      "text" : "VariantCollection"
-    },
-    {
-      "kind" : "text",
-      "text" : "<"
-    },
-    {
-      "kind" : "typeIdentifier",
-      "text" : "Value"
-    },
-    {
-      "kind" : "text",
-      "text" : ">."
     },
     {
       "kind" : "typeIdentifier",

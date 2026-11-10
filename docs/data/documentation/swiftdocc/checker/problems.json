@@ -1,15 +1,19 @@
 {
-  "abstract" : [
+  "deprecationSummary" : [
     {
-      "text" : "Problems found while walking.",
-      "type" : "text"
+      "inlineContent" : [
+        {
+          "text" : "Use 'diagnostics' instead. This deprecated API will be removed after 6.5 is released.",
+          "type" : "text"
+        }
+      ],
+      "type" : "paragraph"
     }
   ],
   "hierarchy" : {
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checker"
       ]
     ]
@@ -20,7 +24,8 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:9SwiftDocC7CheckerP8problemsSayAA7ProblemVGvp",
+    "extendedModule" : "SwiftDocC",
+    "externalID" : "s:9SwiftDocC7CheckerPAAE8problemsSayAA7ProblemVGvp",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -55,9 +60,8 @@
     ],
     "remoteSource" : {
       "fileName" : "Checker.swift",
-      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Checker\/Checker.swift#L20"
+      "url" : "https:\/\/github.com\/swiftlang\/swift-docc\/blob\/main\/Sources\/SwiftDocC\/Checker\/Checker.swift#L26"
     },
-    "required" : true,
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",
@@ -71,7 +75,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -186,11 +190,9 @@
 },
 "doc://SwiftDocC/documentation/SwiftDocC/Checker/problems": {
   "abstract" : [
-    {
-      "text" : "Problems found while walking.",
-      "type" : "text"
-    }
+
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -220,7 +222,6 @@
   ],
   "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Checker\/problems",
   "kind" : "symbol",
-  "required" : true,
   "role" : "symbol",
   "title" : "problems",
   "type" : "topic",
@@ -233,6 +234,7 @@
       "type" : "text"
     }
   ],
+  "deprecated" : true,
   "fragments" : [
     {
       "kind" : "keyword",
@@ -259,20 +261,6 @@
   "title" : "Problem",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/problem"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/StaticAnalysis": {
-  "abstract" : [
-    {
-      "text" : "Run static analysis checks on markup files.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/StaticAnalysis",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Static Analysis",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/staticanalysis"
 }
 }
 }

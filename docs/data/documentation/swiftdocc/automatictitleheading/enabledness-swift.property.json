@@ -9,7 +9,6 @@
     "paths" : [
       [
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Options",
         "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading"
       ]
     ]
@@ -40,15 +39,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC",
-        "text" : "AutomaticTitleHeading"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC11EnablednessO",
         "text" : "Enabledness"
       }
@@ -75,7 +65,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -107,16 +97,6 @@
             {
               "kind" : "text",
               "text" : ": "
-            },
-            {
-              "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC",
-              "text" : "AutomaticTitleHeading"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/AutomaticTitleHeading\/Enabledness-swift.enum",
@@ -288,15 +268,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC",
-      "text" : "AutomaticTitleHeading"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:9SwiftDocC21AutomaticTitleHeadingC11EnablednessO",
       "text" : "Enabledness"
     }
@@ -341,40 +312,6 @@
   "title" : "DirectiveArgumentWrapped",
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/directiveargumentwrapped"
-},
-"doc://SwiftDocC/documentation/SwiftDocC/Options": {
-  "abstract" : [
-    {
-      "text" : "A directive to adjust Swift-DocC’s default behaviors when rendering a page.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "class"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Options"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/Options",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Options"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Options",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/options"
 }
 }
 }

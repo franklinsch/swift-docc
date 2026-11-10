@@ -8,8 +8,7 @@
   "hierarchy" : {
     "paths" : [
       [
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC",
-        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel"
+        "doc:\/\/SwiftDocC\/documentation\/SwiftDocC"
       ]
     ]
   },
@@ -62,7 +61,7 @@
             "swift"
           ],
           "platforms" : [
-            "macOS"
+            "Linux"
           ],
           "tokens" : [
             {
@@ -401,20 +400,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdocc\/rendernode\/variantoverrides"
 },
-"doc://SwiftDocC/documentation/SwiftDocC/RenderingModel": {
-  "abstract" : [
-    {
-      "text" : "Convert documentation nodes into render nodes and save them to disk.",
-      "type" : "text"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDocC\/documentation\/SwiftDocC\/RenderingModel",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Rendering Model",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdocc\/renderingmodel"
-},
 "doc://SwiftDocC/documentation/SwiftDocC/TopicRenderReference": {
   "abstract" : [
     {
@@ -585,6 +570,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03getC12DefaultValue7keyPathqd__Sgs011WritableKeyI0CyxAA0C10CollectionVyqd__GSgG_tSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -593,6 +579,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03getC12DefaultValue7keyPathqd__Sgs011WritableKeyI0CyxAA0C10CollectionVyqd__GSgG_tSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -675,6 +662,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03getC12DefaultValue7keyPathqd__s011WritableKeyI0CyxAA0C10CollectionVyqd__GG_tSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -683,6 +671,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03getC12DefaultValue7keyPathqd__s011WritableKeyI0CyxAA0C10CollectionVyqd__GG_tSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     }
   ],
@@ -727,6 +716,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd__Sg_s011WritableKeyI0CyxAA0C10CollectionVyqd__GSgGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -769,6 +759,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd__Sg_s011WritableKeyI0CyxAA0C10CollectionVyqd__GSgGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -817,6 +808,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
@@ -859,6 +851,7 @@
     },
     {
       "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:9SwiftDocC16VariantContainerPAAE03setC12DefaultValue_7keyPathyqd___s011WritableKeyI0CyxAA0C10CollectionVyqd__GGtSeRd__SERd__lF0G0L_qd__mfp",
       "text" : "Value"
     },
     {
