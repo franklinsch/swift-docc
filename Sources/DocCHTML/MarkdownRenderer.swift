@@ -89,9 +89,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
         var children: [HTMLNode] = [
             p(attributes: [.class("label")], contents: [.text(aside.kind.displayName)])
         ]
-        for child in aside.content {
-            children.append(visit(child))
-        }
+        children.append(contentsOf: visit(aside.content as [any Markup]))
         
         return DocCHTML.aside(attributes: [.class(aside.kind.rawValue.lowercased())], contents: children)
     }
@@ -646,7 +644,10 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
     
     // MARK: Markup children
     
-    private func visit(_ container: MarkupChildren) -> [HTMLNode] {
+    /// Transforms a sequence of markdown elements into HTML nodes.
+    ///
+    /// Transform markdown elements together, rather than one at a time, so that inline HTML that spans several elements, like `<span>` and `</span>`, becomes a single HTML element.
+    package func visit(_ container: some Sequence<any Markup>) -> [HTMLNode] {
         var children: [HTMLNode] = []
         children.reserveCapacity(container.underestimatedCount)
         
@@ -737,7 +738,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
             //<small> is phrasing content and should be wrapped by <p>,
             // per the HTML spec - not the other way around
             let content = directive.children.flatMap { child -> [HTMLNode] in
-                (child as? Paragraph).map { visit($0.children) } ?? [visit(child)]
+                (child as? Paragraph).map { visit($0.children) } ?? visit([child])
             }
             return p(contents: [small(contents: content)])
         case .image(let source, let alt, let caption):
@@ -755,7 +756,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
             else {
                 return figure(contents: [
                     picture,
-                    figcaption(contents: caption.map { visit($0) })
+                    figcaption(contents: visit(caption))
                 ])
             }
         case .row(let columns):
@@ -770,7 +771,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
                 ]
                 return div(
                     attributes: attributes,
-                    contents: column.content.map { visit($0) }
+                    contents: visit(column.content)
                 )
             })
         case .tabNavigator(tabs: let tabs):
@@ -792,7 +793,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
                         contents: [
                             summary(contents: [.text(tab.title)]),
                         ] + (
-                            tab.content.map { visit($0) }
+                            visit(tab.content)
                         )
                     )
                 }

@@ -793,7 +793,7 @@ struct MarkdownRendererTests {
             ),
             renderableDirectiveParser: SingleValueDirectiveParser(directiveToReturn: directiveToReturn)
         )
-        let htmlNodes = Document(parsing: markdownContent, options: [.parseSymbolLinks, .parseBlockDirectives]).children.map { renderer.visit($0) }
+        let htmlNodes = renderer.visit(Document(parsing: markdownContent, options: [.parseSymbolLinks, .parseBlockDirectives]).children)
         htmlNodes.assertMatches(prettyFormatted: prettyFormatted, expected: expectedHTML, sourceLocation: sourceLocation)
     }
     
