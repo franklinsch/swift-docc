@@ -472,9 +472,7 @@ package struct HTMLRenderer {
             p(attributes: [.class("label")], contents: [.text("Deprecated")])
         ]
         content.reserveCapacity(1 + markup.count)
-        for child in markup {
-            content.append(renderer.visit(child))
-        }
+        content.append(contentsOf: renderer.visit(markup))
         
         return aside(attributes: [.class("deprecated")], contents: content)
     }

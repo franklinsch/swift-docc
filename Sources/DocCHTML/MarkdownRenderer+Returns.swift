@@ -21,14 +21,14 @@ package extension MarkdownRenderer {
     func returns(_ languageSpecificSections: [SourceLanguage: [any Markup]]) -> [HTMLNode] {
         let info = RenderHelpers.sortedLanguageSpecificValues(languageSpecificSections)
         let items: [HTMLNode] = if info.count == 1 {
-            info.first!.value.map { visit($0) }
+            visit(info.first!.value)
         } else {
             info.flatMap { language, content in
                 let attributes = [language.filterAttribute]
                 // Most return sections only have 1 paragraph of content with 2 and 3 paragraphs being increasingly uncommon.
                 // Avoid wrapping that content in a `<div>` or other container element and instead add the language specific class attribute to each paragraph.
-                return content.map { markup in
-                    var node = visit(markup)
+                return visit(content).map { node in
+                    var node = node
                     
                     guard !node._isText else {
                         // Any text _should_ already be contained in a markdown paragraph, but if the input is unexpected, wrap the raw text in a paragraph here.

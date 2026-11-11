@@ -70,8 +70,7 @@ package extension MarkdownRenderer {
             items.append(selfReferencingHeading(level: 3, content: [.text(title)], plainTextTitle: title))
         }
         // Abstract/Discussion
-        for markup in taskGroup.content {
-            let rendered = visit(markup)
+        for rendered in visit(taskGroup.content) {
             if rendered._isText {
                 // Wrap any inline content in an element. This is not expected to happen in practice
                 items.append(p(contents: [rendered]))
