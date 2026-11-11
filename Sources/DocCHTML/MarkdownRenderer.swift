@@ -466,7 +466,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
     
     // MARK: List
     
-    /// Transforms a markdown unordered list into a`<ul>` HTML element.
+    /// Transforms a markdown unordered list into `<ul>` or `<dl>` HTML elements.
     ///
     /// As part of transforming the unordered list, the renderer also transforms all of its list items and their content recursively.
     /// For example, the renderer transforms this markdown
@@ -495,8 +495,43 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
     ///   </li>
     /// </ul>
     /// ```
-    func visit(_ unorderedList: UnorderedList) -> HTMLNode {
-        ul(contents: visit(unorderedList.children))
+    ///
+    /// If the list items define terms, the renderer transforms them into a `<dl>` HTML element instead.
+    /// For example, the renderer transforms this markdown
+    /// ```md
+    /// - term First: The first term's definition.
+    /// - term Second: The second term's definition.
+    /// ```
+    /// into XML nodes representing this HTML structure
+    /// ```
+    /// <dl>
+    ///   <dt>First</dt>
+    ///   <dd>
+    ///     <p>The first term's definition.</p>
+    ///   </dd>
+    ///   <dt>Second</dt>
+    ///   <dd>
+    ///     <p>The second term's definition.</p>
+    ///   </dd>
+    /// </dl>
+    /// ```
+    ///
+    /// A list that mixes term-list items and other items becomes consecutive sibling `<dl>` and `<ul>` HTML elements, one for each run of items of the same kind.
+    private func _listElements(for unorderedList: UnorderedList) -> [HTMLNode] {
+        unorderedList.termListRuns().map { run in
+            switch run {
+                case .plainItems(let listItems):
+                    return ul(contents: listItems.map { visit($0) })
+                case .termItems(let termListItems):
+                    var items: [HTMLNode] = []
+                    items.reserveCapacity(termListItems.count * 2)
+                    for termListItem in termListItems {
+                        items.append(dt(contents: visit(termListItem.term as [any Markup])))
+                        items.append(dd(contents: visit(termListItem.definition as [any Markup])))
+                    }
+                    return dl(contents: items)
+            }
+        }
     }
     
     /// Transforms a markdown ordered list into a`<ul>` HTML element.
@@ -524,7 +559,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
     
     /// Transforms a markdown list item into a`<li>` HTML element.
     ///
-    /// See ``visit(_:)-(UnorderedList)`` or ``visit(_:)-(OrderedList)`` for examples.
+    /// See ``_listElements(for:)`` or ``visit(_:)-(OrderedList)`` for examples.
     func visit(_ listItem: ListItem) -> HTMLNode {
         li(contents: visit(listItem.children))
     }
@@ -647,6 +682,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
     /// Transforms a sequence of markdown elements into HTML nodes.
     ///
     /// Transform markdown elements together, rather than one at a time, so that inline HTML that spans several elements, like `<span>` and `</span>`, becomes a single HTML element.
+    /// This also lets an unordered list that mixes term-list items and other items become several sibling HTML elements.
     package func visit(_ container: some Sequence<any Markup>) -> [HTMLNode] {
         var children: [HTMLNode] = []
         children.reserveCapacity(container.underestimatedCount)
@@ -654,7 +690,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
         // Check if the markup contains _any_ inline HTML. If it doesn't, then we can simply visit each child.
         guard container.contains(where: { $0 is InlineHTML }) else {
             for element in container {
-                children.append(visit(element))
+                _append(element, to: &children)
             }
             return children
         }
@@ -669,7 +705,7 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
         while let element = remainder.popFirst() {
             guard let openingHTML = element as? InlineHTML else {
                 // If the markup _isn't_ inline HTML we can simply visit it to transform it.
-                children.append(visit(element))
+                _append(element, to: &children)
                 continue
             }
             
@@ -695,6 +731,14 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
         }
         
         return children
+    }
+    
+    private func _append(_ element: any Markup, to nodes: inout [HTMLNode]) {
+        if let unorderedList = element as? UnorderedList {
+            nodes.append(contentsOf: _listElements(for: unorderedList))
+        } else {
+            nodes.append(visit(element))
+        }
     }
     
     private func _findMultiMarkupHTMLElement(in remainder: inout ArraySlice<any Markup>, openingRawHTML: String) -> HTMLNode? {
@@ -851,7 +895,11 @@ package struct MarkdownRenderer<Provider: LinkProvider, Parser: RenderableDirect
         } else if let orderedList = markup as? OrderedList {
             return visit(orderedList)
         } else if let unorderedList = markup as? UnorderedList {
-            return visit(unorderedList)
+            let elements = _listElements(for: unorderedList)
+            // Only a sequence of markup can transform a list that mixes term-list items and other items into sibling HTML elements.
+            // If such a list gets here anyway, wrap its elements so that the page still includes all of the list's content.
+            assert(elements.count == 1, "Transform unordered lists as part of a sequence of markup, for example their parent's children, rather than on their own.")
+            return elements.count == 1 ? elements[0] : div(contents: elements)
         } else if let codeBlock = markup as? CodeBlock {
             return visit(codeBlock)
         } else if let blockQuote = markup as? BlockQuote {
